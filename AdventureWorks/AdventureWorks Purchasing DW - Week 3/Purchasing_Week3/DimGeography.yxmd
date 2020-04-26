@@ -1,0 +1,384 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="390" y="90" width="468" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Create a geography dimension</Text>
+          <Font name="Arial" size="14.25" style="1" />
+          <TextColor name="Black" />
+          <FillColor r="255" g="255" b="128" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:info7370_input|||select Cities.CityID,
+	Cities.CityName,
+	Cities.StateProvinceID,
+	Cities.LatestRecordedPopulation,
+	Cities.LastEditedBy,
+	Cities.ValidFrom,
+	Cities.ValidTo 
+from Cities</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:info7370_input
+Query=select Cities.CityID,
+	Citi...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CityID" source="File: aka:info7370_input|||select Cities.CityID,&#xA;	Cities.CityName,&#xA;	Cities.StateProvinceID,&#xA;	Cities.LatestRecordedPopulation,&#xA;	Cities.LastEditedBy,&#xA;	Cities.ValidFrom,&#xA;	Cities.ValidTo &#xA;from Cities" type="Int32" />
+            <Field name="CityName" size="50" source="File: aka:info7370_input|||select Cities.CityID,&#xA;	Cities.CityName,&#xA;	Cities.StateProvinceID,&#xA;	Cities.LatestRecordedPopulation,&#xA;	Cities.LastEditedBy,&#xA;	Cities.ValidFrom,&#xA;	Cities.ValidTo &#xA;from Cities" type="V_WString" />
+            <Field name="StateProvinceID" source="File: aka:info7370_input|||select Cities.CityID,&#xA;	Cities.CityName,&#xA;	Cities.StateProvinceID,&#xA;	Cities.LatestRecordedPopulation,&#xA;	Cities.LastEditedBy,&#xA;	Cities.ValidFrom,&#xA;	Cities.ValidTo &#xA;from Cities" type="Int32" />
+            <Field name="LatestRecordedPopulation" source="File: aka:info7370_input|||select Cities.CityID,&#xA;	Cities.CityName,&#xA;	Cities.StateProvinceID,&#xA;	Cities.LatestRecordedPopulation,&#xA;	Cities.LastEditedBy,&#xA;	Cities.ValidFrom,&#xA;	Cities.ValidTo &#xA;from Cities" type="Int64" />
+            <Field name="LastEditedBy" source="File: aka:info7370_input|||select Cities.CityID,&#xA;	Cities.CityName,&#xA;	Cities.StateProvinceID,&#xA;	Cities.LatestRecordedPopulation,&#xA;	Cities.LastEditedBy,&#xA;	Cities.ValidFrom,&#xA;	Cities.ValidTo &#xA;from Cities" type="Int32" />
+            <Field name="ValidFrom" source="File: aka:info7370_input|||select Cities.CityID,&#xA;	Cities.CityName,&#xA;	Cities.StateProvinceID,&#xA;	Cities.LatestRecordedPopulation,&#xA;	Cities.LastEditedBy,&#xA;	Cities.ValidFrom,&#xA;	Cities.ValidTo &#xA;from Cities" type="DateTime" />
+            <Field name="ValidTo" source="File: aka:info7370_input|||select Cities.CityID,&#xA;	Cities.CityName,&#xA;	Cities.StateProvinceID,&#xA;	Cities.LatestRecordedPopulation,&#xA;	Cities.LastEditedBy,&#xA;	Cities.ValidFrom,&#xA;	Cities.ValidTo &#xA;from Cities" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:info7370_input|||select StateProvinces.* 
+from StateProvinces</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:info7370_input
+Query=select StateProvinces.* 
+fr...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="StateProvinceID" source="File: aka:info7370_input|||select StateProvinces.* &#xA;from StateProvinces" type="Int32" />
+            <Field name="StateProvinceCode" size="5" source="File: aka:info7370_input|||select StateProvinces.* &#xA;from StateProvinces" type="V_WString" />
+            <Field name="StateProvinceName" size="50" source="File: aka:info7370_input|||select StateProvinces.* &#xA;from StateProvinces" type="V_WString" />
+            <Field name="CountryID" source="File: aka:info7370_input|||select StateProvinces.* &#xA;from StateProvinces" type="Int32" />
+            <Field name="SalesTerritory" size="50" source="File: aka:info7370_input|||select StateProvinces.* &#xA;from StateProvinces" type="V_WString" />
+            <Field name="Border" size="2147483647" source="File: aka:info7370_input|||select StateProvinces.* &#xA;from StateProvinces" type="Blob" />
+            <Field name="LatestRecordedPopulation" source="File: aka:info7370_input|||select StateProvinces.* &#xA;from StateProvinces" type="Int64" />
+            <Field name="LastEditedBy" source="File: aka:info7370_input|||select StateProvinces.* &#xA;from StateProvinces" type="Int32" />
+            <Field name="ValidFrom" source="File: aka:info7370_input|||select StateProvinces.* &#xA;from StateProvinces" type="DateTime" />
+            <Field name="ValidTo" source="File: aka:info7370_input|||select StateProvinces.* &#xA;from StateProvinces" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="390" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="StateProvinceID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="StateProvinceID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_CityID" selected="True" input="Left_" />
+                <SelectField field="Left_CityName" selected="True" input="Left_" />
+                <SelectField field="Left_StateProvinceID" selected="True" input="Left_" />
+                <SelectField field="Left_LatestRecordedPopulation" selected="True" input="Left_" />
+                <SelectField field="Left_LastEditedBy" selected="True" input="Left_" />
+                <SelectField field="Left_ValidFrom" selected="True" input="Left_" />
+                <SelectField field="Left_ValidTo" selected="True" input="Left_" />
+                <SelectField field="Right_StateProvinceID" selected="True" rename="Right_StateProvinceID" input="Right_" />
+                <SelectField field="Right_StateProvinceCode" selected="True" input="Right_" />
+                <SelectField field="Right_StateProvinceName" selected="True" input="Right_" />
+                <SelectField field="Right_CountryID" selected="True" input="Right_" />
+                <SelectField field="Right_SalesTerritory" selected="True" input="Right_" />
+                <SelectField field="Right_LatestRecordedPopulation" selected="True" rename="State_LatestRecordedPopulation" input="Right_" />
+                <SelectField field="Right_LastEditedBy" selected="True" rename="State_LastEditedBy" input="Right_" />
+                <SelectField field="Right_ValidFrom" selected="True" rename="State_ValidFrom" input="Right_" />
+                <SelectField field="Right_ValidTo" selected="True" rename="Statet_ValidTo" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="678" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="CountryID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="CountryID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_CityID" selected="True" input="Left_" />
+                <SelectField field="Left_CityName" selected="True" input="Left_" />
+                <SelectField field="Left_StateProvinceID" selected="True" input="Left_" />
+                <SelectField field="Left_LatestRecordedPopulation" selected="True" input="Left_" />
+                <SelectField field="Left_LastEditedBy" selected="True" input="Left_" />
+                <SelectField field="Left_ValidFrom" selected="True" input="Left_" />
+                <SelectField field="Left_ValidTo" selected="True" input="Left_" />
+                <SelectField field="Left_Right_StateProvinceID" selected="True" input="Left_" />
+                <SelectField field="Left_StateProvinceCode" selected="True" input="Left_" />
+                <SelectField field="Left_StateProvinceName" selected="True" input="Left_" />
+                <SelectField field="Left_CountryID" selected="True" input="Left_" />
+                <SelectField field="Left_SalesTerritory" selected="True" input="Left_" />
+                <SelectField field="Left_State_LatestRecordedPopulation" selected="True" input="Left_" />
+                <SelectField field="Left_State_LastEditedBy" selected="True" input="Left_" />
+                <SelectField field="Left_State_ValidFrom" selected="True" input="Left_" />
+                <SelectField field="Left_Statet_ValidTo" selected="True" input="Left_" />
+                <SelectField field="Right_CountryID" selected="False" rename="Right_CountryID" input="Right_" />
+                <SelectField field="Right_CountryName" selected="True" input="Right_" />
+                <SelectField field="Right_FormalName" selected="True" input="Right_" />
+                <SelectField field="Right_IsoAlpha3Code" selected="True" input="Right_" />
+                <SelectField field="Right_IsoNumericCode" selected="True" input="Right_" />
+                <SelectField field="Right_CountryType" selected="True" input="Right_" />
+                <SelectField field="Right_LatestRecordedPopulation" selected="True" rename="Country_LatestRecordedPopulation" input="Right_" />
+                <SelectField field="Right_Continent" selected="True" input="Right_" />
+                <SelectField field="Right_Region" selected="True" input="Right_" />
+                <SelectField field="Right_Subregion" selected="True" input="Right_" />
+                <SelectField field="Right_Border" selected="False" rename="Right_Border" input="Right_" />
+                <SelectField field="Right_LastEditedBy" selected="True" rename="Country_LastEditedBy" input="Right_" />
+                <SelectField field="Right_ValidFrom" selected="True" rename="Country_ValidFrom" input="Right_" />
+                <SelectField field="Right_ValidTo" selected="True" rename="Country_ValidTo" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="498" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:info7370_input|||select Countries.* 
+from Countries</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:info7370_input
+Query=select Countries.* 
+from Co...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CountryID" source="File: aka:info7370_input|||select Countries.* &#xA;from Countries" type="Int32" />
+            <Field name="CountryName" size="60" source="File: aka:info7370_input|||select Countries.* &#xA;from Countries" type="V_WString" />
+            <Field name="FormalName" size="60" source="File: aka:info7370_input|||select Countries.* &#xA;from Countries" type="V_WString" />
+            <Field name="IsoAlpha3Code" size="3" source="File: aka:info7370_input|||select Countries.* &#xA;from Countries" type="V_WString" />
+            <Field name="IsoNumericCode" source="File: aka:info7370_input|||select Countries.* &#xA;from Countries" type="Int32" />
+            <Field name="CountryType" size="20" source="File: aka:info7370_input|||select Countries.* &#xA;from Countries" type="V_WString" />
+            <Field name="LatestRecordedPopulation" source="File: aka:info7370_input|||select Countries.* &#xA;from Countries" type="Int64" />
+            <Field name="Continent" size="30" source="File: aka:info7370_input|||select Countries.* &#xA;from Countries" type="V_WString" />
+            <Field name="Region" size="30" source="File: aka:info7370_input|||select Countries.* &#xA;from Countries" type="V_WString" />
+            <Field name="Subregion" size="30" source="File: aka:info7370_input|||select Countries.* &#xA;from Countries" type="V_WString" />
+            <Field name="Border" size="2147483647" source="File: aka:info7370_input|||select Countries.* &#xA;from Countries" type="Blob" />
+            <Field name="LastEditedBy" source="File: aka:info7370_input|||select Countries.* &#xA;from Countries" type="Int32" />
+            <Field name="ValidFrom" source="File: aka:info7370_input|||select Countries.* &#xA;from Countries" type="DateTime" />
+            <Field name="ValidTo" source="File: aka:info7370_input|||select Countries.* &#xA;from Countries" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="930" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="di_create_date" size="19" type="DateTime" />
+            <FormulaField expression="[Engine.WorkflowFileName]" field="di_job_name" size="255" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[di_create_date = DateTimeNow()
+di_job_name = [Engine.WorkflowFileName]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1206" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:info7370_workshops|||dim_geography</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:info7370_workshops
+Query=dim_geography</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="11" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Join" />
+      <Destination ToolID="13" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="13" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Join" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>create_dim_geography_workshop</Name>
+      <Description>Create a geography dimension</Description>
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author>richard sherman</Author>
+      <Company>athena IT Solutions</Company>
+      <Copyright>2018</Copyright>
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

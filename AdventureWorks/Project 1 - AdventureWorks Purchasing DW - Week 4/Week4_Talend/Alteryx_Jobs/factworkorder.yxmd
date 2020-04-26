@@ -1,0 +1,720 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:ProductionSQL|||select AdventureWorks2017.Production.WorkOrder.WorkOrderID,
+	AdventureWorks2017.Production.WorkOrder.OrderQty,
+	AdventureWorks2017.Production.WorkOrder.ScrappedQty,
+	AdventureWorks2017.Production.WorkOrder.ProductID,
+	AdventureWorks2017.Production.WorkOrder.ScrapReasonID,
+	AdventureWorks2017.Production.WorkOrder.StartDate,
+	AdventureWorks2017.Production.WorkOrder.EndDate,
+	AdventureWorks2017.Production.WorkOrder.DueDate 
+from AdventureWorks2017.Production.WorkOrder</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:ProductionSQL
+Query=select AdventureWorks2017.Pr...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="WorkOrderID" source="File: aka:ProductionSQL|||select AdventureWorks2017.Production.WorkOrder.WorkOrderID,&#xA;	AdventureWorks2017.Production.WorkOrder.OrderQty,&#xA;	AdventureWorks2017.Production.WorkOrder.ScrappedQty,&#xA;	AdventureWorks2017.Production.WorkOrder.ProductID,&#xA;	AdventureWorks2017.Production.WorkOrder.ScrapReasonID,&#xA;	AdventureWorks2017.Production.WorkOrder.StartDate,&#xA;	AdventureWorks2017.Production.WorkOrder.EndDate,&#xA;	AdventureWorks2017.Production.WorkOrder.DueDate &#xA;from AdventureWorks2017.Production.WorkOrder" type="Int32" />
+            <Field name="OrderQty" source="File: aka:ProductionSQL|||select AdventureWorks2017.Production.WorkOrder.WorkOrderID,&#xA;	AdventureWorks2017.Production.WorkOrder.OrderQty,&#xA;	AdventureWorks2017.Production.WorkOrder.ScrappedQty,&#xA;	AdventureWorks2017.Production.WorkOrder.ProductID,&#xA;	AdventureWorks2017.Production.WorkOrder.ScrapReasonID,&#xA;	AdventureWorks2017.Production.WorkOrder.StartDate,&#xA;	AdventureWorks2017.Production.WorkOrder.EndDate,&#xA;	AdventureWorks2017.Production.WorkOrder.DueDate &#xA;from AdventureWorks2017.Production.WorkOrder" type="Int32" />
+            <Field name="ScrappedQty" source="File: aka:ProductionSQL|||select AdventureWorks2017.Production.WorkOrder.WorkOrderID,&#xA;	AdventureWorks2017.Production.WorkOrder.OrderQty,&#xA;	AdventureWorks2017.Production.WorkOrder.ScrappedQty,&#xA;	AdventureWorks2017.Production.WorkOrder.ProductID,&#xA;	AdventureWorks2017.Production.WorkOrder.ScrapReasonID,&#xA;	AdventureWorks2017.Production.WorkOrder.StartDate,&#xA;	AdventureWorks2017.Production.WorkOrder.EndDate,&#xA;	AdventureWorks2017.Production.WorkOrder.DueDate &#xA;from AdventureWorks2017.Production.WorkOrder" type="Int16" />
+            <Field name="ProductID" source="File: aka:ProductionSQL|||select AdventureWorks2017.Production.WorkOrder.WorkOrderID,&#xA;	AdventureWorks2017.Production.WorkOrder.OrderQty,&#xA;	AdventureWorks2017.Production.WorkOrder.ScrappedQty,&#xA;	AdventureWorks2017.Production.WorkOrder.ProductID,&#xA;	AdventureWorks2017.Production.WorkOrder.ScrapReasonID,&#xA;	AdventureWorks2017.Production.WorkOrder.StartDate,&#xA;	AdventureWorks2017.Production.WorkOrder.EndDate,&#xA;	AdventureWorks2017.Production.WorkOrder.DueDate &#xA;from AdventureWorks2017.Production.WorkOrder" type="Int32" />
+            <Field name="ScrapReasonID" source="File: aka:ProductionSQL|||select AdventureWorks2017.Production.WorkOrder.WorkOrderID,&#xA;	AdventureWorks2017.Production.WorkOrder.OrderQty,&#xA;	AdventureWorks2017.Production.WorkOrder.ScrappedQty,&#xA;	AdventureWorks2017.Production.WorkOrder.ProductID,&#xA;	AdventureWorks2017.Production.WorkOrder.ScrapReasonID,&#xA;	AdventureWorks2017.Production.WorkOrder.StartDate,&#xA;	AdventureWorks2017.Production.WorkOrder.EndDate,&#xA;	AdventureWorks2017.Production.WorkOrder.DueDate &#xA;from AdventureWorks2017.Production.WorkOrder" type="Int16" />
+            <Field name="StartDate" source="File: aka:ProductionSQL|||select AdventureWorks2017.Production.WorkOrder.WorkOrderID,&#xA;	AdventureWorks2017.Production.WorkOrder.OrderQty,&#xA;	AdventureWorks2017.Production.WorkOrder.ScrappedQty,&#xA;	AdventureWorks2017.Production.WorkOrder.ProductID,&#xA;	AdventureWorks2017.Production.WorkOrder.ScrapReasonID,&#xA;	AdventureWorks2017.Production.WorkOrder.StartDate,&#xA;	AdventureWorks2017.Production.WorkOrder.EndDate,&#xA;	AdventureWorks2017.Production.WorkOrder.DueDate &#xA;from AdventureWorks2017.Production.WorkOrder" type="DateTime" />
+            <Field name="EndDate" source="File: aka:ProductionSQL|||select AdventureWorks2017.Production.WorkOrder.WorkOrderID,&#xA;	AdventureWorks2017.Production.WorkOrder.OrderQty,&#xA;	AdventureWorks2017.Production.WorkOrder.ScrappedQty,&#xA;	AdventureWorks2017.Production.WorkOrder.ProductID,&#xA;	AdventureWorks2017.Production.WorkOrder.ScrapReasonID,&#xA;	AdventureWorks2017.Production.WorkOrder.StartDate,&#xA;	AdventureWorks2017.Production.WorkOrder.EndDate,&#xA;	AdventureWorks2017.Production.WorkOrder.DueDate &#xA;from AdventureWorks2017.Production.WorkOrder" type="DateTime" />
+            <Field name="DueDate" source="File: aka:ProductionSQL|||select AdventureWorks2017.Production.WorkOrder.WorkOrderID,&#xA;	AdventureWorks2017.Production.WorkOrder.OrderQty,&#xA;	AdventureWorks2017.Production.WorkOrder.ScrappedQty,&#xA;	AdventureWorks2017.Production.WorkOrder.ProductID,&#xA;	AdventureWorks2017.Production.WorkOrder.ScrapReasonID,&#xA;	AdventureWorks2017.Production.WorkOrder.StartDate,&#xA;	AdventureWorks2017.Production.WorkOrder.EndDate,&#xA;	AdventureWorks2017.Production.WorkOrder.DueDate &#xA;from AdventureWorks2017.Production.WorkOrder" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="100" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>WorkOrder</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="42" y="222" width="96" height="36" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>dimproduct_purchased</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="270" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ProductID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ProductID_NK" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_ProductID" selected="True" rename="Right_ProductID" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=MYSQL_Source;UID=info7370;PWD=__EncPwd1__|||select dimproducts_purchased.ProductID_SK,
+	dimproducts_purchased.ProductID_NK 
+from dimproducts_purchased</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MYSQL_Source
+Query=select dimproducts_purchased...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="ProductID_SK" source="File: odbc:DSN=MYSQL_Source;UID=info7370;PWD=__EncPwd1__|||select dimproducts_purchased.ProductID_SK,&#xA;	dimproducts_purchased.ProductID_NK &#xA;from dimproducts_purchased" type="Int32" />
+            <Field name="ProductID_NK" source="File: odbc:DSN=MYSQL_Source;UID=info7370;PWD=__EncPwd1__|||select dimproducts_purchased.ProductID_SK,&#xA;	dimproducts_purchased.ProductID_NK &#xA;from dimproducts_purchased" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="330" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=MYSQL_Source;UID=info7370;PWD=__EncPwd1__|||select dimscrapreason.ScrapReasonID_SK,
+	dimscrapreason.ScrapReasonID_NK 
+from dimscrapreason</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MYSQL_Source
+Query=select dimscrapreason.ScrapR...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="ScrapReasonID_SK" source="File: odbc:DSN=MYSQL_Source;UID=info7370;PWD=__EncPwd1__|||select dimscrapreason.ScrapReasonID_SK,&#xA;	dimscrapreason.ScrapReasonID_NK &#xA;from dimscrapreason" type="Int16" />
+            <Field name="ScrapReasonID_NK" source="File: odbc:DSN=MYSQL_Source;UID=info7370;PWD=__EncPwd1__|||select dimscrapreason.ScrapReasonID_SK,&#xA;	dimscrapreason.ScrapReasonID_NK &#xA;from dimscrapreason" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="450" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ScrapReasonID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ScrapReasonID_NK" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="642" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="27" field="SOR_ID" size="255" type="V_WString" />
+            <FormulaField expression="116" field="DI_Job_ID" size="255" type="V_WString" />
+            <FormulaField expression="DateTimeNow()" field="DI_Create_Date" size="10" type="Date" />
+            <FormulaField expression="DateTimeNow()" field="DI_Modified_Date" size="10" type="Date" />
+            <FormulaField expression="'RJ1'" field="RejectCode_SK" size="64" type="String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>SOR_ID = 27
+DI_Job_ID = 116
+DI_Create_Date = DateTimeNow()
+DI_Modified_Date = Da...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1062" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="WorkOrderRejectID" selected="True" />
+            <SelectField field="WorkOrderID" selected="True" />
+            <SelectField field="OrderQty" selected="True" />
+            <SelectField field="ScrappedQty" selected="True" />
+            <SelectField field="ProductID_SK" selected="True" />
+            <SelectField field="ScrapReasonID_SK" selected="True" />
+            <SelectField field="SOR_ID" selected="True" />
+            <SelectField field="DI_Job_ID" selected="True" />
+            <SelectField field="DI_Create_Date" selected="True" />
+            <SelectField field="DI_Modified_Date" selected="True" />
+            <SelectField field="RejectCode_SK" selected="True" />
+            <SelectField field="StartDate2" selected="True" />
+            <SelectField field="EndDate2" selected="True" />
+            <SelectField field="DueDate2" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="366" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="270" y="270" width="96" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>ScrapReason</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1134" y="126" width="132" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>FactWorkOrder_Rejects</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1134" y="6" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>FactWorkOrder</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="954" y="-6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="WorkOrderID" selected="True" />
+            <SelectField field="OrderQty" selected="True" />
+            <SelectField field="ScrappedQty" selected="True" />
+            <SelectField field="ScrapReasonID" selected="True" rename="ScrapReasonID_SK" />
+            <SelectField field="ProductID_SK" selected="True" />
+            <SelectField field="SOR_ID" selected="True" />
+            <SelectField field="DI_Job_ID" selected="True" />
+            <SelectField field="DI_Create_Date" selected="True" />
+            <SelectField field="DI_Modified_Date" selected="True" />
+            <SelectField field="StartDate2" selected="True" rename="StartDate" />
+            <SelectField field="EndDate2" selected="True" rename="EndDate" />
+            <SelectField field="DueDate2" selected="True" rename="DueDate" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="558" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="27" field="SOR_ID" size="255" type="V_WString" />
+            <FormulaField expression="116" field="DI_Job_ID" size="255" type="V_WString" />
+            <FormulaField expression="DateTimeNow()" field="DI_Create_Date" size="10" type="Date" />
+            <FormulaField expression="DateTimeNow()" field="DI_Modified_Date" size="10" type="Date" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>SOR_ID = 27
+DI_Job_ID = 116
+DI_Create_Date = DateTimeNow()
+DI_Modified_Date = Da...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="654" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="True" />
+          <InputFieldName>StartDate</InputFieldName>
+          <Format>yyyyMMdd</Format>
+          <OutputFieldName>StartDate</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert StartDate To:
+yyyyMMdd</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="738" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="True" />
+          <InputFieldName>EndDate</InputFieldName>
+          <Format>yyyyMMdd</Format>
+          <OutputFieldName>EndDate</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert EndDate To:
+yyyyMMdd</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="846" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="True" />
+          <InputFieldName>DueDate</InputFieldName>
+          <Format>yyyyMMdd</Format>
+          <OutputFieldName>DueDate</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert DueDate To:
+yyyyMMdd</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="774" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="True" />
+          <InputFieldName>StartDate</InputFieldName>
+          <Format>yyyyMMdd</Format>
+          <OutputFieldName>StartDate</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert StartDate To:
+yyyyMMdd</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="846" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="True" />
+          <InputFieldName>EndDate</InputFieldName>
+          <Format>yyyyMMdd</Format>
+          <OutputFieldName>EndDate</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert EndDate To:
+yyyyMMdd</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="954" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="True" />
+          <InputFieldName>DueDate</InputFieldName>
+          <Format>yyyyMMdd</Format>
+          <OutputFieldName>DueDate</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert DueDate To:
+yyyyMMdd</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="510" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>WorkOrderRejectID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1074" y="-6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="" />
+          <Passwords />
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1170" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File />
+          <Passwords />
+          <FormatSpecificOptions />
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="5" Connection="Left" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="10" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Left" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Join" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>factworkorder</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

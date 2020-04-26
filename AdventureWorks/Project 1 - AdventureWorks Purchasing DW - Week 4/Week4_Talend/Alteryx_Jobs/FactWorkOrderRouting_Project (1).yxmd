@@ -1,0 +1,273 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:adventureWorks|||select AdventureWorks2017.Production.WorkOrderRouting.WorkOrderID,
+	AdventureWorks2017.Production.WorkOrderRouting.ProductID,
+	AdventureWorks2017.Production.WorkOrderRouting.PlannedCost,
+	AdventureWorks2017.Production.WorkOrderRouting.ActualCost,
+	AdventureWorks2017.Production.WorkOrderRouting.ActualStartDate,
+	AdventureWorks2017.Production.WorkOrderRouting.ActualEndDate,
+	AdventureWorks2017.Production.WorkOrderRouting.ScheduledStartDate,
+	AdventureWorks2017.Production.WorkOrderRouting.ScheduledEndDate,
+	AdventureWorks2017.Production.WorkOrderRouting.OperationSequence,
+	AdventureWorks2017.Production.WorkOrderRouting.LocationID 
+from AdventureWorks2017.Production.WorkOrderRouting</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:adventureWorks
+Query=select AdventureWorks2017.Pr...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="WorkOrderID" source="File: aka:adventureWorks|||select AdventureWorks2017.Production.WorkOrderRouting.WorkOrderID,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ProductID,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.PlannedCost,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualCost,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualStartDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualEndDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ScheduledStartDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ScheduledEndDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.OperationSequence,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.LocationID &#xA;from AdventureWorks2017.Production.WorkOrderRouting" type="Int32" />
+            <Field name="ProductID" source="File: aka:adventureWorks|||select AdventureWorks2017.Production.WorkOrderRouting.WorkOrderID,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ProductID,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.PlannedCost,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualCost,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualStartDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualEndDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ScheduledStartDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ScheduledEndDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.OperationSequence,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.LocationID &#xA;from AdventureWorks2017.Production.WorkOrderRouting" type="Int32" />
+            <Field name="PlannedCost" scale="4" size="21" source="File: aka:adventureWorks|||select AdventureWorks2017.Production.WorkOrderRouting.WorkOrderID,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ProductID,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.PlannedCost,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualCost,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualStartDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualEndDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ScheduledStartDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ScheduledEndDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.OperationSequence,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.LocationID &#xA;from AdventureWorks2017.Production.WorkOrderRouting" type="FixedDecimal" />
+            <Field name="ActualCost" scale="4" size="21" source="File: aka:adventureWorks|||select AdventureWorks2017.Production.WorkOrderRouting.WorkOrderID,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ProductID,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.PlannedCost,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualCost,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualStartDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualEndDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ScheduledStartDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ScheduledEndDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.OperationSequence,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.LocationID &#xA;from AdventureWorks2017.Production.WorkOrderRouting" type="FixedDecimal" />
+            <Field name="ActualStartDate" source="File: aka:adventureWorks|||select AdventureWorks2017.Production.WorkOrderRouting.WorkOrderID,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ProductID,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.PlannedCost,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualCost,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualStartDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualEndDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ScheduledStartDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ScheduledEndDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.OperationSequence,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.LocationID &#xA;from AdventureWorks2017.Production.WorkOrderRouting" type="DateTime" />
+            <Field name="ActualEndDate" source="File: aka:adventureWorks|||select AdventureWorks2017.Production.WorkOrderRouting.WorkOrderID,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ProductID,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.PlannedCost,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualCost,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualStartDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualEndDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ScheduledStartDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ScheduledEndDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.OperationSequence,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.LocationID &#xA;from AdventureWorks2017.Production.WorkOrderRouting" type="DateTime" />
+            <Field name="ScheduledStartDate" source="File: aka:adventureWorks|||select AdventureWorks2017.Production.WorkOrderRouting.WorkOrderID,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ProductID,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.PlannedCost,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualCost,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualStartDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualEndDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ScheduledStartDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ScheduledEndDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.OperationSequence,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.LocationID &#xA;from AdventureWorks2017.Production.WorkOrderRouting" type="DateTime" />
+            <Field name="ScheduledEndDate" source="File: aka:adventureWorks|||select AdventureWorks2017.Production.WorkOrderRouting.WorkOrderID,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ProductID,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.PlannedCost,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualCost,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualStartDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualEndDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ScheduledStartDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ScheduledEndDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.OperationSequence,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.LocationID &#xA;from AdventureWorks2017.Production.WorkOrderRouting" type="DateTime" />
+            <Field name="OperationSequence" source="File: aka:adventureWorks|||select AdventureWorks2017.Production.WorkOrderRouting.WorkOrderID,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ProductID,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.PlannedCost,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualCost,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualStartDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualEndDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ScheduledStartDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ScheduledEndDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.OperationSequence,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.LocationID &#xA;from AdventureWorks2017.Production.WorkOrderRouting" type="Int16" />
+            <Field name="LocationID" source="File: aka:adventureWorks|||select AdventureWorks2017.Production.WorkOrderRouting.WorkOrderID,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ProductID,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.PlannedCost,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualCost,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualStartDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ActualEndDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ScheduledStartDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.ScheduledEndDate,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.OperationSequence,&#xA;	AdventureWorks2017.Production.WorkOrderRouting.LocationID &#xA;from AdventureWorks2017.Production.WorkOrderRouting" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="42" y="18" width="108" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>WorkOrderRouting</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="498" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="" field="SOR_ID" size="1073741823" type="V_WString" />
+            <FormulaField expression="116" field="DI_Job_ID" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeNow()" field="DI_Create_Date" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeNow()" field="DI_Modified_Date" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>SOR_ID = 
+DI_Job_ID = 116
+DI_Create_Date = DateTimeNow()
+DI_Modified_Date = Date...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="222" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="WorkOrderID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="WorkOrderID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_WorkOrderID" selected="True" rename="Right_WorkOrderID" input="Right_" />
+                <SelectField field="Right_ProductID" selected="True" rename="Right_ProductID" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">aka:adventureWorks|||select AdventureWorks2017.Production.WorkOrder.WorkOrderID,
+	AdventureWorks2017.Production.WorkOrder.ProductID 
+from AdventureWorks2017.Production.WorkOrder</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:adventureWorks
+Query=select AdventureWorks2017.Pr...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="WorkOrderID" source="File: aka:adventureWorks|||select AdventureWorks2017.Production.WorkOrder.WorkOrderID,&#xA;	AdventureWorks2017.Production.WorkOrder.ProductID &#xA;from AdventureWorks2017.Production.WorkOrder" type="Int32" />
+            <Field name="ProductID" source="File: aka:adventureWorks|||select AdventureWorks2017.Production.WorkOrder.WorkOrderID,&#xA;	AdventureWorks2017.Production.WorkOrder.ProductID &#xA;from AdventureWorks2017.Production.WorkOrder" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="42" y="198" width="96" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>WorkOrder</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="366" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="4" Connection="Right" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="4" Connection="Left" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="4" Connection="Join" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>FactWorkOrderRouting_Project</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

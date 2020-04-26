@@ -1,0 +1,990 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=MYSQL_Source;UID=info7370;PWD=__EncPwd1__|||select dimvendor.VendorID_SK,
+	dimvendor.BusinessEntityID_NK 
+from dimvendor</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MYSQL_Source
+Query=select dimvendor.VendorID_SK...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="VendorID_SK" source="File: odbc:DSN=MYSQL_Source;UID=info7370;PWD=__EncPwd1__|||select dimvendor.VendorID_SK,&#xA;	dimvendor.BusinessEntityID_NK &#xA;from dimvendor" type="Int32" />
+            <Field name="BusinessEntityID_NK" source="File: odbc:DSN=MYSQL_Source;UID=info7370;PWD=__EncPwd1__|||select dimvendor.VendorID_SK,&#xA;	dimvendor.BusinessEntityID_NK &#xA;from dimvendor" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="136" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Vendor</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="17">aka:Oracle_person|||select BUSINESSENTITYCONTACT.BUSINESSENTITYID,
+	BUSINESSENTITYCONTACT.CONTACTTYPEID,
+	BUSINESSENTITYCONTACT.ETLLOADID,
+	BUSINESSENTITYCONTACT.ETLLOADDATE,
+	BUSINESSENTITYCONTACT.PERSONID 
+from BUSINESSENTITYCONTACT</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Oracle_person
+Query=select BUSINESSENTITYCONTACT...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="BUSINESSENTITYID" source="File: aka:Oracle_person|||select BUSINESSENTITYCONTACT.BUSINESSENTITYID,&#xA;	BUSINESSENTITYCONTACT.CONTACTTYPEID,&#xA;	BUSINESSENTITYCONTACT.ETLLOADID,&#xA;	BUSINESSENTITYCONTACT.ETLLOADDATE,&#xA;	BUSINESSENTITYCONTACT.PERSONID &#xA;from BUSINESSENTITYCONTACT" type="Int64" />
+            <Field description="PrimaryKey" name="CONTACTTYPEID" source="File: aka:Oracle_person|||select BUSINESSENTITYCONTACT.BUSINESSENTITYID,&#xA;	BUSINESSENTITYCONTACT.CONTACTTYPEID,&#xA;	BUSINESSENTITYCONTACT.ETLLOADID,&#xA;	BUSINESSENTITYCONTACT.ETLLOADDATE,&#xA;	BUSINESSENTITYCONTACT.PERSONID &#xA;from BUSINESSENTITYCONTACT" type="Int64" />
+            <Field name="ETLLOADID" source="File: aka:Oracle_person|||select BUSINESSENTITYCONTACT.BUSINESSENTITYID,&#xA;	BUSINESSENTITYCONTACT.CONTACTTYPEID,&#xA;	BUSINESSENTITYCONTACT.ETLLOADID,&#xA;	BUSINESSENTITYCONTACT.ETLLOADDATE,&#xA;	BUSINESSENTITYCONTACT.PERSONID &#xA;from BUSINESSENTITYCONTACT" type="Int64" />
+            <Field name="ETLLOADDATE" source="File: aka:Oracle_person|||select BUSINESSENTITYCONTACT.BUSINESSENTITYID,&#xA;	BUSINESSENTITYCONTACT.CONTACTTYPEID,&#xA;	BUSINESSENTITYCONTACT.ETLLOADID,&#xA;	BUSINESSENTITYCONTACT.ETLLOADDATE,&#xA;	BUSINESSENTITYCONTACT.PERSONID &#xA;from BUSINESSENTITYCONTACT" type="DateTime" />
+            <Field description="PrimaryKey" name="PERSONID" source="File: aka:Oracle_person|||select BUSINESSENTITYCONTACT.BUSINESSENTITYID,&#xA;	BUSINESSENTITYCONTACT.CONTACTTYPEID,&#xA;	BUSINESSENTITYCONTACT.ETLLOADID,&#xA;	BUSINESSENTITYCONTACT.ETLLOADDATE,&#xA;	BUSINESSENTITYCONTACT.PERSONID &#xA;from BUSINESSENTITYCONTACT" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="90" y="282" width="136" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>BusinessEntityContact</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="246" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="BusinessEntityID_NK" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="BUSINESSENTITYID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_VendorID_SK" selected="True" input="Left_" />
+                <SelectField field="Left_BusinessEntityID_NK" selected="True" input="Left_" />
+                <SelectField field="Right_BUSINESSENTITYID" selected="True" input="Right_" />
+                <SelectField field="Right_CONTACTTYPEID" selected="True" input="Right_" />
+                <SelectField field="Right_ETLLOADID" selected="True" input="Right_" />
+                <SelectField field="Right_ETLLOADDATE" selected="True" input="Right_" />
+                <SelectField field="Right_PERSONID" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="294" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="17">aka:Oracle_person|||select CONTACTTYPE.CONTACTTYPEID,
+	CONTACTTYPE.CONTACTTYPENAME 
+from CONTACTTYPE</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Oracle_person
+Query=select CONTACTTYPE.CONTACTTY...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="CONTACTTYPEID" source="File: aka:Oracle_person|||select CONTACTTYPE.CONTACTTYPEID,&#xA;	CONTACTTYPE.CONTACTTYPENAME &#xA;from CONTACTTYPE" type="Int64" />
+            <Field name="CONTACTTYPENAME" size="50" source="File: aka:Oracle_person|||select CONTACTTYPE.CONTACTTYPEID,&#xA;	CONTACTTYPE.CONTACTTYPENAME &#xA;from CONTACTTYPE" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="270" y="390" width="136" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>ContactType</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="390" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="CONTACTTYPEID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="CONTACTTYPEID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_VendorID_SK" selected="True" input="Left_" />
+                <SelectField field="Left_BusinessEntityID_NK" selected="True" input="Left_" />
+                <SelectField field="Left_BUSINESSENTITYID" selected="True" input="Left_" />
+                <SelectField field="Left_CONTACTTYPEID" selected="True" input="Left_" />
+                <SelectField field="Left_ETLLOADID" selected="True" input="Left_" />
+                <SelectField field="Left_ETLLOADDATE" selected="True" input="Left_" />
+                <SelectField field="Left_PERSONID" selected="True" input="Left_" />
+                <SelectField field="Right_CONTACTTYPEID" selected="True" rename="Right_CONTACTTYPEID" input="Right_" />
+                <SelectField field="Right_CONTACTTYPENAME" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="474" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="17">aka:Oracle_person|||select PERSON.BUSINESSENTITYID,
+	PERSON.EMAILPROMOTION,
+	PERSON.TITLE,
+	PERSON.FIRSTNAME,
+	PERSON.MIDDLENAME,
+	PERSON.LASTNAME 
+from PERSON</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Oracle_person
+Query=select PERSON.BUSINESSENTITY...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BUSINESSENTITYID" source="File: aka:Oracle_person|||select PERSON.BUSINESSENTITYID,&#xA;	PERSON.EMAILPROMOTION,&#xA;	PERSON.TITLE,&#xA;	PERSON.FIRSTNAME,&#xA;	PERSON.MIDDLENAME,&#xA;	PERSON.LASTNAME &#xA;from PERSON" type="Int64" />
+            <Field name="EMAILPROMOTION" source="File: aka:Oracle_person|||select PERSON.BUSINESSENTITYID,&#xA;	PERSON.EMAILPROMOTION,&#xA;	PERSON.TITLE,&#xA;	PERSON.FIRSTNAME,&#xA;	PERSON.MIDDLENAME,&#xA;	PERSON.LASTNAME &#xA;from PERSON" type="Int64" />
+            <Field name="TITLE" size="8" source="File: aka:Oracle_person|||select PERSON.BUSINESSENTITYID,&#xA;	PERSON.EMAILPROMOTION,&#xA;	PERSON.TITLE,&#xA;	PERSON.FIRSTNAME,&#xA;	PERSON.MIDDLENAME,&#xA;	PERSON.LASTNAME &#xA;from PERSON" type="WString" />
+            <Field name="FIRSTNAME" size="50" source="File: aka:Oracle_person|||select PERSON.BUSINESSENTITYID,&#xA;	PERSON.EMAILPROMOTION,&#xA;	PERSON.TITLE,&#xA;	PERSON.FIRSTNAME,&#xA;	PERSON.MIDDLENAME,&#xA;	PERSON.LASTNAME &#xA;from PERSON" type="V_WString" />
+            <Field name="MIDDLENAME" size="50" source="File: aka:Oracle_person|||select PERSON.BUSINESSENTITYID,&#xA;	PERSON.EMAILPROMOTION,&#xA;	PERSON.TITLE,&#xA;	PERSON.FIRSTNAME,&#xA;	PERSON.MIDDLENAME,&#xA;	PERSON.LASTNAME &#xA;from PERSON" type="V_WString" />
+            <Field name="LASTNAME" size="50" source="File: aka:Oracle_person|||select PERSON.BUSINESSENTITYID,&#xA;	PERSON.EMAILPROMOTION,&#xA;	PERSON.TITLE,&#xA;	PERSON.FIRSTNAME,&#xA;	PERSON.MIDDLENAME,&#xA;	PERSON.LASTNAME &#xA;from PERSON" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="402" y="258" width="136" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Person</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="570" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="PERSONID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="BUSINESSENTITYID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_VendorID_SK" selected="True" input="Left_" />
+                <SelectField field="Left_BusinessEntityID_NK" selected="True" input="Left_" />
+                <SelectField field="Left_BUSINESSENTITYID" selected="True" input="Left_" />
+                <SelectField field="Left_CONTACTTYPEID" selected="True" input="Left_" />
+                <SelectField field="Left_ETLLOADID" selected="True" input="Left_" />
+                <SelectField field="Left_ETLLOADDATE" selected="True" input="Left_" />
+                <SelectField field="Left_PERSONID" selected="True" input="Left_" />
+                <SelectField field="Left_Right_CONTACTTYPEID" selected="True" input="Left_" />
+                <SelectField field="Left_CONTACTTYPENAME" selected="True" input="Left_" />
+                <SelectField field="Right_BUSINESSENTITYID" selected="True" rename="PERSONBUSINESSENTITYID" input="Right_" />
+                <SelectField field="Right_EMAILPROMOTION" selected="True" input="Right_" />
+                <SelectField field="Right_TITLE" selected="True" input="Right_" />
+                <SelectField field="Right_FIRSTNAME" selected="True" input="Right_" />
+                <SelectField field="Right_MIDDLENAME" selected="True" input="Right_" />
+                <SelectField field="Right_LASTNAME" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="690" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="17">aka:Oracle_person|||select EMAILADDRESS.BUSINESSENTITYID,
+	EMAILADDRESS.EMAILADDRESS 
+from EMAILADDRESS</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Oracle_person
+Query=select EMAILADDRESS.BUSINESS...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="BUSINESSENTITYID" source="File: aka:Oracle_person|||select EMAILADDRESS.BUSINESSENTITYID,&#xA;	EMAILADDRESS.EMAILADDRESS &#xA;from EMAILADDRESS" type="Int64" />
+            <Field name="EMAILADDRESS" size="50" source="File: aka:Oracle_person|||select EMAILADDRESS.BUSINESSENTITYID,&#xA;	EMAILADDRESS.EMAILADDRESS &#xA;from EMAILADDRESS" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="618" y="270" width="136" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>EmailAddress</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="726" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="PERSONBUSINESSENTITYID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="BUSINESSENTITYID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_VendorID_SK" selected="True" input="Left_" />
+                <SelectField field="Left_BusinessEntityID_NK" selected="True" input="Left_" />
+                <SelectField field="Left_BUSINESSENTITYID" selected="True" input="Left_" />
+                <SelectField field="Left_CONTACTTYPEID" selected="True" input="Left_" />
+                <SelectField field="Left_ETLLOADID" selected="True" input="Left_" />
+                <SelectField field="Left_ETLLOADDATE" selected="True" input="Left_" />
+                <SelectField field="Left_PERSONID" selected="True" input="Left_" />
+                <SelectField field="Left_Right_CONTACTTYPEID" selected="True" input="Left_" />
+                <SelectField field="Left_CONTACTTYPENAME" selected="True" input="Left_" />
+                <SelectField field="Left_PERSONBUSINESSENTITYID" selected="True" input="Left_" />
+                <SelectField field="Left_EMAILPROMOTION" selected="True" input="Left_" />
+                <SelectField field="Left_TITLE" selected="True" input="Left_" />
+                <SelectField field="Left_FIRSTNAME" selected="True" input="Left_" />
+                <SelectField field="Left_MIDDLENAME" selected="True" input="Left_" />
+                <SelectField field="Left_LASTNAME" selected="True" input="Left_" />
+                <SelectField field="Right_BUSINESSENTITYID" selected="True" rename="Right_BUSINESSENTITYID" input="Right_" />
+                <SelectField field="Right_EMAILADDRESS" selected="True" input="Right_" />
+                <SelectField field="Left_Right_BUSINESSENTITYID" selected="False" rename="Left_Right_BUSINESSENTITYID" input="Left_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="882" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="894" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="17">aka:Oracle_person|||select PERSONPHONE.BUSINESSENTITYID,
+	PERSONPHONE.PHONENUMBER,
+	PERSONPHONE.PHONENUMBERTYPEID 
+from PERSONPHONE</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Oracle_person
+Query=select PERSONPHONE.BUSINESSE...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="BUSINESSENTITYID" source="File: aka:Oracle_person|||select PERSONPHONE.BUSINESSENTITYID,&#xA;	PERSONPHONE.PHONENUMBER,&#xA;	PERSONPHONE.PHONENUMBERTYPEID &#xA;from PERSONPHONE" type="Int64" />
+            <Field description="PrimaryKey" name="PHONENUMBER" size="25" source="File: aka:Oracle_person|||select PERSONPHONE.BUSINESSENTITYID,&#xA;	PERSONPHONE.PHONENUMBER,&#xA;	PERSONPHONE.PHONENUMBERTYPEID &#xA;from PERSONPHONE" type="WString" />
+            <Field description="PrimaryKey" name="PHONENUMBERTYPEID" source="File: aka:Oracle_person|||select PERSONPHONE.BUSINESSENTITYID,&#xA;	PERSONPHONE.PHONENUMBER,&#xA;	PERSONPHONE.PHONENUMBERTYPEID &#xA;from PERSONPHONE" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="846" y="282" width="136" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>PersonPhone</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1062" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="PERSONBUSINESSENTITYID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="BUSINESSENTITYID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_VendorID_SK" selected="True" input="Left_" />
+                <SelectField field="Left_BusinessEntityID_NK" selected="True" input="Left_" />
+                <SelectField field="Left_BUSINESSENTITYID" selected="True" input="Left_" />
+                <SelectField field="Left_CONTACTTYPEID" selected="True" input="Left_" />
+                <SelectField field="Left_ETLLOADID" selected="True" input="Left_" />
+                <SelectField field="Left_ETLLOADDATE" selected="True" input="Left_" />
+                <SelectField field="Left_PERSONID" selected="True" input="Left_" />
+                <SelectField field="Left_Right_CONTACTTYPEID" selected="True" input="Left_" />
+                <SelectField field="Left_CONTACTTYPENAME" selected="True" input="Left_" />
+                <SelectField field="Left_PERSONBUSINESSENTITYID" selected="True" input="Left_" />
+                <SelectField field="Left_EMAILPROMOTION" selected="True" input="Left_" />
+                <SelectField field="Left_TITLE" selected="True" input="Left_" />
+                <SelectField field="Left_FIRSTNAME" selected="True" input="Left_" />
+                <SelectField field="Left_MIDDLENAME" selected="True" input="Left_" />
+                <SelectField field="Left_LASTNAME" selected="True" input="Left_" />
+                <SelectField field="Left_Right_BUSINESSENTITYID" selected="True" rename="Left_Right_BUSINESSENTITYID" input="Left_" />
+                <SelectField field="Left_EMAILADDRESS" selected="True" input="Left_" />
+                <SelectField field="Right_BUSINESSENTITYID" selected="True" rename="Right_BUSINESSENTITYID" input="Right_" />
+                <SelectField field="Right_PHONENUMBER" selected="True" input="Right_" />
+                <SelectField field="Right_PHONENUMBERTYPEID" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="1074" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="17">aka:Oracle_person|||select PHONENUMBERTYPE.PHONENUMBERTYPEID,
+	PHONENUMBERTYPE.PHONENUMBERTYPENAME 
+from PHONENUMBERTYPE</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Oracle_person
+Query=select PHONENUMBERTYPE.PHONE...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="PHONENUMBERTYPEID" source="File: aka:Oracle_person|||select PHONENUMBERTYPE.PHONENUMBERTYPEID,&#xA;	PHONENUMBERTYPE.PHONENUMBERTYPENAME &#xA;from PHONENUMBERTYPE" type="Int64" />
+            <Field name="PHONENUMBERTYPENAME" size="50" source="File: aka:Oracle_person|||select PHONENUMBERTYPE.PHONENUMBERTYPEID,&#xA;	PHONENUMBERTYPE.PHONENUMBERTYPENAME &#xA;from PHONENUMBERTYPE" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1014" y="294" width="136" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>PhoneNumberType</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1242" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="PHONENUMBERTYPEID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="PHONENUMBERTYPEID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_PHONENUMBERTYPEID" selected="True" rename="Right_PHONENUMBERTYPEID" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1386" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1146" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1710" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="VendorContact_SK" selected="True" />
+            <SelectField field="VendorID_SK" selected="True" />
+            <SelectField field="BusinessEntityID_NK" selected="True" />
+            <SelectField field="BUSINESSENTITYID" selected="False" rename="BusinessEntityID_NK" />
+            <SelectField field="ETLLOADID" selected="True" />
+            <SelectField field="ETLLOADDATE" selected="True" />
+            <SelectField field="CONTACTTYPENAME" selected="True" rename="ContactType" />
+            <SelectField field="EMAILPROMOTION" selected="True" />
+            <SelectField field="TITLE" selected="True" />
+            <SelectField field="FIRSTNAME" selected="True" />
+            <SelectField field="MIDDLENAME" selected="True" />
+            <SelectField field="LASTNAME" selected="True" />
+            <SelectField field="EMAILADDRESS" selected="True" />
+            <SelectField field="PHONENUMBER" selected="True" />
+            <SelectField field="PHONENUMBERTYPEID" selected="True" rename="PhoneNumberType" />
+            <SelectField field="SOR_ID" selected="True" />
+            <SelectField field="DI_Job_ID" selected="True" />
+            <SelectField field="DI_ Create_Date" selected="True" />
+            <SelectField field="DI_Modified_Date" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="1494" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>VendorContact_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1590" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="35" field="SOR_ID" size="100" type="V_WString" />
+            <FormulaField expression="105" field="DI_Job_ID" size="200" type="V_WString" />
+            <FormulaField expression="DateTimeNow()" field="DI_ Create_Date" size="10" type="Date" />
+            <FormulaField expression="DateTimeNow()" field="DI_Modified_Date" size="10" type="Date" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>SOR_ID = 35
+DI_Job_ID = 105
+DI_ Create_Date = DateTimeNow()
+DI_Modified_Date = D...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1830" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=MYSQL_Destination;UID=info7370;PWD=__EncPwd1__|||dimvendorcontacts</File>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <AppendMap>
+              <AppendMapping mode="Custom">
+                <Field Source="VendorContact_SK" Dest="VendorContact_SK" />
+                <Field Source="VendorID_SK" Dest="VendorID_SK" />
+                <Field Source="BusinessEntityID_NK" Dest="BusinessEntittyID_NK" />
+                <Field Source="ETLLOADID" Dest="ETLLoadID" />
+                <Field Source="ETLLOADDATE" Dest="ETLLoadDate" />
+                <Field Source="ContactType" Dest="ContactType" />
+                <Field Source="EMAILPROMOTION" Dest="EmailPromotion" />
+                <Field Source="TITLE" Dest="Title" />
+                <Field Source="FIRSTNAME" Dest="FirstName" />
+                <Field Source="MIDDLENAME" Dest="MiddleName" />
+                <Field Source="LASTNAME" Dest="LastName" />
+                <Field Source="EMAILADDRESS" Dest="EmailAddress" />
+                <Field Source="PHONENUMBER" Dest="PhoneNumber" />
+                <Field Source="PhoneNumberType" Dest="PhoneNumberType" />
+                <Field Source="SOR_ID" Dest="SOR_ID" />
+                <Field Source="DI_Job_ID" Dest="DI_Job_ID" />
+                <Field Source="DI_ Create_Date" Dest="DI_Create_Date" />
+                <Field Source="DI_Modified_Date" Dest="DI_Modified_Date" />
+              </AppendMapping>
+            </AppendMap>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Append</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MYSQL_Destination
+Query=dimvendorcontacts</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="8" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="8" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Join" />
+      <Destination ToolID="12" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="12" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Join" />
+      <Destination ToolID="15" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="15" Connection="Right" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="15" Connection="Join" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="15" Connection="Left" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="19" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="19" Connection="Right" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="19" Connection="Join" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="19" Connection="Left" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="22" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="22" Connection="Left" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="22" Connection="Join" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="22" Connection="Left" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>dimvendorcontacts</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

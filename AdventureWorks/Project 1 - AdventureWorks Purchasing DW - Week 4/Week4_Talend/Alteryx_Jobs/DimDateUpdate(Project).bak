@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="186" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="ToNumber(DateTimeFormat([DateAK],&quot;%w&quot;))" field="DayNumberOfWeek" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeFormat([DateAK],&quot;%A&quot;)" field="DayNameOfWeek" size="1073741823" type="V_WString" />
+            <FormulaField expression="LEFT([DayNameOfWeek],3)" field="DayNameOfWeekAbbr" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeDay([DateAK])" field="DayNumberOfMonth" size="1073741823" type="V_WString" />
+            <FormulaField expression="ToNumber(DateTimeFormat([DateAK],'%U'))+1" field="WeekNumberOfYear" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeFormat([DateAK],&quot;%B&quot;)" field="MonthName" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeFormat([DateAK],&quot;%b&quot;)" field="MonthNameAbbr" size="1073741823" type="V_WString" />
+            <FormulaField expression="ToNumber(DateTimeFormat([DateAK],&quot;%m&quot;))&#xA;" field="MonthNumberOfYear" size="1073741823" type="V_WString" />
+            <FormulaField expression="Left([DateAK],4)+' Q'+&#xA;&#xA;IIF(Substring([DateAK],5,2) IN ('01','02','03'),'1',&#xA;IIF(Substring([DateAK],5,2) IN ('04','05','06'),'2',&#xA;IIF(Substring([DateAK],5,2) IN ('07','08','09'),'3',&#xA;IIF(Substring([DateAK],5,2) IN ('10','11','12'),'4',&#xA;Null()&#xA;&#xA;))))" field="Month Number" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeFormat([DateAK],&quot;%Y&quot;)" field="Year" size="1073741823" type="V_WString" />
+            <FormulaField expression="ToNumber(DateTimeFormat([DateAK],'%j'))&#xA;" field="DayNumberOfYear" size="1073741823" type="V_WString" />
+            <FormulaField expression="32" field="SOR_ID" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeToday()" field="DI_Create_Date" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeToday()" field="DI_Modified_Date" size="1073741823" type="V_WString" />
+            <FormulaField expression="112" field="DI_Job_ID" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DayNumberOfWeek = ToNumber(DateTimeFormat([DateAK],"%w"))
+DayNameOfWeek = DateTi...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\Siddhi\Desktop\DimDate_Input.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DimDate_Input.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DateSK" size="254" source="File: C:\Users\Siddhi\Desktop\DimDate_Input.csv" type="V_WString" />
+            <Field name="DateAK" size="254" source="File: C:\Users\Siddhi\Desktop\DimDate_Input.csv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="330" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="DateSK" selected="True" />
+            <SelectField field="DateAK" selected="True" />
+            <SelectField field="DayNumberOfWeek" selected="True" />
+            <SelectField field="DayNameOfWeek" selected="True" />
+            <SelectField field="DayNameOfWeekAbbr" selected="True" />
+            <SelectField field="DayNumberOfMonth" selected="True" />
+            <SelectField field="WeekNumberOfYear" selected="True" />
+            <SelectField field="MonthName" selected="True" />
+            <SelectField field="MonthNameAbbr" selected="True" />
+            <SelectField field="Month Number" selected="True" />
+            <SelectField field="Year" selected="True" />
+            <SelectField field="DayNumberOfYear" selected="True" />
+            <SelectField field="SOR_ID" selected="True" />
+            <SelectField field="DI_Create_Date" selected="True" />
+            <SelectField field="DI_Modified_Date" selected="True" />
+            <SelectField field="DI_Job_ID" selected="True" />
+            <SelectField field="Job_ID" selected="False" rename="DI_Job_ID" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="438" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=MYSQL_Destination;UID=info7370;PWD=__EncPwd1__|||dimdate</File>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <AppendMap>
+              <AppendMapping mode="Custom">
+                <Field Source="DateSK" Dest="DateSK" />
+                <Field Source="DateAK" Dest="DateAK" />
+                <Field Source="DayNumberOfWeek" Dest="DayNumberOfWeek" />
+                <Field Source="DayNameOfWeek" Dest="DayNameOfWeek" />
+                <Field Source="DayNameOfWeekAbbr" Dest="DayNameOfWeekAbbr" />
+                <Field Source="DayNumberOfMonth" Dest="DayNumberOfMonth" />
+                <Field Source="WeekNumberOfYear" Dest="WeekNumberOfYear" />
+                <Field Source="MonthName" Dest="MonthName" />
+                <Field Source="MonthNameAbbr" Dest="MonthNameAbbr" />
+                <Field Source="Month Number" Dest="MonthNumber" />
+                <Field Source="Year" Dest="Year" />
+                <Field Source="DayNumberOfYear" Dest="DayNumberOfYear" />
+                <Field Source="SOR_ID" Dest="SOR_ID" />
+                <Field Source="DI_Create_Date" Dest="DI_Create_Date" />
+                <Field Source="DI_Modified_Date" Dest="DI_Modified_Date" />
+                <Field Source="DI_Job_ID" Dest="DI_Job_ID" />
+              </AppendMapping>
+            </AppendMap>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Append</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MYSQL_Destination
+Query=dimdate</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DimDateUpdate(Project)</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

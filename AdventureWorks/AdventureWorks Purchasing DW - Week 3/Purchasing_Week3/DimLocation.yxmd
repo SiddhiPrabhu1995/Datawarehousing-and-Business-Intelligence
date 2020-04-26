@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:Jayshil|||select AdventureWorks2017.Production.ProductInventory.ProductID,
+	AdventureWorks2017.Production.ProductInventory.LocationID,
+	AdventureWorks2017.Production.ProductInventory.Shelf,
+	AdventureWorks2017.Production.ProductInventory.Bin,
+	AdventureWorks2017.Production.ProductInventory.Quantity,
+	AdventureWorks2017.Production.ProductInventory.ModifiedDate 
+from AdventureWorks2017.Production.ProductInventory</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Jayshil
+Query=select AdventureWorks2017.Pr...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ProductID" source="File: aka:Jayshil|||select AdventureWorks2017.Production.ProductInventory.ProductID,&#xA;	AdventureWorks2017.Production.ProductInventory.LocationID,&#xA;	AdventureWorks2017.Production.ProductInventory.Shelf,&#xA;	AdventureWorks2017.Production.ProductInventory.Bin,&#xA;	AdventureWorks2017.Production.ProductInventory.Quantity,&#xA;	AdventureWorks2017.Production.ProductInventory.ModifiedDate &#xA;from AdventureWorks2017.Production.ProductInventory" type="Int32" />
+            <Field name="LocationID" source="File: aka:Jayshil|||select AdventureWorks2017.Production.ProductInventory.ProductID,&#xA;	AdventureWorks2017.Production.ProductInventory.LocationID,&#xA;	AdventureWorks2017.Production.ProductInventory.Shelf,&#xA;	AdventureWorks2017.Production.ProductInventory.Bin,&#xA;	AdventureWorks2017.Production.ProductInventory.Quantity,&#xA;	AdventureWorks2017.Production.ProductInventory.ModifiedDate &#xA;from AdventureWorks2017.Production.ProductInventory" type="Int16" />
+            <Field name="Shelf" size="10" source="File: aka:Jayshil|||select AdventureWorks2017.Production.ProductInventory.ProductID,&#xA;	AdventureWorks2017.Production.ProductInventory.LocationID,&#xA;	AdventureWorks2017.Production.ProductInventory.Shelf,&#xA;	AdventureWorks2017.Production.ProductInventory.Bin,&#xA;	AdventureWorks2017.Production.ProductInventory.Quantity,&#xA;	AdventureWorks2017.Production.ProductInventory.ModifiedDate &#xA;from AdventureWorks2017.Production.ProductInventory" type="V_WString" />
+            <Field name="Bin" source="File: aka:Jayshil|||select AdventureWorks2017.Production.ProductInventory.ProductID,&#xA;	AdventureWorks2017.Production.ProductInventory.LocationID,&#xA;	AdventureWorks2017.Production.ProductInventory.Shelf,&#xA;	AdventureWorks2017.Production.ProductInventory.Bin,&#xA;	AdventureWorks2017.Production.ProductInventory.Quantity,&#xA;	AdventureWorks2017.Production.ProductInventory.ModifiedDate &#xA;from AdventureWorks2017.Production.ProductInventory" type="Int16" />
+            <Field name="Quantity" source="File: aka:Jayshil|||select AdventureWorks2017.Production.ProductInventory.ProductID,&#xA;	AdventureWorks2017.Production.ProductInventory.LocationID,&#xA;	AdventureWorks2017.Production.ProductInventory.Shelf,&#xA;	AdventureWorks2017.Production.ProductInventory.Bin,&#xA;	AdventureWorks2017.Production.ProductInventory.Quantity,&#xA;	AdventureWorks2017.Production.ProductInventory.ModifiedDate &#xA;from AdventureWorks2017.Production.ProductInventory" type="Int16" />
+            <Field name="ModifiedDate" source="File: aka:Jayshil|||select AdventureWorks2017.Production.ProductInventory.ProductID,&#xA;	AdventureWorks2017.Production.ProductInventory.LocationID,&#xA;	AdventureWorks2017.Production.ProductInventory.Shelf,&#xA;	AdventureWorks2017.Production.ProductInventory.Bin,&#xA;	AdventureWorks2017.Production.ProductInventory.Quantity,&#xA;	AdventureWorks2017.Production.ProductInventory.ModifiedDate &#xA;from AdventureWorks2017.Production.ProductInventory" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="210" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>Location_Durable_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="330" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="True" />
+          <InputFieldName>ModifiedDate</InputFieldName>
+          <Format>yyyyMMdd</Format>
+          <OutputFieldName>DateTime_Out</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert ModifiedDate To:
+yyyyMMdd</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="450" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ModifiedDate" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="558" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\jaysh\AppData\Local\Temp\Engine_40064_c340b453a17643d3be8ed3f77546cfd9_\Engine_35444_6ee6fccacc01438282d4f339debbdb30_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DimLocation</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

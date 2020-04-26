@@ -1,0 +1,248 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="186" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>ShipMethodID_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="330" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="100" field="DI_Job_ID" size="255" type="V_WString" />
+            <FormulaField expression="DateTimeNow()" field="DI_Create_Date" size="10" type="Date" />
+            <FormulaField expression="DateTimeNow()" field="DI_Modified_Date" size="10" type="Date" />
+            <FormulaField expression="4" field="SOR_ID" size="19" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DI_Job_ID = 100
+DI_Create_Date = DateTimeNow()
+DI_Modified_Date = DateTimeNow()
+...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="426" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="True" />
+          <InputFieldName>ETLLoadDate</InputFieldName>
+          <Format>yyyy-MM-dd</Format>
+          <OutputFieldName>ETLLoadDate</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert ETLLoadDate To:
+yyyy-MM-dd</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="642" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=MYSQL_Destination;UID=info7370;PWD=__EncPwd1__|||dimshipmethod</File>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <AppendMap>
+              <AppendMapping mode="Custom">
+                <Field Source="ShipMethodID_SK" Dest="ShipMethodID_SK" />
+                <Field Source="ShipMethodID_NK" Dest="ShipMethodID_NK" />
+                <Field Source="ETLLoadID" Dest="ETLLoadID" />
+                <Field Source="ShipBase" Dest="ShipBase" />
+                <Field Source="ShipMethodName" Dest="ShipMethodName" />
+                <Field Source="ShipRate" Dest="ShipRate" />
+                <Field Source="DI_Job_ID" Dest="DI_Job_ID" />
+                <Field Source="DI_Create_Date" Dest="DI_Create_Date" />
+                <Field Source="DI_Modified_Date" Dest="DI_Modified_Date" />
+                <Field Source="SOR_ID" Dest="SOR_ID" />
+                <Field Source="ETLLoadDate" Dest="ETLLoadDate" />
+              </AppendMapping>
+            </AppendMap>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Append</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MYSQL_Destination
+Query=dimshipmethod</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=MYSQL_Source;UID=info7370;PWD=__EncPwd1__|||select aw2017neu_purchasing.shipmethod.ShipMethodID,
+	aw2017neu_purchasing.shipmethod.ETLLoadDate,
+	aw2017neu_purchasing.shipmethod.ETLLoadID,
+	aw2017neu_purchasing.shipmethod.ShipBase,
+	aw2017neu_purchasing.shipmethod.ShipMethodName,
+	aw2017neu_purchasing.shipmethod.ShipRate 
+from aw2017neu_purchasing.shipmethod</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MYSQL_Source
+Query=select aw2017neu_purchasing....</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ShipMethodID" source="File: odbc:DSN=MYSQL_Source;UID=info7370;PWD=__EncPwd1__|||select aw2017neu_purchasing.shipmethod.ShipMethodID,&#xA;	aw2017neu_purchasing.shipmethod.ETLLoadDate,&#xA;	aw2017neu_purchasing.shipmethod.ETLLoadID,&#xA;	aw2017neu_purchasing.shipmethod.ShipBase,&#xA;	aw2017neu_purchasing.shipmethod.ShipMethodName,&#xA;	aw2017neu_purchasing.shipmethod.ShipRate &#xA;from aw2017neu_purchasing.shipmethod" type="Int32" />
+            <Field name="ETLLoadDate" source="File: odbc:DSN=MYSQL_Source;UID=info7370;PWD=__EncPwd1__|||select aw2017neu_purchasing.shipmethod.ShipMethodID,&#xA;	aw2017neu_purchasing.shipmethod.ETLLoadDate,&#xA;	aw2017neu_purchasing.shipmethod.ETLLoadID,&#xA;	aw2017neu_purchasing.shipmethod.ShipBase,&#xA;	aw2017neu_purchasing.shipmethod.ShipMethodName,&#xA;	aw2017neu_purchasing.shipmethod.ShipRate &#xA;from aw2017neu_purchasing.shipmethod" type="DateTime" />
+            <Field name="ETLLoadID" source="File: odbc:DSN=MYSQL_Source;UID=info7370;PWD=__EncPwd1__|||select aw2017neu_purchasing.shipmethod.ShipMethodID,&#xA;	aw2017neu_purchasing.shipmethod.ETLLoadDate,&#xA;	aw2017neu_purchasing.shipmethod.ETLLoadID,&#xA;	aw2017neu_purchasing.shipmethod.ShipBase,&#xA;	aw2017neu_purchasing.shipmethod.ShipMethodName,&#xA;	aw2017neu_purchasing.shipmethod.ShipRate &#xA;from aw2017neu_purchasing.shipmethod" type="Int32" />
+            <Field name="ShipBase" scale="2" size="17" source="File: odbc:DSN=MYSQL_Source;UID=info7370;PWD=__EncPwd1__|||select aw2017neu_purchasing.shipmethod.ShipMethodID,&#xA;	aw2017neu_purchasing.shipmethod.ETLLoadDate,&#xA;	aw2017neu_purchasing.shipmethod.ETLLoadID,&#xA;	aw2017neu_purchasing.shipmethod.ShipBase,&#xA;	aw2017neu_purchasing.shipmethod.ShipMethodName,&#xA;	aw2017neu_purchasing.shipmethod.ShipRate &#xA;from aw2017neu_purchasing.shipmethod" type="FixedDecimal" />
+            <Field name="ShipMethodName" size="50" source="File: odbc:DSN=MYSQL_Source;UID=info7370;PWD=__EncPwd1__|||select aw2017neu_purchasing.shipmethod.ShipMethodID,&#xA;	aw2017neu_purchasing.shipmethod.ETLLoadDate,&#xA;	aw2017neu_purchasing.shipmethod.ETLLoadID,&#xA;	aw2017neu_purchasing.shipmethod.ShipBase,&#xA;	aw2017neu_purchasing.shipmethod.ShipMethodName,&#xA;	aw2017neu_purchasing.shipmethod.ShipRate &#xA;from aw2017neu_purchasing.shipmethod" type="V_String" />
+            <Field name="ShipRate" scale="2" size="17" source="File: odbc:DSN=MYSQL_Source;UID=info7370;PWD=__EncPwd1__|||select aw2017neu_purchasing.shipmethod.ShipMethodID,&#xA;	aw2017neu_purchasing.shipmethod.ETLLoadDate,&#xA;	aw2017neu_purchasing.shipmethod.ETLLoadID,&#xA;	aw2017neu_purchasing.shipmethod.ShipBase,&#xA;	aw2017neu_purchasing.shipmethod.ShipMethodName,&#xA;	aw2017neu_purchasing.shipmethod.ShipRate &#xA;from aw2017neu_purchasing.shipmethod" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="546" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ShipMethodID_SK" selected="True" />
+            <SelectField field="ShipMethodID" selected="True" />
+            <SelectField field="ETLLoadDate" selected="True" />
+            <SelectField field="ETLLoadID" selected="True" />
+            <SelectField field="ShipBase" selected="True" />
+            <SelectField field="ShipMethodName" selected="True" />
+            <SelectField field="ShipRate" selected="True" />
+            <SelectField field="DI_Job_ID" selected="True" />
+            <SelectField field="DI_Create_Date" selected="True" />
+            <SelectField field="DI_Modified_Date" selected="True" />
+            <SelectField field="SOR_ID" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>dimshipmethod</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

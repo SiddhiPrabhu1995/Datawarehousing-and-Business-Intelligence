@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="114" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:Jayshil|||select AdventureWorks2017.Purchasing.ShipMethod.Name,
+	AdventureWorks2017.Purchasing.ShipMethod.ShipBase,
+	AdventureWorks2017.Purchasing.ShipMethod.ShipRate,
+	AdventureWorks2017.Purchasing.ShipMethod.ShipMethodID 
+from AdventureWorks2017.Purchasing.ShipMethod</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Jayshil
+Query=select AdventureWorks2017.Pu...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="50" source="File: aka:Jayshil|||select AdventureWorks2017.Purchasing.ShipMethod.Name,&#xA;	AdventureWorks2017.Purchasing.ShipMethod.ShipBase,&#xA;	AdventureWorks2017.Purchasing.ShipMethod.ShipRate,&#xA;	AdventureWorks2017.Purchasing.ShipMethod.ShipMethodID &#xA;from AdventureWorks2017.Purchasing.ShipMethod" type="V_WString" />
+            <Field name="ShipBase" scale="4" size="21" source="File: aka:Jayshil|||select AdventureWorks2017.Purchasing.ShipMethod.Name,&#xA;	AdventureWorks2017.Purchasing.ShipMethod.ShipBase,&#xA;	AdventureWorks2017.Purchasing.ShipMethod.ShipRate,&#xA;	AdventureWorks2017.Purchasing.ShipMethod.ShipMethodID &#xA;from AdventureWorks2017.Purchasing.ShipMethod" type="FixedDecimal" />
+            <Field name="ShipRate" scale="4" size="21" source="File: aka:Jayshil|||select AdventureWorks2017.Purchasing.ShipMethod.Name,&#xA;	AdventureWorks2017.Purchasing.ShipMethod.ShipBase,&#xA;	AdventureWorks2017.Purchasing.ShipMethod.ShipRate,&#xA;	AdventureWorks2017.Purchasing.ShipMethod.ShipMethodID &#xA;from AdventureWorks2017.Purchasing.ShipMethod" type="FixedDecimal" />
+            <Field name="ShipMethodID" source="File: aka:Jayshil|||select AdventureWorks2017.Purchasing.ShipMethod.Name,&#xA;	AdventureWorks2017.Purchasing.ShipMethod.ShipBase,&#xA;	AdventureWorks2017.Purchasing.ShipMethod.ShipRate,&#xA;	AdventureWorks2017.Purchasing.ShipMethod.ShipMethodID &#xA;from AdventureWorks2017.Purchasing.ShipMethod" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="246" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:Test|||DimShipMethod</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Test
+Query=DimShipMethod</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DimShipDate</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

@@ -1,0 +1,727 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=info7370_workshop_c;UID=info7370;PWD=__EncPwd1__|||select aw2017neu_purchasing.purchaseorderdetail.PurchaseOrderDetailID,
+	aw2017neu_purchasing.purchaseorderdetail.ProductID,
+	aw2017neu_purchasing.purchaseorderdetail.PurchaseOrderID 
+from aw2017neu_purchasing.purchaseorderdetail</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=info7370_workshop_c
+Query=select aw2017neu_purchasing....</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="PurchaseOrderDetailID" source="File: odbc:DSN=info7370_workshop_c;UID=info7370;PWD=__EncPwd1__|||select aw2017neu_purchasing.purchaseorderdetail.PurchaseOrderDetailID,&#xA;	aw2017neu_purchasing.purchaseorderdetail.ProductID,&#xA;	aw2017neu_purchasing.purchaseorderdetail.PurchaseOrderID &#xA;from aw2017neu_purchasing.purchaseorderdetail" type="Int32" />
+            <Field name="ProductID" source="File: odbc:DSN=info7370_workshop_c;UID=info7370;PWD=__EncPwd1__|||select aw2017neu_purchasing.purchaseorderdetail.PurchaseOrderDetailID,&#xA;	aw2017neu_purchasing.purchaseorderdetail.ProductID,&#xA;	aw2017neu_purchasing.purchaseorderdetail.PurchaseOrderID &#xA;from aw2017neu_purchasing.purchaseorderdetail" type="Int32" />
+            <Field name="PurchaseOrderID" source="File: odbc:DSN=info7370_workshop_c;UID=info7370;PWD=__EncPwd1__|||select aw2017neu_purchasing.purchaseorderdetail.PurchaseOrderDetailID,&#xA;	aw2017neu_purchasing.purchaseorderdetail.ProductID,&#xA;	aw2017neu_purchasing.purchaseorderdetail.PurchaseOrderID &#xA;from aw2017neu_purchasing.purchaseorderdetail" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="162" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="ProductID" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="318" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ProductID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ProductID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_ProductID" selected="True" input="Left_" />
+                <SelectField field="Right_ProductID" selected="True" rename="Product_ProductID" input="Right_" />
+                <SelectField field="Right_Name" selected="True" rename="ProductName" input="Right_" />
+                <SelectField field="Right_ProductNumber" selected="True" input="Right_" />
+                <SelectField field="Right_StandardCost" selected="True" input="Right_" />
+                <SelectField field="Right_ListPrice" selected="True" input="Right_" />
+                <SelectField field="Right_Size" selected="True" input="Right_" />
+                <SelectField field="Right_Weight" selected="True" input="Right_" />
+                <SelectField field="Right_ProductSubcategoryID" selected="True" input="Right_" />
+                <SelectField field="Right_ProductModelID" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="150" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:product|||select AdventureWorks2017.Production.Product.ProductID,
+	AdventureWorks2017.Production.Product.Name,
+	AdventureWorks2017.Production.Product.ProductNumber,
+	AdventureWorks2017.Production.Product.MakeFlag,
+	AdventureWorks2017.Production.Product.FinishedGoodsFlag,
+	AdventureWorks2017.Production.Product.Color,
+	AdventureWorks2017.Production.Product.SafetyStockLevel,
+	AdventureWorks2017.Production.Product.ReorderPoint,
+	AdventureWorks2017.Production.Product.StandardCost,
+	AdventureWorks2017.Production.Product.ListPrice,
+	AdventureWorks2017.Production.Product.Size,
+	AdventureWorks2017.Production.Product.SizeUnitMeasureCode,
+	AdventureWorks2017.Production.Product.WeightUnitMeasureCode,
+	AdventureWorks2017.Production.Product.Weight,
+	AdventureWorks2017.Production.Product.DaysToManufacture,
+	AdventureWorks2017.Production.Product.ProductLine,
+	AdventureWorks2017.Production.Product.Class,
+	AdventureWorks2017.Production.Product.Style,
+	AdventureWorks2017.Production.Product.ProductSubcategoryID,
+	AdventureWorks2017.Production.Product.ProductModelID,
+	AdventureWorks2017.Production.Product.SellStartDate,
+	AdventureWorks2017.Production.Product.SellEndDate,
+	AdventureWorks2017.Production.Product.DiscontinuedDate 
+from AdventureWorks2017.Production.Product</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:product
+Query=select AdventureWorks2017.Pr...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ProductID" source="File: aka:product|||select AdventureWorks2017.Production.Product.ProductID,&#xA;	AdventureWorks2017.Production.Product.Name,&#xA;	AdventureWorks2017.Production.Product.ProductNumber,&#xA;	AdventureWorks2017.Production.Product.MakeFlag,&#xA;	AdventureWorks2017.Production.Product.FinishedGoodsFlag,&#xA;	AdventureWorks2017.Production.Product.Color,&#xA;	AdventureWorks2017.Production.Product.SafetyStockLevel,&#xA;	AdventureWorks2017.Production.Product.ReorderPoint,&#xA;	AdventureWorks2017.Production.Product.StandardCost,&#xA;	AdventureWorks2017.Production.Product.ListPrice,&#xA;	AdventureWorks2017.Production.Product.Size,&#xA;	AdventureWorks2017.Production.Product.SizeUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.WeightUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.Weight,&#xA;	AdventureWorks2017.Production.Product.DaysToManufacture,&#xA;	AdventureWorks2017.Production.Product.ProductLine,&#xA;	AdventureWorks2017.Production.Product.Class,&#xA;	AdventureWorks2017.Production.Product.Style,&#xA;	AdventureWorks2017.Production.Product.ProductSubcategoryID,&#xA;	AdventureWorks2017.Production.Product.ProductModelID,&#xA;	AdventureWorks2017.Production.Product.SellStartDate,&#xA;	AdventureWorks2017.Production.Product.SellEndDate,&#xA;	AdventureWorks2017.Production.Product.DiscontinuedDate &#xA;from AdventureWorks2017.Production.Product" type="Int32" />
+            <Field name="Name" size="50" source="File: aka:product|||select AdventureWorks2017.Production.Product.ProductID,&#xA;	AdventureWorks2017.Production.Product.Name,&#xA;	AdventureWorks2017.Production.Product.ProductNumber,&#xA;	AdventureWorks2017.Production.Product.MakeFlag,&#xA;	AdventureWorks2017.Production.Product.FinishedGoodsFlag,&#xA;	AdventureWorks2017.Production.Product.Color,&#xA;	AdventureWorks2017.Production.Product.SafetyStockLevel,&#xA;	AdventureWorks2017.Production.Product.ReorderPoint,&#xA;	AdventureWorks2017.Production.Product.StandardCost,&#xA;	AdventureWorks2017.Production.Product.ListPrice,&#xA;	AdventureWorks2017.Production.Product.Size,&#xA;	AdventureWorks2017.Production.Product.SizeUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.WeightUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.Weight,&#xA;	AdventureWorks2017.Production.Product.DaysToManufacture,&#xA;	AdventureWorks2017.Production.Product.ProductLine,&#xA;	AdventureWorks2017.Production.Product.Class,&#xA;	AdventureWorks2017.Production.Product.Style,&#xA;	AdventureWorks2017.Production.Product.ProductSubcategoryID,&#xA;	AdventureWorks2017.Production.Product.ProductModelID,&#xA;	AdventureWorks2017.Production.Product.SellStartDate,&#xA;	AdventureWorks2017.Production.Product.SellEndDate,&#xA;	AdventureWorks2017.Production.Product.DiscontinuedDate &#xA;from AdventureWorks2017.Production.Product" type="V_WString" />
+            <Field name="ProductNumber" size="25" source="File: aka:product|||select AdventureWorks2017.Production.Product.ProductID,&#xA;	AdventureWorks2017.Production.Product.Name,&#xA;	AdventureWorks2017.Production.Product.ProductNumber,&#xA;	AdventureWorks2017.Production.Product.MakeFlag,&#xA;	AdventureWorks2017.Production.Product.FinishedGoodsFlag,&#xA;	AdventureWorks2017.Production.Product.Color,&#xA;	AdventureWorks2017.Production.Product.SafetyStockLevel,&#xA;	AdventureWorks2017.Production.Product.ReorderPoint,&#xA;	AdventureWorks2017.Production.Product.StandardCost,&#xA;	AdventureWorks2017.Production.Product.ListPrice,&#xA;	AdventureWorks2017.Production.Product.Size,&#xA;	AdventureWorks2017.Production.Product.SizeUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.WeightUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.Weight,&#xA;	AdventureWorks2017.Production.Product.DaysToManufacture,&#xA;	AdventureWorks2017.Production.Product.ProductLine,&#xA;	AdventureWorks2017.Production.Product.Class,&#xA;	AdventureWorks2017.Production.Product.Style,&#xA;	AdventureWorks2017.Production.Product.ProductSubcategoryID,&#xA;	AdventureWorks2017.Production.Product.ProductModelID,&#xA;	AdventureWorks2017.Production.Product.SellStartDate,&#xA;	AdventureWorks2017.Production.Product.SellEndDate,&#xA;	AdventureWorks2017.Production.Product.DiscontinuedDate &#xA;from AdventureWorks2017.Production.Product" type="V_WString" />
+            <Field name="MakeFlag" source="File: aka:product|||select AdventureWorks2017.Production.Product.ProductID,&#xA;	AdventureWorks2017.Production.Product.Name,&#xA;	AdventureWorks2017.Production.Product.ProductNumber,&#xA;	AdventureWorks2017.Production.Product.MakeFlag,&#xA;	AdventureWorks2017.Production.Product.FinishedGoodsFlag,&#xA;	AdventureWorks2017.Production.Product.Color,&#xA;	AdventureWorks2017.Production.Product.SafetyStockLevel,&#xA;	AdventureWorks2017.Production.Product.ReorderPoint,&#xA;	AdventureWorks2017.Production.Product.StandardCost,&#xA;	AdventureWorks2017.Production.Product.ListPrice,&#xA;	AdventureWorks2017.Production.Product.Size,&#xA;	AdventureWorks2017.Production.Product.SizeUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.WeightUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.Weight,&#xA;	AdventureWorks2017.Production.Product.DaysToManufacture,&#xA;	AdventureWorks2017.Production.Product.ProductLine,&#xA;	AdventureWorks2017.Production.Product.Class,&#xA;	AdventureWorks2017.Production.Product.Style,&#xA;	AdventureWorks2017.Production.Product.ProductSubcategoryID,&#xA;	AdventureWorks2017.Production.Product.ProductModelID,&#xA;	AdventureWorks2017.Production.Product.SellStartDate,&#xA;	AdventureWorks2017.Production.Product.SellEndDate,&#xA;	AdventureWorks2017.Production.Product.DiscontinuedDate &#xA;from AdventureWorks2017.Production.Product" type="Bool" />
+            <Field name="FinishedGoodsFlag" source="File: aka:product|||select AdventureWorks2017.Production.Product.ProductID,&#xA;	AdventureWorks2017.Production.Product.Name,&#xA;	AdventureWorks2017.Production.Product.ProductNumber,&#xA;	AdventureWorks2017.Production.Product.MakeFlag,&#xA;	AdventureWorks2017.Production.Product.FinishedGoodsFlag,&#xA;	AdventureWorks2017.Production.Product.Color,&#xA;	AdventureWorks2017.Production.Product.SafetyStockLevel,&#xA;	AdventureWorks2017.Production.Product.ReorderPoint,&#xA;	AdventureWorks2017.Production.Product.StandardCost,&#xA;	AdventureWorks2017.Production.Product.ListPrice,&#xA;	AdventureWorks2017.Production.Product.Size,&#xA;	AdventureWorks2017.Production.Product.SizeUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.WeightUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.Weight,&#xA;	AdventureWorks2017.Production.Product.DaysToManufacture,&#xA;	AdventureWorks2017.Production.Product.ProductLine,&#xA;	AdventureWorks2017.Production.Product.Class,&#xA;	AdventureWorks2017.Production.Product.Style,&#xA;	AdventureWorks2017.Production.Product.ProductSubcategoryID,&#xA;	AdventureWorks2017.Production.Product.ProductModelID,&#xA;	AdventureWorks2017.Production.Product.SellStartDate,&#xA;	AdventureWorks2017.Production.Product.SellEndDate,&#xA;	AdventureWorks2017.Production.Product.DiscontinuedDate &#xA;from AdventureWorks2017.Production.Product" type="Bool" />
+            <Field name="Color" size="15" source="File: aka:product|||select AdventureWorks2017.Production.Product.ProductID,&#xA;	AdventureWorks2017.Production.Product.Name,&#xA;	AdventureWorks2017.Production.Product.ProductNumber,&#xA;	AdventureWorks2017.Production.Product.MakeFlag,&#xA;	AdventureWorks2017.Production.Product.FinishedGoodsFlag,&#xA;	AdventureWorks2017.Production.Product.Color,&#xA;	AdventureWorks2017.Production.Product.SafetyStockLevel,&#xA;	AdventureWorks2017.Production.Product.ReorderPoint,&#xA;	AdventureWorks2017.Production.Product.StandardCost,&#xA;	AdventureWorks2017.Production.Product.ListPrice,&#xA;	AdventureWorks2017.Production.Product.Size,&#xA;	AdventureWorks2017.Production.Product.SizeUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.WeightUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.Weight,&#xA;	AdventureWorks2017.Production.Product.DaysToManufacture,&#xA;	AdventureWorks2017.Production.Product.ProductLine,&#xA;	AdventureWorks2017.Production.Product.Class,&#xA;	AdventureWorks2017.Production.Product.Style,&#xA;	AdventureWorks2017.Production.Product.ProductSubcategoryID,&#xA;	AdventureWorks2017.Production.Product.ProductModelID,&#xA;	AdventureWorks2017.Production.Product.SellStartDate,&#xA;	AdventureWorks2017.Production.Product.SellEndDate,&#xA;	AdventureWorks2017.Production.Product.DiscontinuedDate &#xA;from AdventureWorks2017.Production.Product" type="V_WString" />
+            <Field name="SafetyStockLevel" source="File: aka:product|||select AdventureWorks2017.Production.Product.ProductID,&#xA;	AdventureWorks2017.Production.Product.Name,&#xA;	AdventureWorks2017.Production.Product.ProductNumber,&#xA;	AdventureWorks2017.Production.Product.MakeFlag,&#xA;	AdventureWorks2017.Production.Product.FinishedGoodsFlag,&#xA;	AdventureWorks2017.Production.Product.Color,&#xA;	AdventureWorks2017.Production.Product.SafetyStockLevel,&#xA;	AdventureWorks2017.Production.Product.ReorderPoint,&#xA;	AdventureWorks2017.Production.Product.StandardCost,&#xA;	AdventureWorks2017.Production.Product.ListPrice,&#xA;	AdventureWorks2017.Production.Product.Size,&#xA;	AdventureWorks2017.Production.Product.SizeUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.WeightUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.Weight,&#xA;	AdventureWorks2017.Production.Product.DaysToManufacture,&#xA;	AdventureWorks2017.Production.Product.ProductLine,&#xA;	AdventureWorks2017.Production.Product.Class,&#xA;	AdventureWorks2017.Production.Product.Style,&#xA;	AdventureWorks2017.Production.Product.ProductSubcategoryID,&#xA;	AdventureWorks2017.Production.Product.ProductModelID,&#xA;	AdventureWorks2017.Production.Product.SellStartDate,&#xA;	AdventureWorks2017.Production.Product.SellEndDate,&#xA;	AdventureWorks2017.Production.Product.DiscontinuedDate &#xA;from AdventureWorks2017.Production.Product" type="Int16" />
+            <Field name="ReorderPoint" source="File: aka:product|||select AdventureWorks2017.Production.Product.ProductID,&#xA;	AdventureWorks2017.Production.Product.Name,&#xA;	AdventureWorks2017.Production.Product.ProductNumber,&#xA;	AdventureWorks2017.Production.Product.MakeFlag,&#xA;	AdventureWorks2017.Production.Product.FinishedGoodsFlag,&#xA;	AdventureWorks2017.Production.Product.Color,&#xA;	AdventureWorks2017.Production.Product.SafetyStockLevel,&#xA;	AdventureWorks2017.Production.Product.ReorderPoint,&#xA;	AdventureWorks2017.Production.Product.StandardCost,&#xA;	AdventureWorks2017.Production.Product.ListPrice,&#xA;	AdventureWorks2017.Production.Product.Size,&#xA;	AdventureWorks2017.Production.Product.SizeUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.WeightUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.Weight,&#xA;	AdventureWorks2017.Production.Product.DaysToManufacture,&#xA;	AdventureWorks2017.Production.Product.ProductLine,&#xA;	AdventureWorks2017.Production.Product.Class,&#xA;	AdventureWorks2017.Production.Product.Style,&#xA;	AdventureWorks2017.Production.Product.ProductSubcategoryID,&#xA;	AdventureWorks2017.Production.Product.ProductModelID,&#xA;	AdventureWorks2017.Production.Product.SellStartDate,&#xA;	AdventureWorks2017.Production.Product.SellEndDate,&#xA;	AdventureWorks2017.Production.Product.DiscontinuedDate &#xA;from AdventureWorks2017.Production.Product" type="Int16" />
+            <Field name="StandardCost" scale="4" size="21" source="File: aka:product|||select AdventureWorks2017.Production.Product.ProductID,&#xA;	AdventureWorks2017.Production.Product.Name,&#xA;	AdventureWorks2017.Production.Product.ProductNumber,&#xA;	AdventureWorks2017.Production.Product.MakeFlag,&#xA;	AdventureWorks2017.Production.Product.FinishedGoodsFlag,&#xA;	AdventureWorks2017.Production.Product.Color,&#xA;	AdventureWorks2017.Production.Product.SafetyStockLevel,&#xA;	AdventureWorks2017.Production.Product.ReorderPoint,&#xA;	AdventureWorks2017.Production.Product.StandardCost,&#xA;	AdventureWorks2017.Production.Product.ListPrice,&#xA;	AdventureWorks2017.Production.Product.Size,&#xA;	AdventureWorks2017.Production.Product.SizeUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.WeightUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.Weight,&#xA;	AdventureWorks2017.Production.Product.DaysToManufacture,&#xA;	AdventureWorks2017.Production.Product.ProductLine,&#xA;	AdventureWorks2017.Production.Product.Class,&#xA;	AdventureWorks2017.Production.Product.Style,&#xA;	AdventureWorks2017.Production.Product.ProductSubcategoryID,&#xA;	AdventureWorks2017.Production.Product.ProductModelID,&#xA;	AdventureWorks2017.Production.Product.SellStartDate,&#xA;	AdventureWorks2017.Production.Product.SellEndDate,&#xA;	AdventureWorks2017.Production.Product.DiscontinuedDate &#xA;from AdventureWorks2017.Production.Product" type="FixedDecimal" />
+            <Field name="ListPrice" scale="4" size="21" source="File: aka:product|||select AdventureWorks2017.Production.Product.ProductID,&#xA;	AdventureWorks2017.Production.Product.Name,&#xA;	AdventureWorks2017.Production.Product.ProductNumber,&#xA;	AdventureWorks2017.Production.Product.MakeFlag,&#xA;	AdventureWorks2017.Production.Product.FinishedGoodsFlag,&#xA;	AdventureWorks2017.Production.Product.Color,&#xA;	AdventureWorks2017.Production.Product.SafetyStockLevel,&#xA;	AdventureWorks2017.Production.Product.ReorderPoint,&#xA;	AdventureWorks2017.Production.Product.StandardCost,&#xA;	AdventureWorks2017.Production.Product.ListPrice,&#xA;	AdventureWorks2017.Production.Product.Size,&#xA;	AdventureWorks2017.Production.Product.SizeUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.WeightUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.Weight,&#xA;	AdventureWorks2017.Production.Product.DaysToManufacture,&#xA;	AdventureWorks2017.Production.Product.ProductLine,&#xA;	AdventureWorks2017.Production.Product.Class,&#xA;	AdventureWorks2017.Production.Product.Style,&#xA;	AdventureWorks2017.Production.Product.ProductSubcategoryID,&#xA;	AdventureWorks2017.Production.Product.ProductModelID,&#xA;	AdventureWorks2017.Production.Product.SellStartDate,&#xA;	AdventureWorks2017.Production.Product.SellEndDate,&#xA;	AdventureWorks2017.Production.Product.DiscontinuedDate &#xA;from AdventureWorks2017.Production.Product" type="FixedDecimal" />
+            <Field name="Size" size="5" source="File: aka:product|||select AdventureWorks2017.Production.Product.ProductID,&#xA;	AdventureWorks2017.Production.Product.Name,&#xA;	AdventureWorks2017.Production.Product.ProductNumber,&#xA;	AdventureWorks2017.Production.Product.MakeFlag,&#xA;	AdventureWorks2017.Production.Product.FinishedGoodsFlag,&#xA;	AdventureWorks2017.Production.Product.Color,&#xA;	AdventureWorks2017.Production.Product.SafetyStockLevel,&#xA;	AdventureWorks2017.Production.Product.ReorderPoint,&#xA;	AdventureWorks2017.Production.Product.StandardCost,&#xA;	AdventureWorks2017.Production.Product.ListPrice,&#xA;	AdventureWorks2017.Production.Product.Size,&#xA;	AdventureWorks2017.Production.Product.SizeUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.WeightUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.Weight,&#xA;	AdventureWorks2017.Production.Product.DaysToManufacture,&#xA;	AdventureWorks2017.Production.Product.ProductLine,&#xA;	AdventureWorks2017.Production.Product.Class,&#xA;	AdventureWorks2017.Production.Product.Style,&#xA;	AdventureWorks2017.Production.Product.ProductSubcategoryID,&#xA;	AdventureWorks2017.Production.Product.ProductModelID,&#xA;	AdventureWorks2017.Production.Product.SellStartDate,&#xA;	AdventureWorks2017.Production.Product.SellEndDate,&#xA;	AdventureWorks2017.Production.Product.DiscontinuedDate &#xA;from AdventureWorks2017.Production.Product" type="V_WString" />
+            <Field name="SizeUnitMeasureCode" size="3" source="File: aka:product|||select AdventureWorks2017.Production.Product.ProductID,&#xA;	AdventureWorks2017.Production.Product.Name,&#xA;	AdventureWorks2017.Production.Product.ProductNumber,&#xA;	AdventureWorks2017.Production.Product.MakeFlag,&#xA;	AdventureWorks2017.Production.Product.FinishedGoodsFlag,&#xA;	AdventureWorks2017.Production.Product.Color,&#xA;	AdventureWorks2017.Production.Product.SafetyStockLevel,&#xA;	AdventureWorks2017.Production.Product.ReorderPoint,&#xA;	AdventureWorks2017.Production.Product.StandardCost,&#xA;	AdventureWorks2017.Production.Product.ListPrice,&#xA;	AdventureWorks2017.Production.Product.Size,&#xA;	AdventureWorks2017.Production.Product.SizeUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.WeightUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.Weight,&#xA;	AdventureWorks2017.Production.Product.DaysToManufacture,&#xA;	AdventureWorks2017.Production.Product.ProductLine,&#xA;	AdventureWorks2017.Production.Product.Class,&#xA;	AdventureWorks2017.Production.Product.Style,&#xA;	AdventureWorks2017.Production.Product.ProductSubcategoryID,&#xA;	AdventureWorks2017.Production.Product.ProductModelID,&#xA;	AdventureWorks2017.Production.Product.SellStartDate,&#xA;	AdventureWorks2017.Production.Product.SellEndDate,&#xA;	AdventureWorks2017.Production.Product.DiscontinuedDate &#xA;from AdventureWorks2017.Production.Product" type="WString" />
+            <Field name="WeightUnitMeasureCode" size="3" source="File: aka:product|||select AdventureWorks2017.Production.Product.ProductID,&#xA;	AdventureWorks2017.Production.Product.Name,&#xA;	AdventureWorks2017.Production.Product.ProductNumber,&#xA;	AdventureWorks2017.Production.Product.MakeFlag,&#xA;	AdventureWorks2017.Production.Product.FinishedGoodsFlag,&#xA;	AdventureWorks2017.Production.Product.Color,&#xA;	AdventureWorks2017.Production.Product.SafetyStockLevel,&#xA;	AdventureWorks2017.Production.Product.ReorderPoint,&#xA;	AdventureWorks2017.Production.Product.StandardCost,&#xA;	AdventureWorks2017.Production.Product.ListPrice,&#xA;	AdventureWorks2017.Production.Product.Size,&#xA;	AdventureWorks2017.Production.Product.SizeUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.WeightUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.Weight,&#xA;	AdventureWorks2017.Production.Product.DaysToManufacture,&#xA;	AdventureWorks2017.Production.Product.ProductLine,&#xA;	AdventureWorks2017.Production.Product.Class,&#xA;	AdventureWorks2017.Production.Product.Style,&#xA;	AdventureWorks2017.Production.Product.ProductSubcategoryID,&#xA;	AdventureWorks2017.Production.Product.ProductModelID,&#xA;	AdventureWorks2017.Production.Product.SellStartDate,&#xA;	AdventureWorks2017.Production.Product.SellEndDate,&#xA;	AdventureWorks2017.Production.Product.DiscontinuedDate &#xA;from AdventureWorks2017.Production.Product" type="WString" />
+            <Field name="Weight" scale="2" size="10" source="File: aka:product|||select AdventureWorks2017.Production.Product.ProductID,&#xA;	AdventureWorks2017.Production.Product.Name,&#xA;	AdventureWorks2017.Production.Product.ProductNumber,&#xA;	AdventureWorks2017.Production.Product.MakeFlag,&#xA;	AdventureWorks2017.Production.Product.FinishedGoodsFlag,&#xA;	AdventureWorks2017.Production.Product.Color,&#xA;	AdventureWorks2017.Production.Product.SafetyStockLevel,&#xA;	AdventureWorks2017.Production.Product.ReorderPoint,&#xA;	AdventureWorks2017.Production.Product.StandardCost,&#xA;	AdventureWorks2017.Production.Product.ListPrice,&#xA;	AdventureWorks2017.Production.Product.Size,&#xA;	AdventureWorks2017.Production.Product.SizeUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.WeightUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.Weight,&#xA;	AdventureWorks2017.Production.Product.DaysToManufacture,&#xA;	AdventureWorks2017.Production.Product.ProductLine,&#xA;	AdventureWorks2017.Production.Product.Class,&#xA;	AdventureWorks2017.Production.Product.Style,&#xA;	AdventureWorks2017.Production.Product.ProductSubcategoryID,&#xA;	AdventureWorks2017.Production.Product.ProductModelID,&#xA;	AdventureWorks2017.Production.Product.SellStartDate,&#xA;	AdventureWorks2017.Production.Product.SellEndDate,&#xA;	AdventureWorks2017.Production.Product.DiscontinuedDate &#xA;from AdventureWorks2017.Production.Product" type="FixedDecimal" />
+            <Field name="DaysToManufacture" source="File: aka:product|||select AdventureWorks2017.Production.Product.ProductID,&#xA;	AdventureWorks2017.Production.Product.Name,&#xA;	AdventureWorks2017.Production.Product.ProductNumber,&#xA;	AdventureWorks2017.Production.Product.MakeFlag,&#xA;	AdventureWorks2017.Production.Product.FinishedGoodsFlag,&#xA;	AdventureWorks2017.Production.Product.Color,&#xA;	AdventureWorks2017.Production.Product.SafetyStockLevel,&#xA;	AdventureWorks2017.Production.Product.ReorderPoint,&#xA;	AdventureWorks2017.Production.Product.StandardCost,&#xA;	AdventureWorks2017.Production.Product.ListPrice,&#xA;	AdventureWorks2017.Production.Product.Size,&#xA;	AdventureWorks2017.Production.Product.SizeUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.WeightUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.Weight,&#xA;	AdventureWorks2017.Production.Product.DaysToManufacture,&#xA;	AdventureWorks2017.Production.Product.ProductLine,&#xA;	AdventureWorks2017.Production.Product.Class,&#xA;	AdventureWorks2017.Production.Product.Style,&#xA;	AdventureWorks2017.Production.Product.ProductSubcategoryID,&#xA;	AdventureWorks2017.Production.Product.ProductModelID,&#xA;	AdventureWorks2017.Production.Product.SellStartDate,&#xA;	AdventureWorks2017.Production.Product.SellEndDate,&#xA;	AdventureWorks2017.Production.Product.DiscontinuedDate &#xA;from AdventureWorks2017.Production.Product" type="Int32" />
+            <Field name="ProductLine" size="2" source="File: aka:product|||select AdventureWorks2017.Production.Product.ProductID,&#xA;	AdventureWorks2017.Production.Product.Name,&#xA;	AdventureWorks2017.Production.Product.ProductNumber,&#xA;	AdventureWorks2017.Production.Product.MakeFlag,&#xA;	AdventureWorks2017.Production.Product.FinishedGoodsFlag,&#xA;	AdventureWorks2017.Production.Product.Color,&#xA;	AdventureWorks2017.Production.Product.SafetyStockLevel,&#xA;	AdventureWorks2017.Production.Product.ReorderPoint,&#xA;	AdventureWorks2017.Production.Product.StandardCost,&#xA;	AdventureWorks2017.Production.Product.ListPrice,&#xA;	AdventureWorks2017.Production.Product.Size,&#xA;	AdventureWorks2017.Production.Product.SizeUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.WeightUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.Weight,&#xA;	AdventureWorks2017.Production.Product.DaysToManufacture,&#xA;	AdventureWorks2017.Production.Product.ProductLine,&#xA;	AdventureWorks2017.Production.Product.Class,&#xA;	AdventureWorks2017.Production.Product.Style,&#xA;	AdventureWorks2017.Production.Product.ProductSubcategoryID,&#xA;	AdventureWorks2017.Production.Product.ProductModelID,&#xA;	AdventureWorks2017.Production.Product.SellStartDate,&#xA;	AdventureWorks2017.Production.Product.SellEndDate,&#xA;	AdventureWorks2017.Production.Product.DiscontinuedDate &#xA;from AdventureWorks2017.Production.Product" type="WString" />
+            <Field name="Class" size="2" source="File: aka:product|||select AdventureWorks2017.Production.Product.ProductID,&#xA;	AdventureWorks2017.Production.Product.Name,&#xA;	AdventureWorks2017.Production.Product.ProductNumber,&#xA;	AdventureWorks2017.Production.Product.MakeFlag,&#xA;	AdventureWorks2017.Production.Product.FinishedGoodsFlag,&#xA;	AdventureWorks2017.Production.Product.Color,&#xA;	AdventureWorks2017.Production.Product.SafetyStockLevel,&#xA;	AdventureWorks2017.Production.Product.ReorderPoint,&#xA;	AdventureWorks2017.Production.Product.StandardCost,&#xA;	AdventureWorks2017.Production.Product.ListPrice,&#xA;	AdventureWorks2017.Production.Product.Size,&#xA;	AdventureWorks2017.Production.Product.SizeUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.WeightUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.Weight,&#xA;	AdventureWorks2017.Production.Product.DaysToManufacture,&#xA;	AdventureWorks2017.Production.Product.ProductLine,&#xA;	AdventureWorks2017.Production.Product.Class,&#xA;	AdventureWorks2017.Production.Product.Style,&#xA;	AdventureWorks2017.Production.Product.ProductSubcategoryID,&#xA;	AdventureWorks2017.Production.Product.ProductModelID,&#xA;	AdventureWorks2017.Production.Product.SellStartDate,&#xA;	AdventureWorks2017.Production.Product.SellEndDate,&#xA;	AdventureWorks2017.Production.Product.DiscontinuedDate &#xA;from AdventureWorks2017.Production.Product" type="WString" />
+            <Field name="Style" size="2" source="File: aka:product|||select AdventureWorks2017.Production.Product.ProductID,&#xA;	AdventureWorks2017.Production.Product.Name,&#xA;	AdventureWorks2017.Production.Product.ProductNumber,&#xA;	AdventureWorks2017.Production.Product.MakeFlag,&#xA;	AdventureWorks2017.Production.Product.FinishedGoodsFlag,&#xA;	AdventureWorks2017.Production.Product.Color,&#xA;	AdventureWorks2017.Production.Product.SafetyStockLevel,&#xA;	AdventureWorks2017.Production.Product.ReorderPoint,&#xA;	AdventureWorks2017.Production.Product.StandardCost,&#xA;	AdventureWorks2017.Production.Product.ListPrice,&#xA;	AdventureWorks2017.Production.Product.Size,&#xA;	AdventureWorks2017.Production.Product.SizeUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.WeightUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.Weight,&#xA;	AdventureWorks2017.Production.Product.DaysToManufacture,&#xA;	AdventureWorks2017.Production.Product.ProductLine,&#xA;	AdventureWorks2017.Production.Product.Class,&#xA;	AdventureWorks2017.Production.Product.Style,&#xA;	AdventureWorks2017.Production.Product.ProductSubcategoryID,&#xA;	AdventureWorks2017.Production.Product.ProductModelID,&#xA;	AdventureWorks2017.Production.Product.SellStartDate,&#xA;	AdventureWorks2017.Production.Product.SellEndDate,&#xA;	AdventureWorks2017.Production.Product.DiscontinuedDate &#xA;from AdventureWorks2017.Production.Product" type="WString" />
+            <Field name="ProductSubcategoryID" source="File: aka:product|||select AdventureWorks2017.Production.Product.ProductID,&#xA;	AdventureWorks2017.Production.Product.Name,&#xA;	AdventureWorks2017.Production.Product.ProductNumber,&#xA;	AdventureWorks2017.Production.Product.MakeFlag,&#xA;	AdventureWorks2017.Production.Product.FinishedGoodsFlag,&#xA;	AdventureWorks2017.Production.Product.Color,&#xA;	AdventureWorks2017.Production.Product.SafetyStockLevel,&#xA;	AdventureWorks2017.Production.Product.ReorderPoint,&#xA;	AdventureWorks2017.Production.Product.StandardCost,&#xA;	AdventureWorks2017.Production.Product.ListPrice,&#xA;	AdventureWorks2017.Production.Product.Size,&#xA;	AdventureWorks2017.Production.Product.SizeUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.WeightUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.Weight,&#xA;	AdventureWorks2017.Production.Product.DaysToManufacture,&#xA;	AdventureWorks2017.Production.Product.ProductLine,&#xA;	AdventureWorks2017.Production.Product.Class,&#xA;	AdventureWorks2017.Production.Product.Style,&#xA;	AdventureWorks2017.Production.Product.ProductSubcategoryID,&#xA;	AdventureWorks2017.Production.Product.ProductModelID,&#xA;	AdventureWorks2017.Production.Product.SellStartDate,&#xA;	AdventureWorks2017.Production.Product.SellEndDate,&#xA;	AdventureWorks2017.Production.Product.DiscontinuedDate &#xA;from AdventureWorks2017.Production.Product" type="Int32" />
+            <Field name="ProductModelID" source="File: aka:product|||select AdventureWorks2017.Production.Product.ProductID,&#xA;	AdventureWorks2017.Production.Product.Name,&#xA;	AdventureWorks2017.Production.Product.ProductNumber,&#xA;	AdventureWorks2017.Production.Product.MakeFlag,&#xA;	AdventureWorks2017.Production.Product.FinishedGoodsFlag,&#xA;	AdventureWorks2017.Production.Product.Color,&#xA;	AdventureWorks2017.Production.Product.SafetyStockLevel,&#xA;	AdventureWorks2017.Production.Product.ReorderPoint,&#xA;	AdventureWorks2017.Production.Product.StandardCost,&#xA;	AdventureWorks2017.Production.Product.ListPrice,&#xA;	AdventureWorks2017.Production.Product.Size,&#xA;	AdventureWorks2017.Production.Product.SizeUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.WeightUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.Weight,&#xA;	AdventureWorks2017.Production.Product.DaysToManufacture,&#xA;	AdventureWorks2017.Production.Product.ProductLine,&#xA;	AdventureWorks2017.Production.Product.Class,&#xA;	AdventureWorks2017.Production.Product.Style,&#xA;	AdventureWorks2017.Production.Product.ProductSubcategoryID,&#xA;	AdventureWorks2017.Production.Product.ProductModelID,&#xA;	AdventureWorks2017.Production.Product.SellStartDate,&#xA;	AdventureWorks2017.Production.Product.SellEndDate,&#xA;	AdventureWorks2017.Production.Product.DiscontinuedDate &#xA;from AdventureWorks2017.Production.Product" type="Int32" />
+            <Field name="SellStartDate" source="File: aka:product|||select AdventureWorks2017.Production.Product.ProductID,&#xA;	AdventureWorks2017.Production.Product.Name,&#xA;	AdventureWorks2017.Production.Product.ProductNumber,&#xA;	AdventureWorks2017.Production.Product.MakeFlag,&#xA;	AdventureWorks2017.Production.Product.FinishedGoodsFlag,&#xA;	AdventureWorks2017.Production.Product.Color,&#xA;	AdventureWorks2017.Production.Product.SafetyStockLevel,&#xA;	AdventureWorks2017.Production.Product.ReorderPoint,&#xA;	AdventureWorks2017.Production.Product.StandardCost,&#xA;	AdventureWorks2017.Production.Product.ListPrice,&#xA;	AdventureWorks2017.Production.Product.Size,&#xA;	AdventureWorks2017.Production.Product.SizeUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.WeightUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.Weight,&#xA;	AdventureWorks2017.Production.Product.DaysToManufacture,&#xA;	AdventureWorks2017.Production.Product.ProductLine,&#xA;	AdventureWorks2017.Production.Product.Class,&#xA;	AdventureWorks2017.Production.Product.Style,&#xA;	AdventureWorks2017.Production.Product.ProductSubcategoryID,&#xA;	AdventureWorks2017.Production.Product.ProductModelID,&#xA;	AdventureWorks2017.Production.Product.SellStartDate,&#xA;	AdventureWorks2017.Production.Product.SellEndDate,&#xA;	AdventureWorks2017.Production.Product.DiscontinuedDate &#xA;from AdventureWorks2017.Production.Product" type="DateTime" />
+            <Field name="SellEndDate" source="File: aka:product|||select AdventureWorks2017.Production.Product.ProductID,&#xA;	AdventureWorks2017.Production.Product.Name,&#xA;	AdventureWorks2017.Production.Product.ProductNumber,&#xA;	AdventureWorks2017.Production.Product.MakeFlag,&#xA;	AdventureWorks2017.Production.Product.FinishedGoodsFlag,&#xA;	AdventureWorks2017.Production.Product.Color,&#xA;	AdventureWorks2017.Production.Product.SafetyStockLevel,&#xA;	AdventureWorks2017.Production.Product.ReorderPoint,&#xA;	AdventureWorks2017.Production.Product.StandardCost,&#xA;	AdventureWorks2017.Production.Product.ListPrice,&#xA;	AdventureWorks2017.Production.Product.Size,&#xA;	AdventureWorks2017.Production.Product.SizeUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.WeightUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.Weight,&#xA;	AdventureWorks2017.Production.Product.DaysToManufacture,&#xA;	AdventureWorks2017.Production.Product.ProductLine,&#xA;	AdventureWorks2017.Production.Product.Class,&#xA;	AdventureWorks2017.Production.Product.Style,&#xA;	AdventureWorks2017.Production.Product.ProductSubcategoryID,&#xA;	AdventureWorks2017.Production.Product.ProductModelID,&#xA;	AdventureWorks2017.Production.Product.SellStartDate,&#xA;	AdventureWorks2017.Production.Product.SellEndDate,&#xA;	AdventureWorks2017.Production.Product.DiscontinuedDate &#xA;from AdventureWorks2017.Production.Product" type="DateTime" />
+            <Field name="DiscontinuedDate" source="File: aka:product|||select AdventureWorks2017.Production.Product.ProductID,&#xA;	AdventureWorks2017.Production.Product.Name,&#xA;	AdventureWorks2017.Production.Product.ProductNumber,&#xA;	AdventureWorks2017.Production.Product.MakeFlag,&#xA;	AdventureWorks2017.Production.Product.FinishedGoodsFlag,&#xA;	AdventureWorks2017.Production.Product.Color,&#xA;	AdventureWorks2017.Production.Product.SafetyStockLevel,&#xA;	AdventureWorks2017.Production.Product.ReorderPoint,&#xA;	AdventureWorks2017.Production.Product.StandardCost,&#xA;	AdventureWorks2017.Production.Product.ListPrice,&#xA;	AdventureWorks2017.Production.Product.Size,&#xA;	AdventureWorks2017.Production.Product.SizeUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.WeightUnitMeasureCode,&#xA;	AdventureWorks2017.Production.Product.Weight,&#xA;	AdventureWorks2017.Production.Product.DaysToManufacture,&#xA;	AdventureWorks2017.Production.Product.ProductLine,&#xA;	AdventureWorks2017.Production.Product.Class,&#xA;	AdventureWorks2017.Production.Product.Style,&#xA;	AdventureWorks2017.Production.Product.ProductSubcategoryID,&#xA;	AdventureWorks2017.Production.Product.ProductModelID,&#xA;	AdventureWorks2017.Production.Product.SellStartDate,&#xA;	AdventureWorks2017.Production.Product.SellEndDate,&#xA;	AdventureWorks2017.Production.Product.DiscontinuedDate &#xA;from AdventureWorks2017.Production.Product" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="450" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:productsubcat|||select AdventureWorks2017.Production.ProductSubcategory.ProductSubcategoryID,
+	AdventureWorks2017.Production.ProductSubcategory.ProductCategoryID,
+	AdventureWorks2017.Production.ProductSubcategory.Name 
+from AdventureWorks2017.Production.ProductSubcategory</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:productsubcat
+Query=select AdventureWorks2017.Pr...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ProductSubcategoryID" source="File: aka:productsubcat|||select AdventureWorks2017.Production.ProductSubcategory.ProductSubcategoryID,&#xA;	AdventureWorks2017.Production.ProductSubcategory.ProductCategoryID,&#xA;	AdventureWorks2017.Production.ProductSubcategory.Name &#xA;from AdventureWorks2017.Production.ProductSubcategory" type="Int32" />
+            <Field name="ProductCategoryID" source="File: aka:productsubcat|||select AdventureWorks2017.Production.ProductSubcategory.ProductSubcategoryID,&#xA;	AdventureWorks2017.Production.ProductSubcategory.ProductCategoryID,&#xA;	AdventureWorks2017.Production.ProductSubcategory.Name &#xA;from AdventureWorks2017.Production.ProductSubcategory" type="Int32" />
+            <Field name="Name" size="50" source="File: aka:productsubcat|||select AdventureWorks2017.Production.ProductSubcategory.ProductSubcategoryID,&#xA;	AdventureWorks2017.Production.ProductSubcategory.ProductCategoryID,&#xA;	AdventureWorks2017.Production.ProductSubcategory.Name &#xA;from AdventureWorks2017.Production.ProductSubcategory" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="570" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ProductSubcategoryID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ProductSubcategoryID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_ProductID" selected="True" rename="ProductID_NK" input="Left_" />
+                <SelectField field="Left_Product_ProductID" selected="True" input="Left_" />
+                <SelectField field="Left_ProductName" selected="True" input="Left_" />
+                <SelectField field="Left_ProductNumber" selected="True" input="Left_" />
+                <SelectField field="Left_StandardCost" selected="True" input="Left_" />
+                <SelectField field="Left_ListPrice" selected="True" input="Left_" />
+                <SelectField field="Left_Size" selected="True" input="Left_" />
+                <SelectField field="Left_Weight" selected="True" input="Left_" />
+                <SelectField field="Left_ProductSubcategoryID" selected="True" input="Left_" />
+                <SelectField field="Left_ProductModelID" selected="True" input="Left_" />
+                <SelectField field="Right_ProductSubcategoryID" selected="False" rename="Right_ProductSubcategoryID" input="Right_" />
+                <SelectField field="Right_ProductCategoryID" selected="True" input="Right_" />
+                <SelectField field="Right_Name" selected="True" rename="SubcategoryName" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="714" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="678" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:productCategory|||select AdventureWorks2017.Production.ProductCategory.ProductCategoryID,
+	AdventureWorks2017.Production.ProductCategory.Name 
+from AdventureWorks2017.Production.ProductCategory</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:productCategory
+Query=select AdventureWorks2017.Pr...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ProductCategoryID" source="File: aka:productCategory|||select AdventureWorks2017.Production.ProductCategory.ProductCategoryID,&#xA;	AdventureWorks2017.Production.ProductCategory.Name &#xA;from AdventureWorks2017.Production.ProductCategory" type="Int32" />
+            <Field name="Name" size="50" source="File: aka:productCategory|||select AdventureWorks2017.Production.ProductCategory.ProductCategoryID,&#xA;	AdventureWorks2017.Production.ProductCategory.Name &#xA;from AdventureWorks2017.Production.ProductCategory" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="858" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ProductCategoryID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ProductCategoryID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_ProductID_NK" selected="True" input="Left_" />
+                <SelectField field="Left_Product_ProductID" selected="True" input="Left_" />
+                <SelectField field="Left_ProductName" selected="True" input="Left_" />
+                <SelectField field="Left_ProductNumber" selected="True" input="Left_" />
+                <SelectField field="Left_StandardCost" selected="True" input="Left_" />
+                <SelectField field="Left_ListPrice" selected="True" input="Left_" />
+                <SelectField field="Left_Size" selected="True" input="Left_" />
+                <SelectField field="Left_Weight" selected="True" input="Left_" />
+                <SelectField field="Left_ProductSubcategoryID" selected="True" input="Left_" />
+                <SelectField field="Left_ProductModelID" selected="True" input="Left_" />
+                <SelectField field="Left_ProductCategoryID" selected="True" input="Left_" />
+                <SelectField field="Left_SubcategoryName" selected="True" input="Left_" />
+                <SelectField field="Right_ProductCategoryID" selected="False" rename="Right_ProductCategoryID" input="Right_" />
+                <SelectField field="Right_Name" selected="True" rename="ProductCategoryName" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1002" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="978" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:productModelID|||select AdventureWorks2017.Production.ProductModel.ProductModelID,
+	AdventureWorks2017.Production.ProductModel.Name 
+from AdventureWorks2017.Production.ProductModel</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:productModelID
+Query=select AdventureWorks2017.Pr...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ProductModelID" source="File: aka:productModelID|||select AdventureWorks2017.Production.ProductModel.ProductModelID,&#xA;	AdventureWorks2017.Production.ProductModel.Name &#xA;from AdventureWorks2017.Production.ProductModel" type="Int32" />
+            <Field name="Name" size="50" source="File: aka:productModelID|||select AdventureWorks2017.Production.ProductModel.ProductModelID,&#xA;	AdventureWorks2017.Production.ProductModel.Name &#xA;from AdventureWorks2017.Production.ProductModel" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1194" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ProductModelID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ProductModelID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_ProductID_NK" selected="True" input="Left_" />
+                <SelectField field="Left_Product_ProductID" selected="True" input="Left_" />
+                <SelectField field="Left_ProductName" selected="True" input="Left_" />
+                <SelectField field="Left_ProductNumber" selected="True" input="Left_" />
+                <SelectField field="Left_StandardCost" selected="True" input="Left_" />
+                <SelectField field="Left_ListPrice" selected="True" input="Left_" />
+                <SelectField field="Left_Size" selected="True" input="Left_" />
+                <SelectField field="Left_Weight" selected="True" input="Left_" />
+                <SelectField field="Left_ProductSubcategoryID" selected="True" input="Left_" />
+                <SelectField field="Left_ProductModelID" selected="True" input="Left_" />
+                <SelectField field="Left_ProductCategoryID" selected="True" input="Left_" />
+                <SelectField field="Left_SubcategoryName" selected="True" input="Left_" />
+                <SelectField field="Left_ProductCategoryName" selected="True" input="Left_" />
+                <SelectField field="Right_ProductModelID" selected="False" rename="Right_ProductModelID" input="Right_" />
+                <SelectField field="Right_Name" selected="True" rename="ProductModelName" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1314" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1614" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ProductID_SK" selected="True" />
+            <SelectField field="Product_ProductID" selected="True" rename="ProductID_NK" />
+            <SelectField field="ProductName" selected="True" />
+            <SelectField field="ProductNumber" selected="True" />
+            <SelectField field="StandardCost" selected="True" />
+            <SelectField field="ListPrice" selected="True" />
+            <SelectField field="Size" selected="True" />
+            <SelectField field="Weight" selected="True" />
+            <SelectField field="ProductSubcategoryID" selected="True" rename="SubCategoryID" />
+            <SelectField field="ProductModelID" selected="True" />
+            <SelectField field="ProductCategoryID" selected="True" />
+            <SelectField field="SubcategoryName" selected="True" rename="SubCategoryName" />
+            <SelectField field="ProductCategoryName" selected="True" />
+            <SelectField field="ProductModelName" selected="True" />
+            <SelectField field="DI_Job_ID" selected="True" />
+            <SelectField field="DI_Create_Date" selected="True" />
+            <SelectField field="DI_Modified_Date" selected="True" />
+            <SelectField field="SOR_ID" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="1410" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>ProductID_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1518" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="104" field="DI_Job_ID" size="255" type="V_WString" />
+            <FormulaField expression="DateTimeNow()" field="DI_Create_Date" size="10" type="Date" />
+            <FormulaField expression="DateTimeNow()" field="DI_Modified_Date" size="10" type="Date" />
+            <FormulaField expression="21" field="SOR_ID" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DI_Job_ID = 104
+DI_Create_Date = DateTimeNow()
+DI_Modified_Date = DateTimeNow()
+...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1746" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=MYSQL_Destination;UID=info7370;PWD=__EncPwd1__|||dimproducts_purchased</File>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <AppendMap>
+              <AppendMapping mode="Custom">
+                <Field Source="ProductID_SK" Dest="ProductID_SK" />
+                <Field Source="ProductID_NK" Dest="ProductID_NK" />
+                <Field Source="ProductName" Dest="ProductName" />
+                <Field Source="ProductNumber" Dest="ProductNumber" />
+                <Field Source="StandardCost" Dest="StandardCost" />
+                <Field Source="ListPrice" Dest="ListPrice" />
+                <Field Source="Size" Dest="Size" />
+                <Field Source="Weight" Dest="Weight" />
+                <Field Source="SubCategoryID" Dest="SubCategoryID" />
+                <Field Source="ProductModelID" Dest="ProductModelID" />
+                <Field Source="ProductCategoryID" Dest="ProductCategoryID" />
+                <Field Source="SubCategoryName" Dest="SubCategoryName" />
+                <Field Source="ProductCategoryName" Dest="CategoryName" />
+                <Field Source="ProductModelName" Dest="ModelName" />
+                <Field Source="DI_Job_ID" Dest="DI_Job_ID" />
+                <Field Source="DI_Create_Date" Dest="DI_Create_Date" />
+                <Field Source="DI_Modified_Date" Dest="DI_Modified_Date" />
+                <Field Source="SOR_ID" Dest="SOR_ID" />
+              </AppendMapping>
+            </AppendMap>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Delete</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MYSQL_Destination
+Query=dimproducts_purchased</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Unique" />
+      <Destination ToolID="4" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="4" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Join" />
+      <Destination ToolID="13" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Right" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="13" Connection="Left" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="13" Connection="Join" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="18" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Right" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="18" Connection="Left" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="18" Connection="Join" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="21" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Right" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="21" Connection="Join" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="21" Connection="Left" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>dimproductpurchase_final26thfeb2020</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

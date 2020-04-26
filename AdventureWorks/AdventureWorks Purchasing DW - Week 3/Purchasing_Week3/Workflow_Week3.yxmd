@@ -1,0 +1,762 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:AdventureWorks2017_SQLServer|||select Production.ProductCategory.ProductCategoryID,
+	Production.ProductCategory.Name,
+	Production.ProductCategory.rowguid 
+from Production.ProductCategory</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:AdventureWorks2017_SQLServer
+Query=select Production.ProductCat...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ProductCategoryID" source="File: aka:AdventureWorks2017_SQLServer|||select Production.ProductCategory.ProductCategoryID,&#xA;	Production.ProductCategory.Name,&#xA;	Production.ProductCategory.rowguid &#xA;from Production.ProductCategory" type="Int32" />
+            <Field name="Name" size="50" source="File: aka:AdventureWorks2017_SQLServer|||select Production.ProductCategory.ProductCategoryID,&#xA;	Production.ProductCategory.Name,&#xA;	Production.ProductCategory.rowguid &#xA;from Production.ProductCategory" type="V_WString" />
+            <Field name="rowguid" size="36" source="File: aka:AdventureWorks2017_SQLServer|||select Production.ProductCategory.ProductCategoryID,&#xA;	Production.ProductCategory.Name,&#xA;	Production.ProductCategory.rowguid &#xA;from Production.ProductCategory" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="246" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>ProductCategoryID_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="378" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=adventureworks2017;UID=info7370;PWD=__EncPwd1__|||DimProductCategory</File>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <AppendMap>
+              <AppendMapping mode="Custom">
+                <Field Source="ProductCategoryID" Dest="ProductCategoryID_PK" />
+                <Field Source="Name" Dest="Name" />
+                <Field Source="rowguid" Dest="rowguid" />
+              </AppendMapping>
+            </AppendMap>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=adventureworks2017
+Query=DimProductCategory</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:AdventureWorks2017_SQLServer|||select Production.ProductModel.ProductModelID,
+	Production.ProductModel.Name,
+	Production.ProductModel.CatalogDescription,
+	Production.ProductModel.Instructions,
+	Production.ProductModel.rowguid 
+from Production.ProductModel</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:AdventureWorks2017_SQLServer
+Query=select Production.ProductMod...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ProductModelID" source="File: aka:AdventureWorks2017_SQLServer|||select Production.ProductModel.ProductModelID,&#xA;	Production.ProductModel.Name,&#xA;	Production.ProductModel.CatalogDescription,&#xA;	Production.ProductModel.Instructions,&#xA;	Production.ProductModel.rowguid &#xA;from Production.ProductModel" type="Int32" />
+            <Field name="Name" size="50" source="File: aka:AdventureWorks2017_SQLServer|||select Production.ProductModel.ProductModelID,&#xA;	Production.ProductModel.Name,&#xA;	Production.ProductModel.CatalogDescription,&#xA;	Production.ProductModel.Instructions,&#xA;	Production.ProductModel.rowguid &#xA;from Production.ProductModel" type="V_WString" />
+            <Field name="CatalogDescription" size="16777216" source="File: aka:AdventureWorks2017_SQLServer|||select Production.ProductModel.ProductModelID,&#xA;	Production.ProductModel.Name,&#xA;	Production.ProductModel.CatalogDescription,&#xA;	Production.ProductModel.Instructions,&#xA;	Production.ProductModel.rowguid &#xA;from Production.ProductModel" type="V_String" />
+            <Field name="Instructions" size="16777216" source="File: aka:AdventureWorks2017_SQLServer|||select Production.ProductModel.ProductModelID,&#xA;	Production.ProductModel.Name,&#xA;	Production.ProductModel.CatalogDescription,&#xA;	Production.ProductModel.Instructions,&#xA;	Production.ProductModel.rowguid &#xA;from Production.ProductModel" type="V_String" />
+            <Field name="rowguid" size="36" source="File: aka:AdventureWorks2017_SQLServer|||select Production.ProductModel.ProductModelID,&#xA;	Production.ProductModel.Name,&#xA;	Production.ProductModel.CatalogDescription,&#xA;	Production.ProductModel.Instructions,&#xA;	Production.ProductModel.rowguid &#xA;from Production.ProductModel" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="246" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>ProductModelID_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="390" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=AdventureWorks2017_Purchasing;UID=info7370;PWD=__EncPwd1__|||DimProductModel</File>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=AdventureWorks2017_Purchasing
+Query=DimProductModel</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="114" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">aka:AdventureWorks2017_SQLServer|||select Purchasing.ShipMethod.ShipMethodID,
+	Purchasing.ShipMethod.Name,
+	Purchasing.ShipMethod.ShipBase,
+	Purchasing.ShipMethod.ShipRate,
+	Purchasing.ShipMethod.rowguid 
+from Purchasing.ShipMethod</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:AdventureWorks2017_SQLServer
+Query=select Purchasing.ShipMethod...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ShipMethodID" source="File: aka:AdventureWorks2017_SQLServer|||select Purchasing.ShipMethod.ShipMethodID,&#xA;	Purchasing.ShipMethod.Name,&#xA;	Purchasing.ShipMethod.ShipBase,&#xA;	Purchasing.ShipMethod.ShipRate,&#xA;	Purchasing.ShipMethod.rowguid &#xA;from Purchasing.ShipMethod" type="Int32" />
+            <Field name="Name" size="50" source="File: aka:AdventureWorks2017_SQLServer|||select Purchasing.ShipMethod.ShipMethodID,&#xA;	Purchasing.ShipMethod.Name,&#xA;	Purchasing.ShipMethod.ShipBase,&#xA;	Purchasing.ShipMethod.ShipRate,&#xA;	Purchasing.ShipMethod.rowguid &#xA;from Purchasing.ShipMethod" type="V_WString" />
+            <Field name="ShipBase" scale="4" size="21" source="File: aka:AdventureWorks2017_SQLServer|||select Purchasing.ShipMethod.ShipMethodID,&#xA;	Purchasing.ShipMethod.Name,&#xA;	Purchasing.ShipMethod.ShipBase,&#xA;	Purchasing.ShipMethod.ShipRate,&#xA;	Purchasing.ShipMethod.rowguid &#xA;from Purchasing.ShipMethod" type="FixedDecimal" />
+            <Field name="ShipRate" scale="4" size="21" source="File: aka:AdventureWorks2017_SQLServer|||select Purchasing.ShipMethod.ShipMethodID,&#xA;	Purchasing.ShipMethod.Name,&#xA;	Purchasing.ShipMethod.ShipBase,&#xA;	Purchasing.ShipMethod.ShipRate,&#xA;	Purchasing.ShipMethod.rowguid &#xA;from Purchasing.ShipMethod" type="FixedDecimal" />
+            <Field name="rowguid" size="36" source="File: aka:AdventureWorks2017_SQLServer|||select Purchasing.ShipMethod.ShipMethodID,&#xA;	Purchasing.ShipMethod.Name,&#xA;	Purchasing.ShipMethod.ShipBase,&#xA;	Purchasing.ShipMethod.ShipRate,&#xA;	Purchasing.ShipMethod.rowguid &#xA;from Purchasing.ShipMethod" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="258" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>ShipMethodID_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="402" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=AdventureWorks2017_Purchasing;UID=info7370;PWD=__EncPwd1__|||DimShipMethod</File>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=AdventureWorks2017_Purchasing
+Query=DimShipMethod</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="114" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">aka:AdventureWorks2017_SQLServer|||select AdventureWorksDW2017.dbo.DimDate.DateKey,
+	AdventureWorksDW2017.dbo.DimDate.DayNumberOfWeek,
+	AdventureWorksDW2017.dbo.DimDate.DayNumberOfMonth,
+	AdventureWorksDW2017.dbo.DimDate.DayNumberOfYear,
+	AdventureWorksDW2017.dbo.DimDate.WeekNumberOfYear,
+	AdventureWorksDW2017.dbo.DimDate.EnglishMonthName,
+	AdventureWorksDW2017.dbo.DimDate.MonthNumberOfYear,
+	AdventureWorksDW2017.dbo.DimDate.CalendarYear,
+	AdventureWorksDW2017.dbo.DimDate.CalendarQuarter,
+	AdventureWorksDW2017.dbo.DimDate.CalendarSemester,
+	AdventureWorksDW2017.dbo.DimDate.FiscalQuarter,
+	AdventureWorksDW2017.dbo.DimDate.FiscalYear,
+	AdventureWorksDW2017.dbo.DimDate.FiscalSemester 
+from AdventureWorksDW2017.dbo.DimDate</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:AdventureWorks2017_SQLServer
+Query=select AdventureWorksDW2017....</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DateKey" source="File: aka:AdventureWorks2017_SQLServer|||select AdventureWorksDW2017.dbo.DimDate.DateKey,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfWeek,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfMonth,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.WeekNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.EnglishMonthName,&#xA;	AdventureWorksDW2017.dbo.DimDate.MonthNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarQuarter,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarSemester,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalQuarter,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalSemester &#xA;from AdventureWorksDW2017.dbo.DimDate" type="Int32" />
+            <Field name="DayNumberOfWeek" source="File: aka:AdventureWorks2017_SQLServer|||select AdventureWorksDW2017.dbo.DimDate.DateKey,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfWeek,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfMonth,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.WeekNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.EnglishMonthName,&#xA;	AdventureWorksDW2017.dbo.DimDate.MonthNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarQuarter,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarSemester,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalQuarter,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalSemester &#xA;from AdventureWorksDW2017.dbo.DimDate" type="Int16" />
+            <Field name="DayNumberOfMonth" source="File: aka:AdventureWorks2017_SQLServer|||select AdventureWorksDW2017.dbo.DimDate.DateKey,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfWeek,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfMonth,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.WeekNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.EnglishMonthName,&#xA;	AdventureWorksDW2017.dbo.DimDate.MonthNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarQuarter,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarSemester,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalQuarter,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalSemester &#xA;from AdventureWorksDW2017.dbo.DimDate" type="Int16" />
+            <Field name="DayNumberOfYear" source="File: aka:AdventureWorks2017_SQLServer|||select AdventureWorksDW2017.dbo.DimDate.DateKey,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfWeek,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfMonth,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.WeekNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.EnglishMonthName,&#xA;	AdventureWorksDW2017.dbo.DimDate.MonthNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarQuarter,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarSemester,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalQuarter,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalSemester &#xA;from AdventureWorksDW2017.dbo.DimDate" type="Int16" />
+            <Field name="WeekNumberOfYear" source="File: aka:AdventureWorks2017_SQLServer|||select AdventureWorksDW2017.dbo.DimDate.DateKey,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfWeek,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfMonth,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.WeekNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.EnglishMonthName,&#xA;	AdventureWorksDW2017.dbo.DimDate.MonthNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarQuarter,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarSemester,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalQuarter,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalSemester &#xA;from AdventureWorksDW2017.dbo.DimDate" type="Int16" />
+            <Field name="EnglishMonthName" size="10" source="File: aka:AdventureWorks2017_SQLServer|||select AdventureWorksDW2017.dbo.DimDate.DateKey,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfWeek,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfMonth,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.WeekNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.EnglishMonthName,&#xA;	AdventureWorksDW2017.dbo.DimDate.MonthNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarQuarter,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarSemester,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalQuarter,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalSemester &#xA;from AdventureWorksDW2017.dbo.DimDate" type="V_WString" />
+            <Field name="MonthNumberOfYear" source="File: aka:AdventureWorks2017_SQLServer|||select AdventureWorksDW2017.dbo.DimDate.DateKey,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfWeek,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfMonth,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.WeekNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.EnglishMonthName,&#xA;	AdventureWorksDW2017.dbo.DimDate.MonthNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarQuarter,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarSemester,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalQuarter,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalSemester &#xA;from AdventureWorksDW2017.dbo.DimDate" type="Int16" />
+            <Field name="CalendarYear" source="File: aka:AdventureWorks2017_SQLServer|||select AdventureWorksDW2017.dbo.DimDate.DateKey,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfWeek,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfMonth,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.WeekNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.EnglishMonthName,&#xA;	AdventureWorksDW2017.dbo.DimDate.MonthNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarQuarter,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarSemester,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalQuarter,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalSemester &#xA;from AdventureWorksDW2017.dbo.DimDate" type="Int16" />
+            <Field name="CalendarQuarter" source="File: aka:AdventureWorks2017_SQLServer|||select AdventureWorksDW2017.dbo.DimDate.DateKey,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfWeek,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfMonth,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.WeekNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.EnglishMonthName,&#xA;	AdventureWorksDW2017.dbo.DimDate.MonthNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarQuarter,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarSemester,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalQuarter,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalSemester &#xA;from AdventureWorksDW2017.dbo.DimDate" type="Int16" />
+            <Field name="CalendarSemester" source="File: aka:AdventureWorks2017_SQLServer|||select AdventureWorksDW2017.dbo.DimDate.DateKey,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfWeek,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfMonth,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.WeekNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.EnglishMonthName,&#xA;	AdventureWorksDW2017.dbo.DimDate.MonthNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarQuarter,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarSemester,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalQuarter,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalSemester &#xA;from AdventureWorksDW2017.dbo.DimDate" type="Int16" />
+            <Field name="FiscalQuarter" source="File: aka:AdventureWorks2017_SQLServer|||select AdventureWorksDW2017.dbo.DimDate.DateKey,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfWeek,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfMonth,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.WeekNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.EnglishMonthName,&#xA;	AdventureWorksDW2017.dbo.DimDate.MonthNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarQuarter,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarSemester,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalQuarter,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalSemester &#xA;from AdventureWorksDW2017.dbo.DimDate" type="Int16" />
+            <Field name="FiscalYear" source="File: aka:AdventureWorks2017_SQLServer|||select AdventureWorksDW2017.dbo.DimDate.DateKey,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfWeek,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfMonth,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.WeekNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.EnglishMonthName,&#xA;	AdventureWorksDW2017.dbo.DimDate.MonthNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarQuarter,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarSemester,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalQuarter,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalSemester &#xA;from AdventureWorksDW2017.dbo.DimDate" type="Int16" />
+            <Field name="FiscalSemester" source="File: aka:AdventureWorks2017_SQLServer|||select AdventureWorksDW2017.dbo.DimDate.DateKey,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfWeek,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfMonth,&#xA;	AdventureWorksDW2017.dbo.DimDate.DayNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.WeekNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.EnglishMonthName,&#xA;	AdventureWorksDW2017.dbo.DimDate.MonthNumberOfYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarQuarter,&#xA;	AdventureWorksDW2017.dbo.DimDate.CalendarSemester,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalQuarter,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalYear,&#xA;	AdventureWorksDW2017.dbo.DimDate.FiscalSemester &#xA;from AdventureWorksDW2017.dbo.DimDate" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="270" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>DateKey_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="402" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=AdventureWorks2017_Purchasing;UID=info7370;PWD=__EncPwd1__|||DimDate</File>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <AppendMap>
+              <AppendMapping mode="Custom">
+                <Field Source="DateKey_SK" Dest="DateKey_SK" />
+                <Field Source="DateKey" Dest="DateKey_PK" />
+                <Field Source="DayNumberOfWeek" Dest="DayNumberOfWeek" />
+                <Field Source="DayNumberOfMonth" Dest="DayNumberOfMonth" />
+                <Field Source="DayNumberOfYear" Dest="DayNumberOfYear" />
+                <Field Source="WeekNumberOfYear" Dest="WeekNumberOfYear" />
+                <Field Source="EnglishMonthName" Dest="MonthName" />
+                <Field Source="MonthNumberOfYear" Dest="MonthNumberOfYear" />
+                <Field Source="CalendarYear" Dest="CalenderYear" />
+                <Field Source="CalendarQuarter" Dest="CalenderQuarter" />
+                <Field Source="CalendarSemester" Dest="CalenderSemester" />
+                <Field Source="FiscalQuarter" Dest="FiscalQuarter" />
+                <Field Source="FiscalYear" Dest="FiscalYear" />
+                <Field Source="FiscalSemester" Dest="FiscalSemester" />
+              </AppendMapping>
+            </AppendMap>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=AdventureWorks2017_Purchasing
+Query=DimDate</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="30" y="834" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:AdventureWorks2017_SQLServer|||select Person.StateProvince.Name,
+	Person.StateProvince.StateProvinceID,
+	Person.StateProvince.CountryRegionCode 
+from Person.StateProvince</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:AdventureWorks2017_SQLServer
+Query=select Person.StateProvince....</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="50" source="File: aka:AdventureWorks2017_SQLServer|||select Person.StateProvince.Name,&#xA;	Person.StateProvince.StateProvinceID,&#xA;	Person.StateProvince.CountryRegionCode &#xA;from Person.StateProvince" type="V_WString" />
+            <Field name="StateProvinceID" source="File: aka:AdventureWorks2017_SQLServer|||select Person.StateProvince.Name,&#xA;	Person.StateProvince.StateProvinceID,&#xA;	Person.StateProvince.CountryRegionCode &#xA;from Person.StateProvince" type="Int32" />
+            <Field name="CountryRegionCode" size="3" source="File: aka:AdventureWorks2017_SQLServer|||select Person.StateProvince.Name,&#xA;	Person.StateProvince.StateProvinceID,&#xA;	Person.StateProvince.CountryRegionCode &#xA;from Person.StateProvince" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="42" y="1002" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:AdventureWorks2017_SQLServer|||select Person.Address.City,
+	Person.Address.PostalCode,
+	Person.Address.AddressLine1,
+	Person.Address.AddressID,
+	Person.Address.StateProvinceID 
+from Person.Address</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:AdventureWorks2017_SQLServer
+Query=select Person.Address.City,...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="City" size="30" source="File: aka:AdventureWorks2017_SQLServer|||select Person.Address.City,&#xA;	Person.Address.PostalCode,&#xA;	Person.Address.AddressLine1,&#xA;	Person.Address.AddressID,&#xA;	Person.Address.StateProvinceID &#xA;from Person.Address" type="V_WString" />
+            <Field name="PostalCode" size="15" source="File: aka:AdventureWorks2017_SQLServer|||select Person.Address.City,&#xA;	Person.Address.PostalCode,&#xA;	Person.Address.AddressLine1,&#xA;	Person.Address.AddressID,&#xA;	Person.Address.StateProvinceID &#xA;from Person.Address" type="V_WString" />
+            <Field name="AddressLine1" size="60" source="File: aka:AdventureWorks2017_SQLServer|||select Person.Address.City,&#xA;	Person.Address.PostalCode,&#xA;	Person.Address.AddressLine1,&#xA;	Person.Address.AddressID,&#xA;	Person.Address.StateProvinceID &#xA;from Person.Address" type="V_WString" />
+            <Field name="AddressID" source="File: aka:AdventureWorks2017_SQLServer|||select Person.Address.City,&#xA;	Person.Address.PostalCode,&#xA;	Person.Address.AddressLine1,&#xA;	Person.Address.AddressID,&#xA;	Person.Address.StateProvinceID &#xA;from Person.Address" type="Int32" />
+            <Field name="StateProvinceID" source="File: aka:AdventureWorks2017_SQLServer|||select Person.Address.City,&#xA;	Person.Address.PostalCode,&#xA;	Person.Address.AddressLine1,&#xA;	Person.Address.AddressID,&#xA;	Person.Address.StateProvinceID &#xA;from Person.Address" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="198" y="918" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="StateProvinceID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="StateProvinceID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Name" selected="True" input="Left_" />
+                <SelectField field="Left_StateProvinceID" selected="True" input="Left_" />
+                <SelectField field="Left_CountryRegionCode" selected="True" input="Left_" />
+                <SelectField field="Right_City" selected="True" input="Right_" />
+                <SelectField field="Right_PostalCode" selected="True" input="Right_" />
+                <SelectField field="Right_AddressLine1" selected="True" input="Right_" />
+                <SelectField field="Right_AddressID" selected="True" input="Right_" />
+                <SelectField field="Right_StateProvinceID" selected="False" rename="Right_StateProvinceID" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="282" y="1038" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:AdventureWorks2017_SQLServer|||select Person.CountryRegion.CountryRegionCode,
+	Person.CountryRegion.Name 
+from Person.CountryRegion</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:AdventureWorks2017_SQLServer
+Query=select Person.CountryRegion....</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CountryRegionCode" size="3" source="File: aka:AdventureWorks2017_SQLServer|||select Person.CountryRegion.CountryRegionCode,&#xA;	Person.CountryRegion.Name &#xA;from Person.CountryRegion" type="V_WString" />
+            <Field name="Name" size="50" source="File: aka:AdventureWorks2017_SQLServer|||select Person.CountryRegion.CountryRegionCode,&#xA;	Person.CountryRegion.Name &#xA;from Person.CountryRegion" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="402" y="930" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="CountryRegionCode" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="CountryRegionCode" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Name" selected="True" input="Left_" />
+                <SelectField field="Left_StateProvinceID" selected="True" input="Left_" />
+                <SelectField field="Left_CountryRegionCode" selected="True" input="Left_" />
+                <SelectField field="Left_City" selected="True" input="Left_" />
+                <SelectField field="Left_PostalCode" selected="True" input="Left_" />
+                <SelectField field="Left_AddressLine1" selected="True" input="Left_" />
+                <SelectField field="Left_AddressID" selected="True" input="Left_" />
+                <SelectField field="Right_CountryRegionCode" selected="True" rename="Right_CountryRegionCode" input="Right_" />
+                <SelectField field="Right_Name" selected="True" rename="Country_Name" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="570" y="918" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>GeographyID_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="702" y="918" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=AdventureWorks2017_Purchasing;UID=info7370;PWD=__EncPwd1__|||DimGeography</File>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <AppendMap>
+              <AppendMapping mode="Custom">
+                <Field Source="GeographyID_SK" Dest="GeographyID_SK" />
+                <Field Source="Name" Dest="State" />
+                <Field Source="City" Dest="City" />
+                <Field Source="PostalCode" Dest="ZipCode" />
+                <Field Source="AddressLine1" Dest="Address" />
+                <Field Source="AddressID" Dest="GeographyID_PK" />
+                <Field Source="Country_Name" Dest="Country" />
+              </AppendMapping>
+            </AppendMap>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=AdventureWorks2017_Purchasing
+Query=DimGeography</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="30" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="30" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Join" />
+      <Destination ToolID="32" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="32" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Join" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Workflow_Week3</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

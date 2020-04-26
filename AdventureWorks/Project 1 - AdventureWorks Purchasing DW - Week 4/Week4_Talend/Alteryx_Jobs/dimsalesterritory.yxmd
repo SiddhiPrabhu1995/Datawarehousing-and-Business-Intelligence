@@ -1,0 +1,234 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">aka:ProductionSQL|||select AdventureWorks2017.Sales.SalesTerritory.TerritoryID,
+	AdventureWorks2017.Sales.SalesTerritory.Name,
+	AdventureWorks2017.Sales.SalesTerritory.CountryRegionCode,
+	AdventureWorks2017.Sales.SalesTerritory.[Group],
+	AdventureWorks2017.Sales.SalesTerritory.SalesYTD,
+	AdventureWorks2017.Sales.SalesTerritory.SalesLastYear,
+	AdventureWorks2017.Sales.SalesTerritory.CostYTD,
+	AdventureWorks2017.Sales.SalesTerritory.CostLastYear 
+from AdventureWorks2017.Sales.SalesTerritory</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:ProductionSQL
+Query=select AdventureWorks2017.Sa...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="TerritoryID" source="File: aka:ProductionSQL|||select AdventureWorks2017.Sales.SalesTerritory.TerritoryID,&#xA;	AdventureWorks2017.Sales.SalesTerritory.Name,&#xA;	AdventureWorks2017.Sales.SalesTerritory.CountryRegionCode,&#xA;	AdventureWorks2017.Sales.SalesTerritory.[Group],&#xA;	AdventureWorks2017.Sales.SalesTerritory.SalesYTD,&#xA;	AdventureWorks2017.Sales.SalesTerritory.SalesLastYear,&#xA;	AdventureWorks2017.Sales.SalesTerritory.CostYTD,&#xA;	AdventureWorks2017.Sales.SalesTerritory.CostLastYear &#xA;from AdventureWorks2017.Sales.SalesTerritory" type="Int32" />
+            <Field name="Name" size="50" source="File: aka:ProductionSQL|||select AdventureWorks2017.Sales.SalesTerritory.TerritoryID,&#xA;	AdventureWorks2017.Sales.SalesTerritory.Name,&#xA;	AdventureWorks2017.Sales.SalesTerritory.CountryRegionCode,&#xA;	AdventureWorks2017.Sales.SalesTerritory.[Group],&#xA;	AdventureWorks2017.Sales.SalesTerritory.SalesYTD,&#xA;	AdventureWorks2017.Sales.SalesTerritory.SalesLastYear,&#xA;	AdventureWorks2017.Sales.SalesTerritory.CostYTD,&#xA;	AdventureWorks2017.Sales.SalesTerritory.CostLastYear &#xA;from AdventureWorks2017.Sales.SalesTerritory" type="V_WString" />
+            <Field name="CountryRegionCode" size="3" source="File: aka:ProductionSQL|||select AdventureWorks2017.Sales.SalesTerritory.TerritoryID,&#xA;	AdventureWorks2017.Sales.SalesTerritory.Name,&#xA;	AdventureWorks2017.Sales.SalesTerritory.CountryRegionCode,&#xA;	AdventureWorks2017.Sales.SalesTerritory.[Group],&#xA;	AdventureWorks2017.Sales.SalesTerritory.SalesYTD,&#xA;	AdventureWorks2017.Sales.SalesTerritory.SalesLastYear,&#xA;	AdventureWorks2017.Sales.SalesTerritory.CostYTD,&#xA;	AdventureWorks2017.Sales.SalesTerritory.CostLastYear &#xA;from AdventureWorks2017.Sales.SalesTerritory" type="V_WString" />
+            <Field name="Group" size="50" source="File: aka:ProductionSQL|||select AdventureWorks2017.Sales.SalesTerritory.TerritoryID,&#xA;	AdventureWorks2017.Sales.SalesTerritory.Name,&#xA;	AdventureWorks2017.Sales.SalesTerritory.CountryRegionCode,&#xA;	AdventureWorks2017.Sales.SalesTerritory.[Group],&#xA;	AdventureWorks2017.Sales.SalesTerritory.SalesYTD,&#xA;	AdventureWorks2017.Sales.SalesTerritory.SalesLastYear,&#xA;	AdventureWorks2017.Sales.SalesTerritory.CostYTD,&#xA;	AdventureWorks2017.Sales.SalesTerritory.CostLastYear &#xA;from AdventureWorks2017.Sales.SalesTerritory" type="V_WString" />
+            <Field name="SalesYTD" scale="4" size="21" source="File: aka:ProductionSQL|||select AdventureWorks2017.Sales.SalesTerritory.TerritoryID,&#xA;	AdventureWorks2017.Sales.SalesTerritory.Name,&#xA;	AdventureWorks2017.Sales.SalesTerritory.CountryRegionCode,&#xA;	AdventureWorks2017.Sales.SalesTerritory.[Group],&#xA;	AdventureWorks2017.Sales.SalesTerritory.SalesYTD,&#xA;	AdventureWorks2017.Sales.SalesTerritory.SalesLastYear,&#xA;	AdventureWorks2017.Sales.SalesTerritory.CostYTD,&#xA;	AdventureWorks2017.Sales.SalesTerritory.CostLastYear &#xA;from AdventureWorks2017.Sales.SalesTerritory" type="FixedDecimal" />
+            <Field name="SalesLastYear" scale="4" size="21" source="File: aka:ProductionSQL|||select AdventureWorks2017.Sales.SalesTerritory.TerritoryID,&#xA;	AdventureWorks2017.Sales.SalesTerritory.Name,&#xA;	AdventureWorks2017.Sales.SalesTerritory.CountryRegionCode,&#xA;	AdventureWorks2017.Sales.SalesTerritory.[Group],&#xA;	AdventureWorks2017.Sales.SalesTerritory.SalesYTD,&#xA;	AdventureWorks2017.Sales.SalesTerritory.SalesLastYear,&#xA;	AdventureWorks2017.Sales.SalesTerritory.CostYTD,&#xA;	AdventureWorks2017.Sales.SalesTerritory.CostLastYear &#xA;from AdventureWorks2017.Sales.SalesTerritory" type="FixedDecimal" />
+            <Field name="CostYTD" scale="4" size="21" source="File: aka:ProductionSQL|||select AdventureWorks2017.Sales.SalesTerritory.TerritoryID,&#xA;	AdventureWorks2017.Sales.SalesTerritory.Name,&#xA;	AdventureWorks2017.Sales.SalesTerritory.CountryRegionCode,&#xA;	AdventureWorks2017.Sales.SalesTerritory.[Group],&#xA;	AdventureWorks2017.Sales.SalesTerritory.SalesYTD,&#xA;	AdventureWorks2017.Sales.SalesTerritory.SalesLastYear,&#xA;	AdventureWorks2017.Sales.SalesTerritory.CostYTD,&#xA;	AdventureWorks2017.Sales.SalesTerritory.CostLastYear &#xA;from AdventureWorks2017.Sales.SalesTerritory" type="FixedDecimal" />
+            <Field name="CostLastYear" scale="4" size="21" source="File: aka:ProductionSQL|||select AdventureWorks2017.Sales.SalesTerritory.TerritoryID,&#xA;	AdventureWorks2017.Sales.SalesTerritory.Name,&#xA;	AdventureWorks2017.Sales.SalesTerritory.CountryRegionCode,&#xA;	AdventureWorks2017.Sales.SalesTerritory.[Group],&#xA;	AdventureWorks2017.Sales.SalesTerritory.SalesYTD,&#xA;	AdventureWorks2017.Sales.SalesTerritory.SalesLastYear,&#xA;	AdventureWorks2017.Sales.SalesTerritory.CostYTD,&#xA;	AdventureWorks2017.Sales.SalesTerritory.CostLastYear &#xA;from AdventureWorks2017.Sales.SalesTerritory" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="174" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>SalesTerritoryID_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="294" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="38" field="SOR_ID" size="255" type="V_WString" />
+            <FormulaField expression="111" field="DI_Job_ID" size="255" type="V_WString" />
+            <FormulaField expression="DateTimeNow()" field="DI_Create_Date" size="10" type="Date" />
+            <FormulaField expression="DateTimeNow()" field="DI_Modified_Date" size="10" type="Date" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>SOR_ID = 38
+DI_Job_ID = 111
+DI_Create_Date = DateTimeNow()
+DI_Modified_Date = Da...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="414" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="SalesTerritoryID_SK" selected="True" />
+            <SelectField field="TerritoryID" selected="True" rename="TerritoryID_NK" />
+            <SelectField field="Name" selected="True" rename="TerritoryName" />
+            <SelectField field="CountryRegionCode" selected="True" />
+            <SelectField field="Group" selected="True" />
+            <SelectField field="SalesYTD" selected="True" />
+            <SelectField field="SalesLastYear" selected="True" />
+            <SelectField field="CostYTD" selected="True" />
+            <SelectField field="CostLastYear" selected="True" />
+            <SelectField field="SOR_ID" selected="True" />
+            <SelectField field="DI_Job_ID" selected="True" />
+            <SelectField field="DI_Create_Date" selected="True" />
+            <SelectField field="DI_Modified_Date" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="522" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=MYSQL_Destination;UID=info7370;PWD=__EncPwd1__|||dimsalesterritory</File>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <AppendMap>
+              <AppendMapping mode="Custom">
+                <Field Source="SalesTerritoryID_SK" Dest="SalesTerritoryID_SK" />
+                <Field Source="TerritoryID_NK" Dest="TerritoryID_PK" />
+                <Field Source="TerritoryName" Dest="TerritoryName" />
+                <Field Source="CountryRegionCode" Dest="CountryRegionCode" />
+                <Field Source="Group" Dest="Group" />
+                <Field Source="SalesYTD" Dest="SalesYTD" />
+                <Field Source="SalesLastYear" Dest="SalesLastYear" />
+                <Field Source="CostYTD" Dest="CostYTD" />
+                <Field Source="CostLastYear" Dest="CostLastYear" />
+                <Field Source="SOR_ID" Dest="SOR_ID" />
+                <Field Source="DI_Job_ID" Dest="DI_Job_ID" />
+                <Field Source="DI_Create_Date" Dest="DI_Create_Date" />
+                <Field Source="DI_Modified_Date" Dest="DI_Modified_Date" />
+              </AppendMapping>
+            </AppendMap>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Append</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MYSQL_Destination
+Query=dimsalesterritory</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>dimsalesterritory</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

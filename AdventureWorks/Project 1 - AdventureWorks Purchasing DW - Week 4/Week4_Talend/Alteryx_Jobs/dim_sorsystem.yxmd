@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Siddhi\Desktop\DesignDataArchitecture\AdventureWorksUpdated_25thfeb2020\AdvWorks_26thfeb2020\SOR.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>SOR.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="SOR_ID" source="File: C:\Users\Siddhi\Desktop\DesignDataArchitecture\AdventureWorksUpdated_25thfeb2020\AdvWorks_26thfeb2020\SOR.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="SOR_NAME" size="255" source="File: C:\Users\Siddhi\Desktop\DesignDataArchitecture\AdventureWorksUpdated_25thfeb2020\AdvWorks_26thfeb2020\SOR.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="SOR_MODULE" size="255" source="File: C:\Users\Siddhi\Desktop\DesignDataArchitecture\AdventureWorksUpdated_25thfeb2020\AdvWorks_26thfeb2020\SOR.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="SOR_TABLE" size="255" source="File: C:\Users\Siddhi\Desktop\DesignDataArchitecture\AdventureWorksUpdated_25thfeb2020\AdvWorks_26thfeb2020\SOR.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="DI_JOB_ID" source="File: C:\Users\Siddhi\Desktop\DesignDataArchitecture\AdventureWorksUpdated_25thfeb2020\AdvWorks_26thfeb2020\SOR.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="DI_Create_Date" source="File: C:\Users\Siddhi\Desktop\DesignDataArchitecture\AdventureWorksUpdated_25thfeb2020\AdvWorks_26thfeb2020\SOR.xlsx|||`Sheet1$`" type="Date" />
+            <Field name="DI_Modified_Date" source="File: C:\Users\Siddhi\Desktop\DesignDataArchitecture\AdventureWorksUpdated_25thfeb2020\AdvWorks_26thfeb2020\SOR.xlsx|||`Sheet1$`" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="198" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="SOR_ID" selected="True" />
+            <SelectField field="SOR_NAME" selected="True" />
+            <SelectField field="SOR_MODULE" selected="True" />
+            <SelectField field="SOR_TABLE" selected="True" />
+            <SelectField field="DI_JOB_ID" selected="True" />
+            <SelectField field="DI_Create_Date" selected="True" />
+            <SelectField field="DI_Modified_Date" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="342" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=TargetMYSQL;UID=info7370;PWD=__EncPwd1__|||dim_sorsystem</File>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <AppendMap>
+              <AppendMapping mode="Custom">
+                <Field Source="SOR_ID" Dest="SOR_ID" />
+                <Field Source="SOR_NAME" Dest="SOR_Name" />
+                <Field Source="SOR_MODULE" Dest="SOR_Module" />
+                <Field Source="SOR_TABLE" Dest="SOR_Table" />
+                <Field Source="DI_JOB_ID" Dest="DI_Job_ID" />
+                <Field Source="DI_Create_Date" Dest="DI_Create_Date" />
+                <Field Source="DI_Modified_Date" Dest="DI_Modified_Date" />
+              </AppendMapping>
+            </AppendMap>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Append</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=TargetMYSQL
+Query=dim_sorsystem</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>dim_sorsystem</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
