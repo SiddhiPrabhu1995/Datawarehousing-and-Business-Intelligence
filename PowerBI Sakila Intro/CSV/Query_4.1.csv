@@ -1,0 +1,585 @@
+last_name,first_name,RentalAmount,Rental_Quantity,country,city,active
+ABNEY,RAFAEL,97.79,21,Philippines,Talavera,1
+ADAM,NATHANIEL,133.72,28,"United States",Joliet,1
+ADAMS,KATHLEEN,92.73,27,Iran,Arak,1
+ALEXANDER,DIANA,105.73,27,"United States","Augusta-Richmond County",1
+ALLARD,GORDON,160.68,32,Yemen,Hodeida,1
+ALLEN,SHIRLEY,126.69,31,Philippines,Davao,1
+ALVAREZ,CHARLENE,114.73,27,Tanzania,Zanzibar,1
+ANDERSON,LISA,106.76,24,Japan,Sagamihara,1
+ANDREW,JOSE,96.75,25,"Saint Vincent and the Grenadines",Kingstown,1
+ANDREWS,IDA,76.77,23,Brazil,Luzinia,1
+AQUINO,OSCAR,99.80,20,Iran,Sirjan,1
+ARCHULETA,JORDAN,132.70,30,Argentina,Avellaneda,1
+ARMSTRONG,MELANIE,92.75,25,Philippines,Bayugan,1
+ARNOLD,BEATRICE,119.74,26,India,Udaipur,1
+ARSENAULT,KENT,134.73,27,Brazil,"Juiz de Fora",1
+ARTIS,CARL,106.77,23,Paraguay,"San Lorenzo",1
+ASHCRAFT,DARRYL,76.77,23,Argentina,Ezeiza,1
+ASHER,TYRONE,112.76,24,Bulgaria,Ruse,1
+AUSTIN,ALMA,151.65,35,Germany,Mannheim,1
+BAILEY,MILDRED,98.75,25,India,Jaipur,1
+BAKER,PAMELA,95.77,23,China,Nanyang,1
+BALES,MARTIN,103.73,27,Angola,Namibe,1
+BANDA,EVERETT,110.72,28,Egypt,Bilbays,1
+BANKS,JESSIE,91.74,26,Bulgaria,"Stara Zagora",1
+BARBEE,CLAYTON,96.74,26,Brazil,Alvorada,1
+BARCLAY,ANGEL,115.68,32,Japan,Ueda,1
+BARFIELD,NICHOLAS,145.68,32,Brazil,Belm,1
+BARKLEY,VICTOR,91.76,24,"United States",Manchester,1
+BARNES,RACHEL,84.78,22,Japan,Kamakura,1
+BARNETT,CAROLE,108.70,30,"United States",Peoria,1
+BARRETT,TRACEY,118.73,27,Nigeria,Owo,1
+BATES,DAISY,162.62,38,"Russian Federation",Kolpino,1
+BAUGH,EDWARD,114.72,28,"Faroe Islands",Trshavn,1
+BAUGHMAN,ROBERT,92.79,21,"Russian Federation",Kaliningrad,1
+BELL,JEAN,115.73,27,Malaysia,Kuching,1
+BENNER,CHESTER,99.76,24,China,Suihua,1
+BENNETT,JANE,100.72,28,Brazil,Araatuba,1
+BERRY,REGINA,135.66,34,China,Jinchang,1
+BESS,CHARLIE,120.74,26,China,Baiyin,1
+BETANCOURT,MIGUEL,135.71,29,Germany,Erlangen,1
+BILLINGSLEY,HENRY,73.82,18,Tonga,Nukualofa,1
+BISHOP,AGNES,98.77,23,India,Sambhal,1
+BLACK,VALERIE,121.74,26,"United States",Brockton,1
+BLAKELY,DEREK,97.72,28,Philippines,Gingoog,1
+BOLIN,MATHEW,90.78,22,Venezuela,Valencia,1
+BONE,DON,133.75,25,Mozambique,Naala-Porto,1
+BOSTIC,LEON,109.75,25,Colombia,Florencia,1
+BOUDREAU,BOBBY,106.65,35,Anguilla,"South Hill",1
+BOURQUE,DERRICK,95.78,22,Canada,Gatineau,1
+BOWENS,CLIFFORD,113.71,29,"Russian Federation","Nabereznyje Telny",1
+BOWMAN,CAROLINE,50.85,15,"United States",Tallahassee,1
+BOX,BYRON,120.71,29,Kazakstan,Zhezqazghan,1
+BOYD,EMMA,94.77,23,Egypt,Qalyub,1
+BRADLEY,ANA,174.66,34,"United States",Memphis,1
+BREAUX,TED,117.71,29,China,Baicheng,1
+BREWER,VICKIE,120.69,31,Germany,Halle/Saale,1
+BRINSON,RUSSELL,136.64,36,Poland,Tychy,1
+BROOKS,BEVERLY,97.76,24,Taiwan,Chiayi,1
+BROTHERS,CHRIS,84.78,22,Spain,Gijn,1
+BROWN,ELIZABETH,144.62,38,Taiwan,Nantou,1
+BROWNLEE,GUY,159.68,32,China,Zhoushan,1
+BRYANT,PAULA,77.82,18,India,Pathankot,1
+BUFORD,CLINTON,103.75,25,"United States",Aurora,1
+BULL,WESLEY,177.60,40,Spain,"Ourense (Orense)",1
+BUNN,TIMOTHY,91.78,22,Brazil,Braslia,1
+BURK,EDWIN,116.77,23,"South Africa",Newcastle,1
+BURKE,LYDIA,82.76,24,Argentina,"San Miguel de Tucumn",1
+BURLESON,SIDNEY,108.75,25,Poland,Czestochowa,1
+BURNS,APRIL,94.74,26,"United Kingdom",Dundee,1
+BURTON,COLLEEN,87.76,24,Germany,Saarbrcken,1
+BUSTAMANTE,LEROY,118.68,32,China,Tongliao,1
+BUTLER,LOIS,113.65,35,Brunei,"Bandar Seri Begawan",1
+BUTTERFIELD,ALLEN,85.79,21,India,Hoshiarpur,1
+BYRD,DEANNA,107.74,26,Philippines,Tuguegarao,1
+CABRAL,DANIEL,97.80,20,Brazil,Ibirit,1
+CALDWELL,KAY,98.80,20,China,Yantai,1
+CAMPBELL,CATHERINE,142.66,34,"Russian Federation",Moscow,1
+CARBONE,CHAD,89.75,25,India,Katihar,1
+CARLSON,TERRY,127.71,29,Japan,Miyakonojo,1
+CARPENTER,LORETTA,93.78,22,Canada,Oshawa,1
+CARR,EILEEN,80.82,18,Paraguay,"Ciudad del Este",1
+CARRANZA,TONY,73.79,21,Japan,Koriyama,1
+CARROLL,JUNE,173.63,37,Algeria,Skikda,1
+CARTER,AMANDA,110.73,27,Morocco,Nador,1
+CARY,TIM,175.61,39,India,Bijapur,1
+CASILLAS,ALFRED,120.74,26,Egypt,Sawhaj,1
+CASTILLO,GERTRUDE,137.66,34,Greenland,Nuuk,1
+CASTRO,JENNY,103.73,27,"Puerto Rico",Ponce,1
+CAUSEY,PHILIP,121.69,31,"Russian Federation",Korolev,1
+CHAMBERS,KRISTINA,109.72,28,Venezuela,"Valle de la Pascua",1
+CHAPA,VERNON,88.82,18,Turkey,Denizli,1
+CHAPMAN,TONYA,161.68,32,India,Bhilwara,1
+CHAVEZ,KRISTEN,87.82,18,Japan,Hino,1
+CHEATHAM,MARIO,112.72,28,Algeria,Batna,1
+CHESTNUT,PEDRO,103.76,24,Ukraine,ostka,1
+CHISHOLM,JOHNNIE,121.76,24,Poland,Plock,1
+CHOATE,RAMON,140.69,31,Ecuador,Robamba,1
+CHRISTENSON,NELSON,77.80,20,Spain,"Santiago de Compostela",1
+CHURCHILL,FERNANDO,117.75,25,"South Korea",Tonghae,1
+CINTRON,AUSTIN,83.81,19,China,Tieli,1
+CLARK,MICHELLE,155.65,35,Bangladesh,Tangail,1
+CLARY,ADRIAN,74.81,19,Italy,Udine,1
+COLBY,BERNARD,88.78,22,India,"Dhule (Dhulia)",1
+COLE,TRACY,132.70,30,Mexico,Huixquilucan,1
+COLEMAN,KATHRYN,130.74,26,Ukraine,Simferopol,1
+COLLAZO,TOMMY,186.62,38,Iran,Qomsheh,1
+COLLINS,DIANE,169.65,35,Sudan,Omdurman,1
+COOK,GLORIA,135.70,30,"French Polynesia",Papeete,1
+COOPER,JOAN,84.77,23,"United States","Saint Louis",1
+CORNISH,ALLAN,79.81,19,Philippines,Tarlac,1
+CORNWELL,BRETT,138.66,34,India,"Siliguri (Shiliguri)",1
+COUGHLIN,CARLOS,106.77,23,India,Bhavnagar,1
+COY,GARY,103.75,25,China,Yuzhou,1
+CRAIG,BOBBIE,80.76,24,Mexico,"Valle de Santiago",1
+CRAWFORD,ESTHER,95.72,28,"South Africa",Botshabelo,1
+CROMWELL,IVAN,99.74,26,Mexico,Monclova,1
+CROUSE,ALBERT,99.77,23,Cameroon,Bamenda,1
+CRUZ,KIM,82.79,21,"United States","Grand Prairie",1
+CULPEPPER,EUGENE,71.81,19,China,Shenzhen,1
+CUNNINGHAM,STACY,98.77,23,Colombia,Pereira,1
+CURLEY,STEVEN,132.71,29,India,Miraj,1
+CURRIER,NORMAN,80.74,26,Indonesia,Cianjur,1
+CURTIS,LEAH,104.75,25,Poland,Kalisz,1
+DANIELS,DANIELLE,105.75,25,Mexico,Hidalgo,1
+DAVIDSON,PATSY,119.72,28,Ecuador,Portoviejo,1
+DAVIS,JENNIFER,93.72,28,"United States",Laredo,1
+DAY,COURTNEY,132.68,32,"South Korea",Uijongbu,1
+DEAN,MARCIA,175.58,42,Philippines,Tanza,1
+DELOACH,ALVIN,139.71,29,Mexico,Cuauhtmoc,1
+DELUCA,RON,103.77,23,Japan,Isesaki,1
+DELVALLE,WADE,83.78,22,Switzerland,Lausanne,1
+DEVORE,HERMAN,115.71,29,Tanzania,Mwanza,1
+DIAZ,EMILY,91.76,24,"South Korea",Kimchon,1
+DIXON,AMBER,113.73,27,Taiwan,Touliu,1
+DOUGLAS,MARSHA,151.63,37,Mozambique,Beira,1
+DOUGLASS,SEAN,91.77,23,Ethiopia,"Addis Abeba",1
+DOWD,LLOYD,66.81,19,Indonesia,Tegal,1
+DUGGAN,FREDDIE,99.75,25,Peru,Sullana,1
+DUNCAN,SAMANTHA,71.77,23,Mexico,Matamoros,1
+DUNN,ERIN,106.73,27,"Russian Federation",Ljubertsy,1
+EAST,JEFF,107.70,30,"Dominican Republic","San Felipe de Puerto Plata",1
+EBERT,LEO,104.77,23,China,Dongying,1
+EDWARDS,JOYCE,130.72,28,"Saudi Arabia",Jedda,1
+ELLINGTON,MELVIN,97.74,26,China,Laohekou,1
+ELLIOTT,KATIE,109.75,25,Kenya,Kisumu,1
+ELLIS,GRACE,139.67,33,Germany,Duisburg,1
+ELROD,JAVIER,135.68,32,Chad,NDjamna,1
+ELY,JARED,87.81,19,Indonesia,Purwakarta,1
+EMMONS,KURT,99.77,23,Japan,Kanazawa,1
+ESTEP,TRAVIS,110.75,25,"Saudi Arabia",al-Qatif,1
+EVANS,ANN,76.83,17,"Russian Federation",Niznekamsk,1
+FARNSWORTH,JOHN,137.69,31,India,Parbhani,1
+FENNELL,ALEXANDER,151.64,36,Italy,Bergamo,1
+FERGUSON,BERTHA,101.75,25,Nigeria,Ondo,1
+FERNANDEZ,MELINDA,80.83,17,Pakistan,"Mandi Bahauddin",1
+FIELDS,VICKI,108.75,25,Germany,Witten,1
+FISHER,CINDY,113.71,29,Venezuela,Cuman,1
+FLEMING,MYRTLE,110.76,24,"Dominican Republic","Santiago de los Caballeros",1
+FLETCHER,MAE,158.69,31,Spain,"Donostia-San Sebastin",1
+FLORES,JULIA,134.68,32,Argentina,"La Plata",1
+FORD,CRYSTAL,137.67,33,Israel,Ashdod,1
+FORMAN,MICHEAL,102.74,26,Argentina,Escobar,1
+FORSYTHE,ENRIQUE,96.72,28,Greece,Patras,1
+FORTIER,RAUL,100.80,20,India,Chapra,1
+FORTNER,HOWARD,93.74,26,Iran,Kermanshah,1
+FOSTER,PHYLLIS,91.77,23,China,Zalantun,1
+FOUST,JACK,89.76,24,"Russian Federation",Zeleznogorsk,1
+FOWLER,JO,73.80,20,Nigeria,Oyo,1
+FOX,HOLLY,114.69,31,India,Haldia,1
+FRALEY,JUAN,73.77,23,"Russian Federation",Teboksary,1
+FRANCISCO,JOEL,95.77,23,Bolivia,Sucre,1
+FRANKLIN,BETH,103.75,25,Vietnam,Haiphong,1
+FRAZIER,GLENDA,140.68,32,China,Qinhuangdao,1
+FREEMAN,SHANNON,100.76,24,India,"Varanasi (Benares)",1
+FULLER,CLAUDIA,111.74,26,Kuwait,"Jalib al-Shuyukh",1
+FULTZ,GERALD,121.70,30,India,Satna,1
+GAFFNEY,FELIX,73.76,24,Lithuania,Vilnius,1
+GAITHER,RANDY,110.72,28,"Russian Federation",Kurgan,1
+GAMEZ,CLARENCE,104.70,30,Japan,Izumisano,1
+GANDY,FLOYD,69.83,17,Mexico,Zapopan,1
+GANNON,JAMES,131.70,30,Japan,Hiroshima,1
+GARCIA,CAROL,91.78,22,Nigeria,Kaduna,1
+GARDINER,DAVE,134.68,32,China,Leshan,1
+GARDNER,JOANN,66.84,16,Turkey,Tarsus,1
+GARRETT,NELLIE,94.79,21,India,Shimoga,1
+GARZA,PEARL,76.78,22,India,Jodhpur,1
+GAVIN,BILL,114.72,28,"United States",Rockford,1
+GEARY,RUBEN,89.79,21,Poland,Lublin,1
+GEORGE,JOY,124.67,33,Romania,Botosani,1
+GIBSON,VICTORIA,111.73,27,Indonesia,Pemalang,1
+GILBERT,TANYA,144.67,33,"South Korea",Naju,1
+GILLETTE,DUSTIN,100.74,26,Netherlands,Emmen,1
+GILLILAND,JOE,138.71,29,Philippines,Imus,1
+GILMAN,DENNIS,114.72,28,"South Africa",Paarl,1
+GOMEZ,JOSEPHINE,109.74,26,India,Etawah,1
+GONZALES,NORMA,79.79,21,Philippines,Bislig,1
+GONZALEZ,MARTHA,127.66,34,Moldova,Chisinau,1
+GOOCH,ADAM,101.78,22,India,Adoni,1
+GORDON,LESLIE,89.78,22,Turkey,Kilis,1
+GRAF,DOUGLAS,114.75,25,Mexico,Mexicali,1
+GRAHAM,RITA,92.76,24,France,Toulon,1
+GRANT,MICHELE,130.70,30,China,Yuncheng,1
+GRAVES,BRANDY,122.72,28,"United States",Warren,1
+GRAY,JUDY,96.75,25,Algeria,Bchar,1
+GRECO,CHRISTOPHER,147.69,31,Italy,Brescia,1
+GREEN,VIRGINIA,129.68,32,France,Toulouse,1
+GREENE,JEANETTE,74.80,20,"Russian Federation",Novoterkassk,1
+GREGORY,SONIA,126.72,28,Nigeria,"Benin City",1
+GRESHAM,ALEX,151.67,33,Mexico,Uruapan,1
+GREY,ROSS,99.73,27,Philippines,Iligan,1
+GRIFFIN,LILLIAN,106.75,25,"United Arab Emirates",al-Ayn,1
+GRIGSBY,THOMAS,105.75,25,"United States","Kansas City",1
+GRISSOM,TERRY,72.80,20,Japan,Matsue,1
+GRUBER,ARMANDO,83.79,21,"United Kingdom",Southport,1
+GUAJARDO,HARVEY,93.78,22,Vietnam,Vinh,1
+GUILLEN,ERIK,118.71,29,India,Bhimavaram,1
+GUNDERSON,TERRENCE,117.70,30,China,Jinzhou,1
+GUTIERREZ,CARLA,103.74,26,India,Bhusawal,1
+HALE,RAMONA,129.70,30,India,Patiala,1
+HALL,JESSICA,152.66,34,"Holy See (Vatican City State)","Citt del Vaticano",1
+HAMILTON,GLADYS,146.69,31,Nigeria,Ilorin,1
+HANNON,SETH,112.75,25,Bahrain,al-Manama,1
+HANSEN,DELORES,91.79,21,"Russian Federation",Jaroslavl,1
+HANSON,VIOLA,129.68,32,Philippines,Lapu-Lapu,1
+HARDER,GABRIEL,111.74,26,Turkey,Sivas,1
+HARDISON,BRYAN,124.72,28,"United States",Dallas,1
+HARKINS,BRENT,112.77,23,Turkey,Sultanbeyli,1
+HARPER,ROBERTA,84.77,23,Iran,"Shahr-e Kord",1
+HARRIS,HELEN,134.68,32,India,Bhopal,1
+HARRISON,WENDY,91.70,30,Mexico,Nezahualcyotl,1
+HART,DANA,133.71,29,"Russian Federation",Kirovo-Tepetsk,1
+HARVEY,ARLENE,120.74,26,India,Ambattur,1
+HAUSER,COREY,101.78,22,Turkey,Gaziantep,1
+HAVENS,ARNOLD,167.67,33,Philippines,"Santa Rosa",1
+HAWKINS,JILL,68.79,21,Austria,Linz,1
+HAWKS,LEE,119.73,27,India,Pudukkottai,1
+HAYES,ROBIN,102.76,24,"Russian Federation",Jelets,1
+HEATON,SHAWN,152.67,33,Thailand,"Nakhon Sawan",1
+HENDERSON,ANDREA,93.78,22,Madagascar,Mahajanga,1
+HENNING,ALBERTO,66.79,21,Venezuela,Barcelona,1
+HENRY,PAULINE,98.73,27,Mexico,Torren,1
+HERNANDEZ,ANGELA,140.64,36,Japan,Shimonoseki,1
+HERRERA,NORA,118.72,28,Austria,Salzburg,1
+HERRMANN,TRACY,129.72,28,Ecuador,Loja,1
+HERZOG,CLAUDE,111.75,25,Angola,Benguela,1
+HIATT,EDUARDO,130.73,27,China,Jining,1
+HICKS,MONICA,128.70,30,Ukraine,Mukateve,1
+HIDALGO,MARCUS,115.70,30,Estonia,Tartu,1
+HILL,ANNA,91.79,21,Italy,Alessandria,1
+HITE,ZACHARY,146.69,31,"United States",Akron,1
+HOFFMAN,MATTIE,64.78,22,"United Kingdom",London,1
+HOLLAND,MABEL,112.70,30,Myanmar,Monywa,1
+HOLM,PHILLIP,101.74,26,Japan,Tama,1
+HOLMES,LUCILLE,108.72,28,"South Africa",Soshanguve,1
+HOLT,TONI,95.77,23,"United States",Roanoke,1
+HOPKINS,HILDA,122.71,29,Philippines,Mandaluyong,1
+HORTON,BILLIE,88.74,26,Turkey,Inegl,1
+HOULE,RAY,79.78,22,"Russian Federation",Dzerzinsk,1
+HOWARD,ROSE,103.78,22,"French Guiana",Cayenne,1
+HOWELL,WILLIE,101.74,26,Argentina,"Vicente Lpez",1
+HOWLAND,MILTON,127.75,25,India,Vijayawada,1
+HUDSON,LAUREN,71.80,20,France,"Le Mans",1
+HUEY,BRANDON,152.63,37,Turkey,Balikesir,1
+HUGHES,BONNIE,87.79,21,"South Korea",Cheju,1
+HUNT,ELEANOR,216.54,46,Runion,Saint-Denis,1
+HUNTER,CHARLOTTE,93.76,24,Brazil,"guas Lindas de Gois",1
+HURTADO,JEREMY,103.72,28,Brazil,"Vitria de Santo Anto",1
+IRBY,CURTIS,167.62,38,Canada,"Richmond Hill",1
+ISBELL,FREDERICK,105.79,21,Japan,Tsuyama,1
+ISOM,DANNY,91.79,21,Pakistan,Okara,1
+JACKSON,KAREN,131.73,27,Turkey,Osmaniye,1
+JACOBS,GEORGIA,110.74,26,India,Uttarpara-Kotrung,1
+JAMES,KATHY,129.70,30,Philippines,Baybay,1
+JENKINS,LOUISE,101.75,25,"South Africa",Springs,1
+JENNINGS,NAOMI,152.65,35,India,Karnal,1
+JENSEN,LENA,168.68,32,India,Halisahar,1
+JIMENEZ,OLGA,144.68,32,Nigeria,Ogbomosho,1
+JOHNSON,PATRICIA,128.73,27,"United States","San Bernardino",1
+JOHNSTON,KRISTIN,116.69,31,"United States",Sunnyvale,1
+JONES,BARBARA,81.78,22,Myanmar,Myingyan,1
+JORDAN,TIFFANY,59.86,14,China,Enshi,1
+JORDON,JERRY,143.71,29,Japan,Onomichi,1
+JOY,JOSEPH,134.70,30,Brazil,"Angra dos Reis",1
+KAHN,ALAN,124.74,26,China,Emeishan,1
+KELLEY,ELSIE,141.63,37,Nigeria,Ikerre,1
+KELLY,DENISE,103.73,27,Brazil,"Rio Claro",1
+KENNEDY,RHONDA,194.61,39,Netherlands,Apeldoorn,1
+KENYON,JEROME,73.84,16,Chile,Rancagua,1
+KIM,LILLIE,89.77,23,Egypt,Idfu,1
+KINDER,REGINALD,115.72,28,Indonesia,Madiun,1
+KING,MELISSA,123.66,34,Taiwan,Lungtan,1
+KNIGHT,GAIL,109.75,25,Switzerland,Bern,1
+KNOTT,KELLY,103.75,25,China,Sanya,1
+KOWALSKI,CHARLES,138.68,32,Malaysia,"Sungai Petani",1
+KRAUS,LESTER,65.84,16,India,Kanchrapara,1
+KRUGER,HERBERT,78.80,20,"Russian Federation",Syktyvkar,1
+LAMBERT,MISTY,118.73,27,"United Arab Emirates",Sharja,1
+LANCE,JACOB,79.79,21,"United States","El Monte",1
+LANE,RENEE,97.74,26,"United States",Compton,1
+LARUE,DARYL,111.73,27,Iraq,Mosul,1
+LAWRENCE,LAURIE,99.77,23,India,Firozabad,1
+LAWSON,JEANNE,136.73,27,Turkmenistan,Ashgabat,1
+LAWTON,LAWRENCE,100.69,31,Cameroon,Yaound,1
+LEE,KIMBERLY,95.75,25,Argentina,Crdoba,1
+LEONE,LOUIS,161.65,35,Philippines,Tanauan,1
+LEWIS,SARAH,119.70,30,Latvia,Liepaja,1
+LINTON,GEORGE,131.67,33,Brazil,Sorocaba,1
+LITTLE,MAUREEN,87.79,21,Paraguay,Asuncin,1
+LOMBARDI,DWIGHT,74.83,17,"South Africa",Chatsworth,1
+LONG,JACQUELINE,148.67,33,Thailand,Songkhla,1
+LOPEZ,AMY,127.71,29,India,Jhansi,1
+LOVELACE,BARRY,134.67,33,Zambia,Kitwe,1
+LOWE,PRISCILLA,157.65,35,Mexico,Salamanca,1
+LUCAS,VELMA,117.73,27,Nigeria,Effon-Alaiye,1
+LUMPKIN,WILLARD,96.78,22,Mexico,Carmen,1
+LYMAN,LEWIS,86.81,19,Israel,Ashqelon,1
+LYNCH,JACKIE,93.75,25,Colombia,Buenaventura,1
+MACKENZIE,STEVE,158.66,34,Indonesia,Probolinggo,1
+MADRIGAL,RALPH,150.66,34,"Puerto Rico",Arecibo,1
+MAHAN,MATTHEW,114.69,31,Mexico,Cuautla,1
+MAHON,DONALD,89.77,23,China,Ezhou,1
+MALCOLM,CLIFTON,117.73,27,Taiwan,Tanshui,1
+MARK,JOSHUA,119.70,30,India,Rampur,1
+MARKHAM,WILLIE,101.75,25,Argentina,"Almirante Brown",1
+MARLOW,SAMUEL,80.79,21,India,Ranchi,1
+MARSHALL,SHERRY,153.66,34,Egypt,"Shubra al-Khayma",1
+MARTEL,CALVIN,111.77,23,Venezuela,Maracabo,1
+MARTINEZ,RUTH,125.76,24,"South Africa",Kimberley,1
+MARTINO,HAROLD,130.68,32,Brazil,"Boa Vista",1
+MASON,JUANITA,110.70,30,India,Pune,1
+MATTOX,RICK,124.73,27,Egypt,"Mit Ghamr",1
+MAULDIN,GREGORY,78.77,23,Tunisia,Sousse,1
+MAY,GWENDOLYN,98.75,25,Japan,Higashiosaka,1
+MCADAMS,ALFREDO,85.80,20,"Russian Federation",Serpuhov,1
+MCALISTER,RENE,113.74,26,"United States","Garden Grove",1
+MCCARTER,MORRIS,139.66,34,Taiwan,Fengshan,1
+MCCARTNEY,JESUS,114.76,24,Brazil,Guaruj,1
+MCCOY,VERA,67.82,18,Afghanistan,Kabul,1
+MCCRARY,RICHARD,109.75,25,"United States",Arlington,1
+MCCURDY,BRAD,105.75,25,Taiwan,Chungho,1
+MCDONALD,EDITH,71.81,19,India,Gandhinagar,1
+MCDUFFIE,SAM,117.76,24,Colombia,Sogamoso,1
+MCKINNEY,MIRIAM,135.74,26,Japan,Otsu,1
+MCWHORTER,RAYMOND,135.70,30,Azerbaijan,Sumqayit,1
+MEADOR,RICARDO,99.79,21,Japan,Okayama,1
+MEDINA,DORA,107.77,23,China,Tianjin,1
+MEEHAN,CORY,81.76,24,Belarus,Mogiljov,1
+MEEK,ANTONIO,78.84,16,Brazil,Bag,1
+MENA,CASEY,141.66,34,Turkey,Tokat,1
+MENARD,PETER,106.77,23,Netherlands,Ede,1
+MENDOZA,MARIAN,107.77,23,Brazil,Maring,1
+MEYER,NATALIE,95.77,23,Brazil,"Aparecida de Goinia",1
+MILAM,JESSIE,141.67,33,China,Binzhou,1
+MILES,BECKY,115.71,29,India,Tambaram,1
+MILLARD,SHANE,95.78,22,Mexico,"La Paz",1
+MILLER,MARIA,151.67,33,Yugoslavia,Kragujevac,1
+MILLS,ALICIA,83.79,21,India,Nagaon,1
+MILNER,TOM,107.68,32,"United Arab Emirates","Abu Dhabi",1
+MITCHELL,STEPHANIE,118.75,25,Armenia,Yerevan,1
+MOELLER,RODNEY,104.77,23,Nigeria,"Deba Habe",1
+MONTGOMERY,STACEY,151.66,34,China,Fuyu,1
+MOORE,MARGARET,89.77,23,Oman,Masqat,1
+MORALES,ANITA,62.85,15,India,Hubli-Dharwad,1
+MORENO,STELLA,104.78,22,Mexico,"Coacalco de Berriozbal",1
+MORGAN,EVELYN,114.72,28,Liechtenstein,Vaduz,1
+MORRELL,CRAIG,124.70,30,Philippines,Cavite,1
+MORRIS,HEATHER,115.70,30,Japan,Nagareyama,1
+MORRISON,BESSIE,132.72,28,Italy,Syrakusa,1
+MORRISSEY,JASON,128.72,28,Argentina,"Baha Blanca",1
+MOTLEY,BRADLEY,126.73,27,India,"Purnea (Purnia)",1
+MURPHY,CHERYL,133.73,27,India,Mysore,1
+MURRAY,THELMA,126.68,32,Peru,Lima,1
+MURRELL,MANUEL,116.70,30,"Sri Lanka",Jaffna,1
+MYERS,PEGGY,96.76,24,"Saudi Arabia",Abha,1
+NELSON,DEBRA,141.71,29,Brazil,"Vila Velha",1
+NETTLES,JAIME,126.71,29,Peru,Hunuco,1
+NEUMANN,RANDALL,99.77,23,"Dominican Republic","La Romana",1
+NEWSOM,PATRICK,119.69,31,Vietnam,Hanoi,1
+NGO,JUSTIN,129.64,36,Brazil,"Santo Andr",1
+NGUYEN,TAMARA,93.75,25,Brazil,Anpolis,1
+NICHOLS,SUZANNE,94.76,24,Indonesia,Jakarta,1
+NOE,ELMER,98.74,26,Cambodia,Battambang,1
+NOLAND,JULIO,89.79,21,Ukraine,Konotop,1
+NOLEN,CODY,98.78,22,Brazil,"So Bernardo do Campo",1
+OBRIEN,LEONA,50.86,14,China,Fuzhou,1
+OCAMPO,MARION,115.71,29,China,Weifang,1
+OGLESBY,ISAAC,126.71,29,Mexico,Cuernavaca,1
+OLIVARES,JORGE,134.66,34,Indonesia,Lhokseumawe,1
+OLIVER,ELLA,137.69,31,Yemen,Aden,1
+OLSON,ANNETTE,98.76,24,India,"Allappuzha (Alleppey)",1
+OLVERA,DWAYNE,101.78,22,India,Rajkot,1
+ORTIZ,SYLVIA,143.68,32,Colombia,"Dos Quebradas",1
+OUTLAW,MARC,123.70,30,Italy,Brindisi,1
+OWENS,CARMEN,97.74,26,Venezuela,Caracas,1
+PAINE,DAN,109.78,22,"United Kingdom",Stockport,1
+PALMER,MEGAN,92.73,27,China,Laiwu,1
+PARKER,FRANCES,108.78,22,Brazil,"Juazeiro do Norte",1
+PATTERSON,WANDA,145.70,30,Colombia,Sincelejo,1
+PAYNE,LYNN,123.72,28,Malawi,Lilongwe,1
+PEARSON,IRMA,70.82,18,Philippines,Hagonoy,1
+PEMBERTON,LANCE,82.78,22,Morocco,Beni-Mellal,1
+PENA,ERIKA,101.74,26,Finland,Oulu,1
+PEREZ,CAROLYN,117.70,30,Thailand,"Pak Kret",1
+PERKINS,GERALDINE,112.70,30,Israel,"Tel Aviv-Jaffa",1
+PERRY,SARA,141.67,33,Mexico,Atlixco,1
+PERRYMAN,WALTER,127.70,30,China,Xinxiang,1
+PETERS,SUE,154.60,40,China,Changzhou,1
+PETERSON,NICOLE,94.78,22,India,Shivapuri,1
+PFEIFFER,BOB,91.76,24,China,Xintai,1
+PHILLIPS,JANET,127.73,27,Chile,Antofagasta,1
+PIERCE,SALLY,119.68,32,India,Chandrapur,1
+PINSON,JEFFERY,121.69,31,Pakistan,Dadu,1
+PITT,MAX,107.76,24,Yugoslavia,"Novi Sad",1
+POINDEXTER,HECTOR,119.74,26,"Russian Federation",Pjatigorsk,1
+PORTER,CARRIE,124.66,34,China,Liaocheng,1
+POULIN,BILLY,149.65,35,Philippines,Cabuyao,1
+POWELL,ANNE,87.77,23,"United Kingdom",Bradford,1
+POWER,DARRELL,91.75,25,Canada,Halifax,1
+PREWITT,KEN,110.71,29,Romania,Bucuresti,1
+PRICE,IRENE,77.77,23,Kazakstan,Pavlodar,1
+PULLEN,GLENN,93.77,23,Netherlands,Amersfoort,1
+PURDY,ANDREW,109.73,27,Azerbaijan,Baku,1
+QUALLS,STEPHEN,118.72,28,Bangladesh,Dhaka,1
+QUIGLEY,TROY,144.70,30,Canada,Vancouver,1
+QUINTANILLA,ROGER,146.64,36,Taiwan,Hsichuh,1
+RALSTON,VINCENT,105.75,25,Mexico,Allende,1
+RAMIREZ,CHRISTINA,80.82,18,"Saudi Arabia",al-Hawiya,1
+RAMOS,EVA,83.82,18,"United States",Clarksville,1
+RAPP,ANDRE,126.72,28,Chile,Coquimbo,1
+RATCLIFF,DALE,112.73,27,"South Africa",Rustenburg,1
+RAY,AUDREY,119.71,29,Austria,Graz,1
+REA,JIM,128.67,33,Mexico,"El Fuerte",1
+REED,DORIS,100.78,22,"Russian Federation",Balaiha,1
+REID,CONSTANCE,95.75,25,Nigeria,Zaria,1
+RENNER,NEIL,152.68,32,Vietnam,"Cam Ranh",1
+REYES,DEBBIE,130.68,32,Japan,Fukuyama,1
+REYNOLDS,ROSA,133.70,30,"United States",Lancaster,1
+RHOADS,EDGAR,95.75,25,Turkey,Eskisehir,1
+RHODES,SHERRI,128.67,33,India,Ahmadnagar,1
+RICE,JAMIE,139.71,29,"United States","Sterling Heights",1
+RICHARDS,WILMA,91.80,20,"United States",Bellevue,1
+RICHARDSON,ASHLEY,112.75,25,"United States",Lincoln,1
+RICKETTS,RONNIE,100.75,25,Senegal,Ziguinchor,1
+RICO,KEITH,89.74,26,Slovakia,Bratislava,1
+RILEY,BRITTANY,159.72,28,Ukraine,Sumy,1
+RINEHART,MARK,104.74,26,"Saudi Arabia",Tabuk,1
+RIVERA,KATHERINE,58.86,14,Switzerland,Basel,1
+ROBB,JAY,89.74,26,Indonesia,Surakarta,1
+ROBERT,ERIC,122.73,27,Argentina,"Santa F",1
+ROBERTS,CHRISTINE,99.76,24,"French Polynesia",Faaa,1
+ROBERTSON,JOANNE,127.66,34,Japan,Urawa,1
+ROBINS,GREG,141.70,30,Vietnam,"Nam Dinh",1
+ROBINSON,SHARON,115.70,30,Pakistan,Mardan,1
+RODRIGUEZ,LAURA,113.78,22,Morocco,Sal,1
+RODRIQUEZ,VIOLET,142.70,30,"Hong Kong","Kowloon and New Kowloon",1
+ROGERS,TERESA,128.71,29,Japan,Iwakuni,1
+ROMERO,MINNIE,142.66,34,Indonesia,Ciomas,1
+ROSE,DARLENE,113.69,31,"North Korea",Pyongyang,1
+ROSS,MARILYN,137.70,30,Nigeria,Ife,1
+ROYAL,DAVID,115.74,26,Peru,Callao,1
+RUIZ,VIVIAN,90.77,23,Netherlands,s-Hertogenbosch,1
+RUSSELL,ANNIE,58.82,18,Mozambique,Tete,1
+RYAN,TARA,88.80,20,Indonesia,Gorontalo,1
+SALISBURY,RYAN,142.70,30,Latvia,Daugavpils,1
+SANBORN,GENE,97.73,27,Oman,Salala,1
+SANCHEZ,JULIE,107.71,29,Spain,"A Corua (La Corua)",1
+SANDERS,TAMMY,155.59,41,Taiwan,Changhwa,1
+SATTERFIELD,WILLIAM,100.74,26,Yemen,Sanaa,1
+SAUER,DEAN,109.73,27,"South Africa",Johannesburg,1
+SCARBOROUGH,JONATHAN,72.82,18,Mexico,"Pachuca de Soto",1
+SCHILLING,JESSE,101.74,26,"Congo, The Democratic Republic of the",Lubumbashi,1
+SCHMIDT,ROSEMARY,147.65,35,Turkey,Usak,1
+SCHOFIELD,LEONARD,109.68,32,Argentina,Tandil,1
+SCHRADER,JIMMY,105.71,29,"Russian Federation",Atinsk,1
+SCHULER,KEVIN,116.78,22,Nepal,Birgunj,1
+SCHWAB,ANTHONY,71.80,20,"American Samoa",Tafuna,1
+SCHWARZ,BRUCE,103.77,23,Japan,Okinawa,1
+SCOTT,REBECCA,89.76,24,Japan,Kurashiki,1
+SCROGGINS,STANLEY,139.70,30,Japan,Omiya,1
+SEAL,KARL,221.55,45,"United States","Cape Coral",1
+SELBY,AARON,110.76,24,"Congo, The Democratic Republic of the",Mwene-Ditu,1
+SEWARD,LESLIE,152.65,35,Indonesia,Pontianak,1
+SHANKS,EARL,111.73,27,Japan,Iwatsuki,1
+SHAW,CLARA,195.58,42,Belarus,Molodetno,1
+SHELBY,RICKY,91.75,25,China,Junan,1
+SHELLEY,SCOTT,94.75,25,"United States",Aurora,1
+SHELTON,DIANNE,135.69,31,Iran,Tabriz,1
+SHERROD,WARREN,159.67,33,"Russian Federation",Usolje-Sibirskoje,1
+SIKES,FRANCIS,104.74,26,Mexico,"San Juan Bautista Tuxtepec",1
+SILVA,MAXINE,116.68,32,Brazil,"Poos de Caldas",1
+SILVERMAN,MICHAEL,127.71,29,China,Tiefa,1
+SIMMONS,TINA,133.72,28,Brazil,Goinia,1
+SIMPKINS,ARTHUR,155.68,32,"Russian Federation",Maikop,1
+SIMPSON,ELLEN,117.72,28,Brazil,Po,1
+SIMS,VANESSA,86.81,19,Germany,Siegen,1
+SKIDMORE,FRANCISCO,98.78,22,Brazil,"So Leopoldo",1
+SLEDGE,GILBERT,129.72,28,"United Kingdom",York,1
+SLONE,WALLACE,109.75,25,Nigeria,Sokoto,1
+SMITH,MARY,118.68,32,Japan,Sasebo,1
+SNYDER,MARION,194.61,39,Brazil,"Santa Brbara dOeste",1
+SOTO,NINA,123.71,29,India,"Palghat (Palakkad)",1
+SOUTH,ROLAND,80.77,23,China,Yingkou,1
+SPEAR,JEFFREY,90.77,23,Indonesia,Ciparay,1
+SPENCER,CATHY,122.71,29,Japan,Kakamigahara,1
+SPURLOCK,KYLE,110.70,30,China,Shanwei,1
+STANFIELD,SERGIO,108.74,26,Mexico,Celaya,1
+STANLEY,ALLISON,92.73,27,Cambodia,"Phnom Penh",1
+STCLAIR,KIRK,64.81,19,Taiwan,Tsaotun,1
+STEPHENS,LORRAINE,86.79,21,China,Hami,1
+STEPP,ERNEST,89.75,25,China,Huaian,1
+STEVENS,ELAINE,107.76,24,"Russian Federation",Smolensk,1
+STEWART,ALICE,138.67,33,"United States",Fontana,1
+STILL,IAN,96.73,27,"United States",Garland,1
+STONE,VERONICA,126.68,32,"United States",Greensboro,1
+SULLIVAN,DAWN,120.74,26,Tuvalu,Funafuti,1
+SUTTON,FELICIA,86.72,28,China,Korla,1
+SWAFFORD,PERRY,117.76,24,Argentina,Quilmes,1
+TALBERT,GLEN,113.74,26,Mexico,Acua,1
+TAN,TODD,117.71,29,Ukraine,Kamjanets-Podilskyi,1
+TAYLOR,DOROTHY,99.75,25,Iran,Esfahan,1
+TEEL,SALVADOR,129.70,30,Gambia,Banjul,1
+TERRY,JENNIE,133.71,29,"Czech Republic",Olomouc,1
+THOMAS,NANCY,103.72,28,India,"Yamuna Nagar",1
+THOMPSON,DONNA,98.79,21,"Russian Federation",Elista,1
+THORN,MARSHALL,117.77,23,"United Kingdom",Southampton,1
+THRASHER,LARRY,112.74,26,Turkey,Adana,1
+TIRADO,LONNIE,94.82,18,Indonesia,"Pangkal Pinang",1
+TOBIAS,CLYDE,115.71,29,China,Shaoguan,1
+TOMLIN,EDDIE,128.73,27,Philippines,Ozamis,1
+TORRES,KELLY,99.78,22,China,Xiangtan,1
+TROUT,PAUL,120.77,23,"Russian Federation",Kursk,1
+TROUTMAN,FRANKLIN,74.78,22,China,Zaoyang,1
+TRUONG,WAYNE,70.81,19,India,Gulbarga,1
+TUBBS,DUANE,148.69,31,Nauru,Yangor,1
+TUCKER,MARJORIE,127.68,32,Poland,Jastrzebie-Zdrj,1
+TURNER,MARIE,114.74,26,"Russian Federation",Lipetsk,1
+TURPIN,JOHNNY,57.81,19,Sudan,al-Qadarif,1
+VANHORN,ANDY,113.75,25,Mexico,"Huejutla de Reyes",1
+VARGAS,CHRISTY,122.69,31,China,Datong,1
+VARNEY,BENJAMIN,95.77,23,Mexico,Guadalajara,1
+VASQUEZ,TERRI,126.73,27,Brazil,Blumenau,1
+VEST,JULIAN,109.72,28,Japan,Akishima,1
+VINES,CECIL,115.74,26,"United Kingdom",London,1
+VU,ROBERTO,139.70,30,China,Yinchuan,1
+WADE,MARGIE,159.64,36,China,Lengshuijiang,1
+WAGGONER,FRANK,127.68,32,Bangladesh,Jamalpur,1
+WAGNER,DOLORES,114.74,26,Malaysia,Ipoh,1
+WALDROP,HUGH,90.79,21,China,Haining,1
+WALKER,DEBORAH,115.71,29,Pakistan,Shikarpur,1
+WALLACE,CONNIE,100.77,23,"Russian Federation",Ivanovo,1
+WALTERS,CASSANDRA,129.70,30,"United States",Salinas,1
+WARD,JANICE,144.66,34,Sweden,Malm,1
+WARREN,HAZEL,110.66,34,China,Hohhot,1
+WASHINGTON,RUBY,110.72,28,China,Meixian,1
+WATKINS,YVONNE,92.79,21,Venezuela,"Ocumare del Tuy",1
+WATSON,THERESA,99.70,30,Philippines,Taguig,1
+WATTS,SHELLY,113.74,26,"United States",Dayton,1
+WAUGH,JAMIE,118.75,25,Japan,Kuwana,1
+WAY,MIKE,166.65,35,India,Valparai,1
+WEAVER,YOLANDA,110.73,27,Tanzania,Tabora,1
+WEBB,ETHEL,135.68,32,"South Africa",Boksburg,1
+WEINER,RONALD,132.70,30,Mexico,"San Felipe del Progreso",1
+WELCH,MARLENE,117.74,26,Japan,Iwaki,1
+WEST,EDNA,107.74,26,"South Africa",Klerksdorp,1
+WESTMORELAND,MITCHELL,134.68,32,Vietnam,"Nha Trang",1
+WHEAT,FRED,88.75,25,Mexico,Jurez,1
+WHEELER,LUCY,91.74,26,India,Balurghat,1
+WHITE,BETTY,117.72,28,"United States","Citrus Heights",1
+WHITING,ROY,143.71,29,Kenya,Nyeri,1
+WILES,JON,87.76,24,Bolivia,"El Alto",1
+WILLIAMS,LINDA,135.74,26,Greece,Athenai,1
+WILLIAMSON,GINA,111.72,28,Yemen,Taizz,1
+WILLIS,BERNICE,145.67,33,Turkey,Batman,1
+WILSON,SUSAN,92.76,24,"New Zealand",Hamilton,1
+WINDHAM,DARREN,108.76,24,Italy,Livorno,1
+WOFFORD,VIRGIL,107.73,27,Mexico,"Jos Azueta",1
+WOOD,LORI,141.69,31,India,"Rae Bareli",1
+WOODS,FLORENCE,126.70,30,Argentina,Merlo,1
+WREN,TYLER,88.79,21,China,Rizhao,1
+WRIGHT,BRENDA,104.74,26,India,Kamarhati,1
+WYMAN,BRIAN,52.88,12,Poland,Bydgoszcz,1
+YANEZ,LUIS,79.80,20,France,Brest,1
+YEE,MARVIN,75.79,21,India,"Berhampore (Baharampur)",1
+YOUNG,CYNTHIA,111.68,32,India,"Munger (Monghyr)",1
