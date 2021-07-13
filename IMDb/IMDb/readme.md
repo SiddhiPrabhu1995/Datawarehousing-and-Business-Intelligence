@@ -55,9 +55,9 @@ Data loading- At this phase, transformed data is uploaded into the warehouse.
 
 # Sample Talend Jobs created in the project:
 
-![](Images/Talend_Screenshots/DimEmployee_Talend.png)
+![DimEmployee_Talend](https://user-images.githubusercontent.com/57429405/125508776-1af5c1d7-c6cc-4736-9208-38ff5d660e90.png)
 
-![](Images/Talend_Screenshots/DimVendor_Talend.png)
+![FactPurchases_Talend](https://user-images.githubusercontent.com/57429405/125508840-b5c329e2-0d1f-4d86-8123-caefa8d9043a.png)
 
 ## step 5:- Implement the end-user interface: Reporting tools and dashboards
 
