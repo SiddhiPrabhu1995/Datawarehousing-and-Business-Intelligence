@@ -46,6 +46,18 @@ Data transformation- Once extracted, the ETL tool starts data processing. All ex
 
 Data loading- At this phase, transformed data is uploaded into the warehouse.
 
+# Sample Altreyx Jobs created in the project:
+
+![](Images/Alteryx_Screenshots/DimEmployee.png)
+
+![](Images/Alteryx_Screenshots/FactWorkOrderRouting.png)
+
+# Sample Talend Jobs created in the project:
+
+![](Images/Talend_Screenshots/DimEmployee_Talend.png)
+
+![](Images/Talend_Screenshots/DimVendor_Talend.png)
+
 ## step 5:- Implement the end-user interface: Reporting tools and dashboards
 
 <img width="788" alt="Capture" src="https://user-images.githubusercontent.com/57429405/125010044-c354ca80-e033-11eb-9064-66c96d4f56d4.PNG">
