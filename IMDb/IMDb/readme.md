@@ -48,7 +48,7 @@ Data loading- At this phase, transformed data is uploaded into the warehouse.
 
 # Sample Altreyx Jobs created in the project:
 
-![](Images/Alteryx_Screenshots/DimEmployee.png)
+!(Images/Alteryx_Screenshots/DimEmployee.png)
 
 ![](Images/Alteryx_Screenshots/FactWorkOrderRouting.png)
 
